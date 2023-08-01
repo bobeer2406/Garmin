@@ -5,6 +5,7 @@ import Toybox.System;
 import Toybox.WatchUi;
 import Toybox.Time.Gregorian;
 import Toybox.Time;
+using Toybox.System;
 
 class gw1View extends WatchUi.WatchFace {
 
@@ -58,6 +59,17 @@ class gw1View extends WatchUi.WatchFace {
 
         //BUTTON TOP DATE
         //
+        var stats = System.getSystemStats();
+        var pwr = stats.battery;
+        var batStr = Lang.format( "$1$%", [ pwr.format( "%2d" ) ] );
+        var viewBattery = View.findDrawableById("Battery") as Text;
+        viewBattery.setColor(getApp().getProperty("ForegroundColor") as Number);
+        viewBattery.setText(batStr);
+        // var date = Gregorian.info(Time.now(),Time.FORMAT_SHORT);
+        // var systemStats =System.getSystemStats();
+        // var viewDate = View.findDrawableById("Date").setText(
+        //     date.year.format("%4") + "-" + date.month.format("%02d") + "-" + date.day.format("%02d"));
+        //     viewDate.setColor(getApp().getProperty("ForegroundColor") as Number);
 
         // Call the parent onUpdate function to redraw the layout
         View.onUpdate(dc);
