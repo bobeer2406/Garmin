@@ -1,0 +1,55 @@
+import Toybox.Lang;
+using Toybox.WatchUi;
+using Toybox.WatchUi as Ui;
+using Toybox.Graphics;
+using Toybox.Graphics as Gfx;
+
+module Rez {
+    module Drawables {
+        (:initialized) var back as Symbol;
+        (:initialized) var LauncherIcon as Symbol;
+    } // Drawables
+
+    module Fonts {
+    } // Fonts
+
+    module JsonData {
+    } // JsonData
+
+    module Layouts {
+        function WatchFace(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
+            var rez_cmp_local_custom_drawable_82644229745431653105 = new Background();
+
+            var rez_cmp_local_bitmap_back = new WatchUi.Bitmap({:identifier=>"back", :rezId=>$.Rez.Drawables.back, :locX=>WatchUi.LAYOUT_HALIGN_CENTER, :locY=>WatchUi.LAYOUT_VALIGN_CENTER});
+            rez_cmp_local_bitmap_back.setLocation(((218 - rez_cmp_local_bitmap_back.width) * 0.5), ((218 - rez_cmp_local_bitmap_back.height) * 0.5));
+
+            var rez_cmp_local_text_Date = new WatchUi.Text({:identifier=>"Date", :locX=>(218 * 0.5), :locY=>(218 * (75 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_LARGE});
+
+            var rez_cmp_local_text_MLabel = new WatchUi.Text({:identifier=>"MLabel", :locX=>(218 * (45 / 100.0)), :locY=>(218 * (50 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_SYSTEM_NUMBER_HOT});
+
+            var rez_cmp_local_text_HLabel = new WatchUi.Text({:identifier=>"HLabel", :locX=>(218 * (35 / 100.0)), :locY=>(218 * (25 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_SYSTEM_NUMBER_THAI_HOT});
+
+            var rez_cmp_local_text_Steps = new WatchUi.Text({:identifier=>"Steps", :color=>Graphics.COLOR_WHITE, :locX=>(218 * 0.5), :locY=>(218 * (75 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_LARGE});
+
+            var rez_cmp_local_text_Batery = new WatchUi.Text({:identifier=>"Batery", :color=>Graphics.COLOR_WHITE, :locX=>(218 * 0.5), :locY=>(218 * (90 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_LARGE});
+
+            return [rez_cmp_local_custom_drawable_82644229745431653105, rez_cmp_local_bitmap_back, rez_cmp_local_text_Date, rez_cmp_local_text_MLabel, rez_cmp_local_text_HLabel, rez_cmp_local_text_Steps, rez_cmp_local_text_Batery] as Array<WatchUi.Drawable>;
+        }
+    } // Layouts
+
+    module Menus {
+    } // Menus
+
+    module Strings {
+        (:initialized) var ColorLightGray as Symbol;
+        (:initialized) var ColorBlue as Symbol;
+        (:initialized) var ColorRed as Symbol;
+        (:initialized) var ForegroundColorTitle as Symbol;
+        (:initialized) var BackgroundColorTitle as Symbol;
+        (:initialized) var ColorDarkGray as Symbol;
+        (:initialized) var MilitaryFormatTitle as Symbol;
+        (:initialized) var ColorBlack as Symbol;
+        (:initialized) var ColorWhite as Symbol;
+        (:initialized) var AppName as Symbol;
+    } // Strings
+} // Rez

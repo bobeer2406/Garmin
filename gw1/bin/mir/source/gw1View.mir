@@ -1,0 +1,243 @@
+[ @file = "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc"; @line = 1; ]
+import Toybox.Application;
+[ @file = "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc"; @line = 2; ]
+import Toybox.Graphics;
+[ @file = "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc"; @line = 3; ]
+import Toybox.Lang;
+[ @file = "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc"; @line = 4; ]
+import Toybox.System;
+[ @file = "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc"; @line = 5; ]
+import Toybox.WatchUi;
+[ @file = "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc"; @line = 6; ]
+import Toybox.Time.Gregorian;
+[ @file = "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc"; @line = 7; ]
+import Toybox.Time;
+[ @file = "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc"; @line = 9; ]
+class gw1View extends WatchUi.WatchFace{
+    [ @file = "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc"; @line = 9; ]
+    <init> {
+    }
+    [ @file = "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc"; @line = 9; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc"; @line = 11; ]
+    function initialize() as Void {
+_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_11_26_start:
+[ "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" 12 8 ]
+        %tmp.2 = getv ? :WatchFace;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_11_26_stop:
+    }
+    [ @file = "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc"; @line = 16; ]
+    function onLayout(dc as Dc) as Void {
+_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_16_40_start:
+[ "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" 17 8 ]
+        %tmp.1 = self;
+        %tmp.2 = getv function %tmp.1 :setLayout;
+        %tmp.4 = getv ? :Rez;
+        %tmp.5 = getv %tmp.4 :Layouts;
+        %tmp.6 = getv function %tmp.5 :WatchFace;
+        %tmp.8 = lgetv %dc;
+        %tmp.9 = invoke %tmp.5 %tmp.6(%tmp.8);
+        invoke %tmp.1 %tmp.2(%tmp.9);
+_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_16_40_stop:
+    }
+    [ @file = "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc"; @line = 23; ]
+    function onShow() as Void {
+    }
+    [ @file = "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc"; @line = 27; ]
+    function onUpdate(dc as Dc) as Void {
+_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_27_40_start:
+[ "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" 31 8 ]
+        [ "_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_27_40_start" "_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_27_40_stop" ]
+        %timeFormat.1 = local;
+        %tmp.1 = "$1$:$2$";
+        lputv %timeFormat.1 %tmp.1;
+[ "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" 32 8 ]
+        [ "_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_27_40_start" "_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_27_40_stop" ]
+        %timeFormatH.2 = local;
+        %tmp.2 = "$1$";
+        lputv %timeFormatH.2 %tmp.2;
+[ "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" 33 8 ]
+        [ "_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_27_40_start" "_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_27_40_stop" ]
+        %timeFormatM.3 = local;
+        %tmp.3 = "$2$";
+        lputv %timeFormatM.3 %tmp.3;
+[ "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" 34 8 ]
+        [ "_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_27_40_start" "_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_27_40_stop" ]
+        %clockTime.4 = local;
+        %tmp.4 = getm $.Toybox.System;
+        %tmp.5 = getv function %tmp.4 :getClockTime;
+        %tmp.6 = invoke %tmp.4 %tmp.5();
+        lputv %clockTime.4 %tmp.6;
+[ "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" 35 8 ]
+        [ "_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_27_40_start" "_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_27_40_stop" ]
+        %hours.5 = local;
+        %tmp.7 = lgetv %clockTime.4;
+        %tmp.8 = getv %tmp.7 :hour;
+        lputv %hours.5 %tmp.8;
+[ "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" 36 8 ]
+_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_36_8_if_stmt:
+        %tmp.9 = getm $.Toybox.System;
+        %tmp.10 = getv function %tmp.9 :getDeviceSettings;
+        %tmp.11 = invoke %tmp.9 %tmp.10();
+        %tmp.12 = getv %tmp.11 :is24Hour;
+        %tmp.13 = not %tmp.12;
+        bf %tmp.13 @_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_36_8_if_false;
+_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_36_8_if_true:
+_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_36_50_start:
+[ "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" 37 12 ]
+_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_37_12_if_stmt:
+        %tmp.15 = lgetv %hours.5;
+        %tmp.16 = 24;
+        %tmp.17 = gt %tmp.15 %tmp.16;
+        bf %tmp.17 @_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_37_12_if_end;
+_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_37_12_if_true:
+_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_37_28_start:
+[ "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" 38 16 ]
+        %tmp.19 = lgetv %hours.5;
+        %tmp.20 = 24;
+        %tmp.21 = sub %tmp.19 %tmp.20;
+        lputv %hours.5 %tmp.21;
+_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_37_28_stop:
+        goto @_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_37_12_if_end;
+_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_37_12_if_end:
+_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_36_50_stop:
+        goto @_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_36_8_if_end;
+_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_36_8_if_false:
+_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_40_15_start:
+[ "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" 41 12 ]
+_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_41_12_if_stmt:
+        %tmp.22 = self;
+        %tmp.23 = getv function %tmp.22 :getApp;
+        %tmp.24 = invoke %tmp.22 %tmp.23();
+        %tmp.25 = getv function %tmp.24 :getProperty;
+        %tmp.26 = "UseMilitaryFormat";
+        %tmp.27 = invoke %tmp.24 %tmp.25(%tmp.26);
+        bf %tmp.27 @_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_41_12_if_end;
+_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_41_12_if_true:
+_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_41_59_start:
+[ "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" 42 16 ]
+        %tmp.28 = "$1$$2$";
+        lputv %timeFormat.1 %tmp.28;
+[ "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" 43 16 ]
+        %tmp.29 = lgetv %hours.5;
+        %tmp.30 = getv function %tmp.29 :format;
+        %tmp.31 = "%02d";
+        %tmp.32 = invoke %tmp.29 %tmp.30(%tmp.31);
+        lputv %hours.5 %tmp.32;
+_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_41_59_stop:
+        goto @_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_41_12_if_end;
+_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_41_12_if_end:
+_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_40_15_stop:
+_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_36_8_if_end:
+[ "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" 46 8 ]
+        [ "_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_27_40_start" "_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_27_40_stop" ]
+        %timeStringH.6 = local;
+        %tmp.33 = getm $.Toybox.Lang;
+        %tmp.34 = getv function %tmp.33 :format;
+        %tmp.36 = lgetv %timeFormatH.2;
+        %tmp.37 = newa 2;
+        %tmp.39 = lgetv %hours.5;
+        %tmp.40 = dup %tmp.37;
+        %tmp.41 = aputv %tmp.40 0 %tmp.39;
+        %tmp.42 = lgetv %clockTime.4;
+        %tmp.43 = getv %tmp.42 :min;
+        %tmp.44 = getv function %tmp.43 :format;
+        %tmp.45 = "%02d";
+        %tmp.46 = invoke %tmp.43 %tmp.44(%tmp.45);
+        %tmp.47 = dup %tmp.41;
+        %tmp.48 = aputv %tmp.47 1 %tmp.46;
+        %tmp.49 = invoke %tmp.33 %tmp.34(%tmp.36, %tmp.48);
+        lputv %timeStringH.6 %tmp.49;
+[ "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" 47 8 ]
+        [ "_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_27_40_start" "_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_27_40_stop" ]
+        %timeStringM.7 = local;
+        %tmp.50 = getm $.Toybox.Lang;
+        %tmp.51 = getv function %tmp.50 :format;
+        %tmp.53 = lgetv %timeFormatM.3;
+        %tmp.54 = newa 2;
+        %tmp.56 = lgetv %hours.5;
+        %tmp.57 = dup %tmp.54;
+        %tmp.58 = aputv %tmp.57 0 %tmp.56;
+        %tmp.59 = lgetv %clockTime.4;
+        %tmp.60 = getv %tmp.59 :min;
+        %tmp.61 = getv function %tmp.60 :format;
+        %tmp.62 = "%02d";
+        %tmp.63 = invoke %tmp.60 %tmp.61(%tmp.62);
+        %tmp.64 = dup %tmp.58;
+        %tmp.65 = aputv %tmp.64 1 %tmp.63;
+        %tmp.66 = invoke %tmp.50 %tmp.51(%tmp.53, %tmp.65);
+        lputv %timeStringM.7 %tmp.66;
+[ "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" 51 8 ]
+        [ "_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_27_40_start" "_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_27_40_stop" ]
+        %viewH.8 = local;
+        %tmp.68 = getv ? :View;
+        %tmp.69 = getv function %tmp.68 :findDrawableById;
+        %tmp.70 = "HLabel";
+        %tmp.71 = invoke %tmp.68 %tmp.69(%tmp.70);
+        %tmp.72 = as %tmp.71 Text;
+        lputv %viewH.8 %tmp.72;
+[ "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" 52 8 ]
+        %tmp.73 = lgetv %viewH.8;
+        %tmp.74 = getv function %tmp.73 :setColor;
+        %tmp.75 = self;
+        %tmp.76 = getv function %tmp.75 :getApp;
+        %tmp.77 = invoke %tmp.75 %tmp.76();
+        %tmp.78 = getv function %tmp.77 :getProperty;
+        %tmp.79 = "ForegroundColor";
+        %tmp.80 = invoke %tmp.77 %tmp.78(%tmp.79);
+        %tmp.81 = as %tmp.80 Number;
+        invoke %tmp.73 %tmp.74(%tmp.81);
+[ "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" 53 8 ]
+        %tmp.82 = lgetv %viewH.8;
+        %tmp.83 = getv function %tmp.82 :setText;
+        %tmp.85 = lgetv %timeStringH.6;
+        invoke %tmp.82 %tmp.83(%tmp.85);
+[ "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" 55 8 ]
+        [ "_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_27_40_start" "_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_27_40_stop" ]
+        %viewM.9 = local;
+        %tmp.87 = getv ? :View;
+        %tmp.88 = getv function %tmp.87 :findDrawableById;
+        %tmp.89 = "MLabel";
+        %tmp.90 = invoke %tmp.87 %tmp.88(%tmp.89);
+        %tmp.91 = as %tmp.90 Text;
+        lputv %viewM.9 %tmp.91;
+[ "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" 56 8 ]
+        %tmp.92 = lgetv %viewM.9;
+        %tmp.93 = getv function %tmp.92 :setColor;
+        %tmp.94 = self;
+        %tmp.95 = getv function %tmp.94 :getApp;
+        %tmp.96 = invoke %tmp.94 %tmp.95();
+        %tmp.97 = getv function %tmp.96 :getProperty;
+        %tmp.98 = "ForegroundColor";
+        %tmp.99 = invoke %tmp.96 %tmp.97(%tmp.98);
+        %tmp.100 = as %tmp.99 Number;
+        invoke %tmp.92 %tmp.93(%tmp.100);
+[ "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" 57 8 ]
+        %tmp.101 = lgetv %viewM.9;
+        %tmp.102 = getv function %tmp.101 :setText;
+        %tmp.104 = lgetv %timeStringM.7;
+        invoke %tmp.101 %tmp.102(%tmp.104);
+[ "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" 63 8 ]
+        %tmp.106 = getv ? :View;
+        %tmp.107 = getv function %tmp.106 :onUpdate;
+        %tmp.109 = lgetv %dc;
+        invoke %tmp.106 %tmp.107(%tmp.109);
+_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_27_40_stop:
+    }
+    [ @file = "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc"; @line = 69; ]
+    function onHide() as Void {
+    }
+    [ @file = "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc"; @line = 73; ]
+    function onExitSleep() as Void {
+    }
+    [ @file = "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc"; @line = 77; ]
+    function onEnterSleep() as Void {
+    }
+}
+[ @file = "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc"; @line = 1; ]
+<init> {
+}
