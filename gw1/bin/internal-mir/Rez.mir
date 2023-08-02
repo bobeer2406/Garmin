@@ -45,10 +45,10 @@ module Rez {
 _Users_piotr_GIT_Garmin_gw1_bin_gen_006_B2544_00_source_Rez_mcgen_20_73_start:
 [ "/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen" 21 12 ]
             [ "_Users_piotr_GIT_Garmin_gw1_bin_gen_006_B2544_00_source_Rez_mcgen_20_73_start" "_Users_piotr_GIT_Garmin_gw1_bin_gen_006_B2544_00_source_Rez_mcgen_20_73_stop" ]
-            %rez_cmp_local_custom_drawable_98814525728245771170.1 = local;
+            %rez_cmp_local_custom_drawable_17143377816698693181.1 = local;
             %tmp.4 = getv ? :Background;
             %tmp.1 = newc %tmp.4 ();
-            lputv %rez_cmp_local_custom_drawable_98814525728245771170.1 %tmp.1;
+            lputv %rez_cmp_local_custom_drawable_17143377816698693181.1 %tmp.1;
 [ "/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen" 23 12 ]
             [ "_Users_piotr_GIT_Garmin_gw1_bin_gen_006_B2544_00_source_Rez_mcgen_20_73_start" "_Users_piotr_GIT_Garmin_gw1_bin_gen_006_B2544_00_source_Rez_mcgen_20_73_stop" ]
             %rez_cmp_local_bitmap_back.2 = local;
@@ -515,7 +515,7 @@ _Users_piotr_GIT_Garmin_gw1_bin_gen_006_B2544_00_source_Rez_mcgen_20_73_start:
             lputv %rez_cmp_local_text_DayOfWeek.13 %tmp.445;
 [ "/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen" 48 12 ]
             %tmp.491 = newa Array<WatchUi.Drawable> 13;
-            %tmp.493 = lgetv %rez_cmp_local_custom_drawable_98814525728245771170.1;
+            %tmp.493 = lgetv %rez_cmp_local_custom_drawable_17143377816698693181.1;
             %tmp.494 = dup %tmp.491;
             %tmp.495 = aputv %tmp.494 0 %tmp.493;
             %tmp.497 = lgetv %rez_cmp_local_bitmap_back.2;

@@ -259,13 +259,13 @@ _Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_38_8_if_end:
         %tmp.128 = "Wto";
         %tmp.129 = dup %tmp.127;
         %tmp.130 = aputv %tmp.129 2 %tmp.128;
-        %tmp.131 = "Sro";
+        %tmp.131 = "Śro";
         %tmp.132 = dup %tmp.130;
         %tmp.133 = aputv %tmp.132 3 %tmp.131;
         %tmp.134 = "Czw";
         %tmp.135 = dup %tmp.133;
         %tmp.136 = aputv %tmp.135 4 %tmp.134;
-        %tmp.137 = "Pia";
+        %tmp.137 = "Pią";
         %tmp.138 = dup %tmp.136;
         %tmp.139 = aputv %tmp.138 5 %tmp.137;
         %tmp.140 = "Sob";

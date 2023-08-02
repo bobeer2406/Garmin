@@ -189,7 +189,7 @@
 <entry endPc="268437214" name="viewbaterianr" stackId="25" startPc="268435828"/>
 <entry endPc="268437214" name="viewBattery" stackId="26" startPc="268435828"/>
 <entry arg="true" endPc="268438651" name="dc" stackId="1" startPc="268437216"/>
-<entry endPc="268438651" name="rez_cmp_local_custom_drawable_98814525728245771170" stackId="2" startPc="268437228"/>
+<entry endPc="268438651" name="rez_cmp_local_custom_drawable_17143377816698693181" stackId="2" startPc="268437228"/>
 <entry endPc="268438651" name="rez_cmp_local_bitmap_back" stackId="3" startPc="268437228"/>
 <entry endPc="268438651" name="rez_cmp_local_text_Date" stackId="4" startPc="268437228"/>
 <entry endPc="268438651" name="rez_cmp_local_text_MLabel" stackId="5" startPc="268437228"/>
