@@ -6,6 +6,7 @@ import Toybox.WatchUi;
 import Toybox.Time.Gregorian;
 import Toybox.Time;
 using Toybox.System;
+using Toybox.ActivityMonitor as act;
 
 class gw1View extends WatchUi.WatchFace {
 
@@ -57,7 +58,7 @@ class gw1View extends WatchUi.WatchFace {
         viewM.setColor(getApp().getProperty("ForegroundColor") as Number);
         viewM.setText(timeStringM);
 
-        //BUTTON TOP DATE
+        //BUTTON Battery
         //
         var stats = System.getSystemStats();
         var pwr = stats.battery;
@@ -65,6 +66,43 @@ class gw1View extends WatchUi.WatchFace {
         var viewBattery = View.findDrawableById("Battery") as Text;
         viewBattery.setColor(getApp().getProperty("ForegroundColor") as Number);
         viewBattery.setText(batStr);
+
+
+        //BUTTON STEPS
+        var step = ActivityMonitor.getInfo().steps;
+        var viewStep = View.findDrawableById("Steps") as Text;
+        viewStep.setColor(getApp().getProperty("ForegroundColor") as Number);
+        viewStep.setText("Kroki");
+
+        var viewStepN = View.findDrawableById("StepsNumber") as Text;
+        viewStepN.setColor(getApp().getProperty("ForegroundColor") as Number);
+        viewStepN.setText(timeStringM);
+        
+        
+        //Button Piętra
+        var viewpietra = View.findDrawableById("pietra") as Text;
+        viewpietra.setColor(getApp().getProperty("ForegroundColor") as Number);
+        viewpietra.setText("Piętra");
+
+        var viewpietranr = View.findDrawableById("pietranr") as Text;
+        viewpietranr.setColor(getApp().getProperty("ForegroundColor") as Number);
+        viewpietranr.setText(timeStringM);
+
+        //Button Bateria
+        var viewbateria = View.findDrawableById("bateria") as Text;
+        viewbateria.setColor(getApp().getProperty("ForegroundColor") as Number);
+        viewbateria.setText("Bateria");
+
+        var viewbaterianr = View.findDrawableById("baterianr") as Text;
+        viewbaterianr.setColor(getApp().getProperty("ForegroundColor") as Number);
+        viewbaterianr.setText(batStr);
+
+
+
+
+
+
+        
         // var date = Gregorian.info(Time.now(),Time.FORMAT_SHORT);
         // var systemStats =System.getSystemStats();
         // var viewDate = View.findDrawableById("Date").setText(
