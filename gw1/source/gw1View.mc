@@ -58,37 +58,41 @@ class gw1View extends WatchUi.WatchFace {
         viewM.setColor(getApp().getProperty("ForegroundColor") as Number);
         viewM.setText(timeStringM);
 
+        //Connected
+
+
+        
         //BUTTON Battery
         //
         var stats = System.getSystemStats();
         var pwr = stats.battery;
         var batStr = Lang.format( "$1$%", [ pwr.format( "%2d" ) ] );
-        var viewBattery = View.findDrawableById("Battery") as Text;
-        viewBattery.setColor(getApp().getProperty("ForegroundColor") as Number);
-        viewBattery.setText(batStr);
 
 
-        //BUTTON STEPS
+        //STEPS
         var step = ActivityMonitor.getInfo().steps;
+        var stepsString = step.format("%d");
         var viewStep = View.findDrawableById("Steps") as Text;
         viewStep.setColor(getApp().getProperty("ForegroundColor") as Number);
         viewStep.setText("Kroki");
 
         var viewStepN = View.findDrawableById("StepsNumber") as Text;
         viewStepN.setColor(getApp().getProperty("ForegroundColor") as Number);
-        viewStepN.setText(timeStringM);
+        viewStepN.setText(stepsString);
         
         
-        //Button Piętra
+        //Piętra
+        var floors = ActivityMonitor.getInfo().floorsClimbed;
+        var floorsString = floors.format("%d");
         var viewpietra = View.findDrawableById("pietra") as Text;
         viewpietra.setColor(getApp().getProperty("ForegroundColor") as Number);
         viewpietra.setText("Piętra");
 
         var viewpietranr = View.findDrawableById("pietranr") as Text;
         viewpietranr.setColor(getApp().getProperty("ForegroundColor") as Number);
-        viewpietranr.setText(timeStringM);
+        viewpietranr.setText(floorsString);
 
-        //Button Bateria
+        //Bateria
         var viewbateria = View.findDrawableById("bateria") as Text;
         viewbateria.setColor(getApp().getProperty("ForegroundColor") as Number);
         viewbateria.setText("Bateria");
@@ -97,7 +101,10 @@ class gw1View extends WatchUi.WatchFace {
         viewbaterianr.setColor(getApp().getProperty("ForegroundColor") as Number);
         viewbaterianr.setText(batStr);
 
-
+        //polaczenie
+        var viewBattery = View.findDrawableById("Battery") as Text;
+        viewBattery.setColor(getApp().getProperty("ForegroundColor") as Number);
+        viewBattery.setText("Connected");
 
 
 
