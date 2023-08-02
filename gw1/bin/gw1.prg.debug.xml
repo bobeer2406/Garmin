@@ -46,50 +46,54 @@
 <entry filename="/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" id="19" lineNum="57" parent="globals/gw1View" pc="268436193" symbol="onUpdate"/>
 <entry filename="/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" id="19" lineNum="58" parent="globals/gw1View" pc="268436221" symbol="onUpdate"/>
 <entry filename="/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" id="19" lineNum="59" parent="globals/gw1View" pc="268436258" symbol="onUpdate"/>
-<entry filename="/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" id="19" lineNum="67" parent="globals/gw1View" pc="268436272" symbol="onUpdate"/>
-<entry filename="/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" id="19" lineNum="68" parent="globals/gw1View" pc="268436289" symbol="onUpdate"/>
-<entry filename="/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" id="19" lineNum="69" parent="globals/gw1View" pc="268436299" symbol="onUpdate"/>
-<entry filename="/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" id="19" lineNum="73" parent="globals/gw1View" pc="268436351" symbol="onUpdate"/>
-<entry filename="/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" id="19" lineNum="74" parent="globals/gw1View" pc="268436376" symbol="onUpdate"/>
-<entry filename="/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" id="19" lineNum="75" parent="globals/gw1View" pc="268436394" symbol="onUpdate"/>
-<entry filename="/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" id="19" lineNum="76" parent="globals/gw1View" pc="268436422" symbol="onUpdate"/>
-<entry filename="/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" id="19" lineNum="77" parent="globals/gw1View" pc="268436459" symbol="onUpdate"/>
-<entry filename="/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" id="19" lineNum="79" parent="globals/gw1View" pc="268436476" symbol="onUpdate"/>
-<entry filename="/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" id="19" lineNum="80" parent="globals/gw1View" pc="268436504" symbol="onUpdate"/>
-<entry filename="/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" id="19" lineNum="81" parent="globals/gw1View" pc="268436541" symbol="onUpdate"/>
-<entry filename="/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" id="19" lineNum="85" parent="globals/gw1View" pc="268436555" symbol="onUpdate"/>
-<entry filename="/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" id="19" lineNum="86" parent="globals/gw1View" pc="268436580" symbol="onUpdate"/>
-<entry filename="/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" id="19" lineNum="87" parent="globals/gw1View" pc="268436598" symbol="onUpdate"/>
-<entry filename="/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" id="19" lineNum="88" parent="globals/gw1View" pc="268436626" symbol="onUpdate"/>
-<entry filename="/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" id="19" lineNum="89" parent="globals/gw1View" pc="268436663" symbol="onUpdate"/>
-<entry filename="/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" id="19" lineNum="91" parent="globals/gw1View" pc="268436680" symbol="onUpdate"/>
-<entry filename="/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" id="19" lineNum="92" parent="globals/gw1View" pc="268436708" symbol="onUpdate"/>
-<entry filename="/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" id="19" lineNum="93" parent="globals/gw1View" pc="268436745" symbol="onUpdate"/>
-<entry filename="/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" id="19" lineNum="96" parent="globals/gw1View" pc="268436759" symbol="onUpdate"/>
-<entry filename="/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" id="19" lineNum="97" parent="globals/gw1View" pc="268436787" symbol="onUpdate"/>
-<entry filename="/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" id="19" lineNum="98" parent="globals/gw1View" pc="268436824" symbol="onUpdate"/>
-<entry filename="/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" id="19" lineNum="100" parent="globals/gw1View" pc="268436841" symbol="onUpdate"/>
-<entry filename="/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" id="19" lineNum="101" parent="globals/gw1View" pc="268436869" symbol="onUpdate"/>
-<entry filename="/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" id="19" lineNum="102" parent="globals/gw1View" pc="268436906" symbol="onUpdate"/>
-<entry filename="/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" id="19" lineNum="105" parent="globals/gw1View" pc="268436920" symbol="onUpdate"/>
-<entry filename="/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" id="19" lineNum="106" parent="globals/gw1View" pc="268436948" symbol="onUpdate"/>
-<entry filename="/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" id="19" lineNum="107" parent="globals/gw1View" pc="268436985" symbol="onUpdate"/>
-<entry filename="/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" id="19" lineNum="120" parent="globals/gw1View" pc="268437002" symbol="onUpdate"/>
-<entry filename="/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen" id="20" lineNum="20" parent="globals/Rez/Layouts" pc="268437027" symbol="WatchFace"/>
-<entry filename="/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen" id="20" lineNum="21" parent="globals/Rez/Layouts" pc="268437039" symbol="WatchFace"/>
-<entry filename="/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen" id="20" lineNum="23" parent="globals/Rez/Layouts" pc="268437067" symbol="WatchFace"/>
-<entry filename="/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen" id="20" lineNum="24" parent="globals/Rez/Layouts" pc="268437172" symbol="WatchFace"/>
-<entry filename="/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen" id="20" lineNum="26" parent="globals/Rez/Layouts" pc="268437224" symbol="WatchFace"/>
-<entry filename="/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen" id="20" lineNum="28" parent="globals/Rez/Layouts" pc="268437323" symbol="WatchFace"/>
-<entry filename="/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen" id="20" lineNum="30" parent="globals/Rez/Layouts" pc="268437422" symbol="WatchFace"/>
-<entry filename="/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen" id="20" lineNum="32" parent="globals/Rez/Layouts" pc="268437521" symbol="WatchFace"/>
-<entry filename="/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen" id="20" lineNum="34" parent="globals/Rez/Layouts" pc="268437620" symbol="WatchFace"/>
-<entry filename="/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen" id="20" lineNum="36" parent="globals/Rez/Layouts" pc="268437719" symbol="WatchFace"/>
-<entry filename="/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen" id="20" lineNum="38" parent="globals/Rez/Layouts" pc="268437818" symbol="WatchFace"/>
-<entry filename="/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen" id="20" lineNum="40" parent="globals/Rez/Layouts" pc="268437917" symbol="WatchFace"/>
-<entry filename="/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen" id="20" lineNum="42" parent="globals/Rez/Layouts" pc="268438016" symbol="WatchFace"/>
-<entry filename="/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen" id="20" lineNum="44" parent="globals/Rez/Layouts" pc="268438115" symbol="WatchFace"/>
-<entry filename="/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen" id="20" lineNum="46" parent="globals/Rez/Layouts" pc="268438214" symbol="WatchFace"/>
+<entry filename="/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" id="19" lineNum="62" parent="globals/gw1View" pc="268436272" symbol="onUpdate"/>
+<entry filename="/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" id="19" lineNum="63" parent="globals/gw1View" pc="268436309" symbol="onUpdate"/>
+<entry filename="/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" id="19" lineNum="64" parent="globals/gw1View" pc="268436337" symbol="onUpdate"/>
+<entry filename="/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" id="19" lineNum="73" parent="globals/gw1View" pc="268436461" symbol="onUpdate"/>
+<entry filename="/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" id="19" lineNum="74" parent="globals/gw1View" pc="268436478" symbol="onUpdate"/>
+<entry filename="/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" id="19" lineNum="75" parent="globals/gw1View" pc="268436488" symbol="onUpdate"/>
+<entry filename="/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" id="19" lineNum="79" parent="globals/gw1View" pc="268436540" symbol="onUpdate"/>
+<entry filename="/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" id="19" lineNum="80" parent="globals/gw1View" pc="268436565" symbol="onUpdate"/>
+<entry filename="/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" id="19" lineNum="81" parent="globals/gw1View" pc="268436583" symbol="onUpdate"/>
+<entry filename="/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" id="19" lineNum="82" parent="globals/gw1View" pc="268436611" symbol="onUpdate"/>
+<entry filename="/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" id="19" lineNum="83" parent="globals/gw1View" pc="268436648" symbol="onUpdate"/>
+<entry filename="/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" id="19" lineNum="85" parent="globals/gw1View" pc="268436665" symbol="onUpdate"/>
+<entry filename="/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" id="19" lineNum="86" parent="globals/gw1View" pc="268436693" symbol="onUpdate"/>
+<entry filename="/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" id="19" lineNum="87" parent="globals/gw1View" pc="268436730" symbol="onUpdate"/>
+<entry filename="/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" id="19" lineNum="91" parent="globals/gw1View" pc="268436744" symbol="onUpdate"/>
+<entry filename="/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" id="19" lineNum="92" parent="globals/gw1View" pc="268436769" symbol="onUpdate"/>
+<entry filename="/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" id="19" lineNum="93" parent="globals/gw1View" pc="268436787" symbol="onUpdate"/>
+<entry filename="/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" id="19" lineNum="94" parent="globals/gw1View" pc="268436815" symbol="onUpdate"/>
+<entry filename="/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" id="19" lineNum="95" parent="globals/gw1View" pc="268436852" symbol="onUpdate"/>
+<entry filename="/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" id="19" lineNum="97" parent="globals/gw1View" pc="268436869" symbol="onUpdate"/>
+<entry filename="/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" id="19" lineNum="98" parent="globals/gw1View" pc="268436897" symbol="onUpdate"/>
+<entry filename="/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" id="19" lineNum="99" parent="globals/gw1View" pc="268436934" symbol="onUpdate"/>
+<entry filename="/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" id="19" lineNum="102" parent="globals/gw1View" pc="268436948" symbol="onUpdate"/>
+<entry filename="/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" id="19" lineNum="103" parent="globals/gw1View" pc="268436976" symbol="onUpdate"/>
+<entry filename="/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" id="19" lineNum="104" parent="globals/gw1View" pc="268437013" symbol="onUpdate"/>
+<entry filename="/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" id="19" lineNum="106" parent="globals/gw1View" pc="268437030" symbol="onUpdate"/>
+<entry filename="/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" id="19" lineNum="107" parent="globals/gw1View" pc="268437058" symbol="onUpdate"/>
+<entry filename="/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" id="19" lineNum="108" parent="globals/gw1View" pc="268437095" symbol="onUpdate"/>
+<entry filename="/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" id="19" lineNum="111" parent="globals/gw1View" pc="268437109" symbol="onUpdate"/>
+<entry filename="/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" id="19" lineNum="112" parent="globals/gw1View" pc="268437137" symbol="onUpdate"/>
+<entry filename="/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" id="19" lineNum="113" parent="globals/gw1View" pc="268437174" symbol="onUpdate"/>
+<entry filename="/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" id="19" lineNum="126" parent="globals/gw1View" pc="268437191" symbol="onUpdate"/>
+<entry filename="/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen" id="20" lineNum="20" parent="globals/Rez/Layouts" pc="268437216" symbol="WatchFace"/>
+<entry filename="/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen" id="20" lineNum="21" parent="globals/Rez/Layouts" pc="268437228" symbol="WatchFace"/>
+<entry filename="/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen" id="20" lineNum="23" parent="globals/Rez/Layouts" pc="268437256" symbol="WatchFace"/>
+<entry filename="/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen" id="20" lineNum="24" parent="globals/Rez/Layouts" pc="268437361" symbol="WatchFace"/>
+<entry filename="/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen" id="20" lineNum="26" parent="globals/Rez/Layouts" pc="268437413" symbol="WatchFace"/>
+<entry filename="/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen" id="20" lineNum="28" parent="globals/Rez/Layouts" pc="268437512" symbol="WatchFace"/>
+<entry filename="/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen" id="20" lineNum="30" parent="globals/Rez/Layouts" pc="268437611" symbol="WatchFace"/>
+<entry filename="/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen" id="20" lineNum="32" parent="globals/Rez/Layouts" pc="268437710" symbol="WatchFace"/>
+<entry filename="/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen" id="20" lineNum="34" parent="globals/Rez/Layouts" pc="268437809" symbol="WatchFace"/>
+<entry filename="/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen" id="20" lineNum="36" parent="globals/Rez/Layouts" pc="268437908" symbol="WatchFace"/>
+<entry filename="/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen" id="20" lineNum="38" parent="globals/Rez/Layouts" pc="268438007" symbol="WatchFace"/>
+<entry filename="/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen" id="20" lineNum="40" parent="globals/Rez/Layouts" pc="268438106" symbol="WatchFace"/>
+<entry filename="/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen" id="20" lineNum="42" parent="globals/Rez/Layouts" pc="268438205" symbol="WatchFace"/>
+<entry filename="/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen" id="20" lineNum="44" parent="globals/Rez/Layouts" pc="268438304" symbol="WatchFace"/>
+<entry filename="/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen" id="20" lineNum="46" parent="globals/Rez/Layouts" pc="268438403" symbol="WatchFace"/>
+<entry filename="/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen" id="20" lineNum="48" parent="globals/Rez/Layouts" pc="268438515" symbol="WatchFace"/>
 </pcToLineNum>
 <symbolTable>
 <entry id="8388639" module="true" symbol="Graphics"/>
@@ -147,6 +151,7 @@
 <entry field="true" id="20" symbol="ColorLightGray"/>
 <entry id="8389280" method="true" symbol="getInitialView"/>
 <entry id="8389281" method="true" symbol="onStop"/>
+<entry id="8389347" symbol="color"/>
 <entry field="true" id="23" symbol="ForegroundColorTitle"/>
 <entry id="11" module="true" symbol="Layouts"/>
 <entry id="4" module="true" symbol="globals/Rez/Fonts"/>
@@ -157,43 +162,46 @@
 <entry endPc="268435549" name="dictionary" stackId="1" startPc="268435509"/>
 <entry arg="true" endPc="268435607" name="dc" stackId="1" startPc="268435551"/>
 <entry arg="true" endPc="268435802" name="dc" stackId="1" startPc="268435759"/>
-<entry arg="true" endPc="268437026" name="dc" stackId="1" startPc="268435824"/>
-<entry endPc="268437025" name="timeFormat" stackId="2" startPc="268435828"/>
-<entry endPc="268437025" name="timeFormatH" stackId="3" startPc="268435828"/>
-<entry endPc="268437025" name="timeFormatM" stackId="4" startPc="268435828"/>
-<entry endPc="268437025" name="clockTime" stackId="5" startPc="268435828"/>
-<entry endPc="268437025" name="hours" stackId="6" startPc="268435828"/>
-<entry endPc="268437025" name="timeStringH" stackId="7" startPc="268435828"/>
-<entry endPc="268437025" name="timeStringM" stackId="8" startPc="268435828"/>
-<entry endPc="268437025" name="viewH" stackId="9" startPc="268435828"/>
-<entry endPc="268437025" name="viewM" stackId="10" startPc="268435828"/>
-<entry endPc="268437025" name="stats" stackId="11" startPc="268435828"/>
-<entry endPc="268437025" name="pwr" stackId="12" startPc="268435828"/>
-<entry endPc="268437025" name="batStr" stackId="13" startPc="268435828"/>
-<entry endPc="268437025" name="step" stackId="14" startPc="268435828"/>
-<entry endPc="268437025" name="stepsString" stackId="15" startPc="268435828"/>
-<entry endPc="268437025" name="viewStep" stackId="16" startPc="268435828"/>
-<entry endPc="268437025" name="viewStepN" stackId="17" startPc="268435828"/>
-<entry endPc="268437025" name="floors" stackId="18" startPc="268435828"/>
-<entry endPc="268437025" name="floorsString" stackId="19" startPc="268435828"/>
-<entry endPc="268437025" name="viewpietra" stackId="20" startPc="268435828"/>
-<entry endPc="268437025" name="viewpietranr" stackId="21" startPc="268435828"/>
-<entry endPc="268437025" name="viewbateria" stackId="22" startPc="268435828"/>
-<entry endPc="268437025" name="viewbaterianr" stackId="23" startPc="268435828"/>
-<entry endPc="268437025" name="viewBattery" stackId="24" startPc="268435828"/>
-<entry arg="true" endPc="268438340" name="dc" stackId="1" startPc="268437027"/>
-<entry endPc="268438340" name="rez_cmp_local_custom_drawable_20012626971701492431" stackId="2" startPc="268437039"/>
-<entry endPc="268438340" name="rez_cmp_local_bitmap_back" stackId="3" startPc="268437039"/>
-<entry endPc="268438340" name="rez_cmp_local_text_Date" stackId="4" startPc="268437039"/>
-<entry endPc="268438340" name="rez_cmp_local_text_MLabel" stackId="5" startPc="268437039"/>
-<entry endPc="268438340" name="rez_cmp_local_text_HLabel" stackId="6" startPc="268437039"/>
-<entry endPc="268438340" name="rez_cmp_local_text_Steps" stackId="7" startPc="268437039"/>
-<entry endPc="268438340" name="rez_cmp_local_text_StepsNumber" stackId="8" startPc="268437039"/>
-<entry endPc="268438340" name="rez_cmp_local_text_pietra" stackId="9" startPc="268437039"/>
-<entry endPc="268438340" name="rez_cmp_local_text_pietranr" stackId="10" startPc="268437039"/>
-<entry endPc="268438340" name="rez_cmp_local_text_bateria" stackId="11" startPc="268437039"/>
-<entry endPc="268438340" name="rez_cmp_local_text_baterianr" stackId="12" startPc="268437039"/>
-<entry endPc="268438340" name="rez_cmp_local_text_Battery" stackId="13" startPc="268437039"/>
+<entry arg="true" endPc="268437215" name="dc" stackId="1" startPc="268435824"/>
+<entry endPc="268437214" name="timeFormat" stackId="2" startPc="268435828"/>
+<entry endPc="268437214" name="timeFormatH" stackId="3" startPc="268435828"/>
+<entry endPc="268437214" name="timeFormatM" stackId="4" startPc="268435828"/>
+<entry endPc="268437214" name="clockTime" stackId="5" startPc="268435828"/>
+<entry endPc="268437214" name="hours" stackId="6" startPc="268435828"/>
+<entry endPc="268437214" name="timeStringH" stackId="7" startPc="268435828"/>
+<entry endPc="268437214" name="timeStringM" stackId="8" startPc="268435828"/>
+<entry endPc="268437214" name="viewH" stackId="9" startPc="268435828"/>
+<entry endPc="268437214" name="viewM" stackId="10" startPc="268435828"/>
+<entry endPc="268437214" name="date" stackId="11" startPc="268435828"/>
+<entry endPc="268437214" name="dayOfWeek" stackId="12" startPc="268435828"/>
+<entry endPc="268437214" name="stats" stackId="13" startPc="268435828"/>
+<entry endPc="268437214" name="pwr" stackId="14" startPc="268435828"/>
+<entry endPc="268437214" name="batStr" stackId="15" startPc="268435828"/>
+<entry endPc="268437214" name="step" stackId="16" startPc="268435828"/>
+<entry endPc="268437214" name="stepsString" stackId="17" startPc="268435828"/>
+<entry endPc="268437214" name="viewStep" stackId="18" startPc="268435828"/>
+<entry endPc="268437214" name="viewStepN" stackId="19" startPc="268435828"/>
+<entry endPc="268437214" name="floors" stackId="20" startPc="268435828"/>
+<entry endPc="268437214" name="floorsString" stackId="21" startPc="268435828"/>
+<entry endPc="268437214" name="viewpietra" stackId="22" startPc="268435828"/>
+<entry endPc="268437214" name="viewpietranr" stackId="23" startPc="268435828"/>
+<entry endPc="268437214" name="viewbateria" stackId="24" startPc="268435828"/>
+<entry endPc="268437214" name="viewbaterianr" stackId="25" startPc="268435828"/>
+<entry endPc="268437214" name="viewBattery" stackId="26" startPc="268435828"/>
+<entry arg="true" endPc="268438651" name="dc" stackId="1" startPc="268437216"/>
+<entry endPc="268438651" name="rez_cmp_local_custom_drawable_98814525728245771170" stackId="2" startPc="268437228"/>
+<entry endPc="268438651" name="rez_cmp_local_bitmap_back" stackId="3" startPc="268437228"/>
+<entry endPc="268438651" name="rez_cmp_local_text_Date" stackId="4" startPc="268437228"/>
+<entry endPc="268438651" name="rez_cmp_local_text_MLabel" stackId="5" startPc="268437228"/>
+<entry endPc="268438651" name="rez_cmp_local_text_HLabel" stackId="6" startPc="268437228"/>
+<entry endPc="268438651" name="rez_cmp_local_text_Steps" stackId="7" startPc="268437228"/>
+<entry endPc="268438651" name="rez_cmp_local_text_StepsNumber" stackId="8" startPc="268437228"/>
+<entry endPc="268438651" name="rez_cmp_local_text_pietra" stackId="9" startPc="268437228"/>
+<entry endPc="268438651" name="rez_cmp_local_text_pietranr" stackId="10" startPc="268437228"/>
+<entry endPc="268438651" name="rez_cmp_local_text_bateria" stackId="11" startPc="268437228"/>
+<entry endPc="268438651" name="rez_cmp_local_text_baterianr" stackId="12" startPc="268437228"/>
+<entry endPc="268438651" name="rez_cmp_local_text_Battery" stackId="13" startPc="268437228"/>
+<entry endPc="268438651" name="rez_cmp_local_text_DayOfWeek" stackId="14" startPc="268437228"/>
 </localVars>
 <annotations>
 <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="MilitaryFormatTitle"/>
@@ -281,7 +289,7 @@
 <functionEntry accessMode="public" name="onHide" parent="gw1View">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268437026" name="onUpdate" parent="gw1View" startPc="268435824">
+<functionEntry accessMode="public" endPc="268437215" name="onUpdate" parent="gw1View" startPc="268435824">
 <param id="dc"/>
 <documentation/>
 </functionEntry>
@@ -303,7 +311,7 @@
 <functionEntry accessMode="public" name="&lt;init&gt;" parent="JsonData">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268438340" name="WatchFace" parent="Layouts" startPc="268437027">
+<functionEntry accessMode="public" endPc="268438651" name="WatchFace" parent="Layouts" startPc="268437216">
 <param id="dc"/>
 <documentation/>
 </functionEntry>

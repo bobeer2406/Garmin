@@ -18,7 +18,7 @@ module Rez {
 
     module Layouts {
         function WatchFace(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
-            var rez_cmp_local_custom_drawable_20012626971701492431 = new Background();
+            var rez_cmp_local_custom_drawable_98814525728245771170 = new Background();
 
             var rez_cmp_local_bitmap_back = new WatchUi.Bitmap({:identifier=>"back", :rezId=>$.Rez.Drawables.back, :locX=>WatchUi.LAYOUT_HALIGN_CENTER, :locY=>WatchUi.LAYOUT_VALIGN_CENTER});
             rez_cmp_local_bitmap_back.setLocation(((218 - rez_cmp_local_bitmap_back.width) * 0.5), ((218 - rez_cmp_local_bitmap_back.height) * 0.5));
@@ -43,7 +43,9 @@ module Rez {
 
             var rez_cmp_local_text_Battery = new WatchUi.Text({:identifier=>"Battery", :locX=>(218 * 0.5), :locY=>(218 * (80 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_SMALL});
 
-            return [rez_cmp_local_custom_drawable_20012626971701492431, rez_cmp_local_bitmap_back, rez_cmp_local_text_Date, rez_cmp_local_text_MLabel, rez_cmp_local_text_HLabel, rez_cmp_local_text_Steps, rez_cmp_local_text_StepsNumber, rez_cmp_local_text_pietra, rez_cmp_local_text_pietranr, rez_cmp_local_text_bateria, rez_cmp_local_text_baterianr, rez_cmp_local_text_Battery] as Array<WatchUi.Drawable>;
+            var rez_cmp_local_text_DayOfWeek = new WatchUi.Text({:identifier=>"DayOfWeek", :color=>Graphics.COLOR_WHITE, :locX=>(218 * (30 / 100.0)), :locY=>(218 * (10 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_MEDIUM});
+
+            return [rez_cmp_local_custom_drawable_98814525728245771170, rez_cmp_local_bitmap_back, rez_cmp_local_text_Date, rez_cmp_local_text_MLabel, rez_cmp_local_text_HLabel, rez_cmp_local_text_Steps, rez_cmp_local_text_StepsNumber, rez_cmp_local_text_pietra, rez_cmp_local_text_pietranr, rez_cmp_local_text_bateria, rez_cmp_local_text_baterianr, rez_cmp_local_text_Battery, rez_cmp_local_text_DayOfWeek] as Array<WatchUi.Drawable>;
         }
     } // Layouts
 
