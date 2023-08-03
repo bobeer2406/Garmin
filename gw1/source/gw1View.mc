@@ -59,9 +59,14 @@ class gw1View extends WatchUi.WatchFace {
         viewM.setText(timeStringM);
 
         //DayOfWeek 
-        var date = Gregorian.info(Time.now(), Time.FORMAT_SHORT);
+        var day = Gregorian.info(Time.now(), Time.FORMAT_SHORT);
         var dayOfWeek = View.findDrawableById("DayOfWeek") as Text;
-        dayOfWeek.setText(["Nie", "Pon", "Wto", "Śro", "Czw", "Pią", "Sob"][date.day_of_week - 1]);
+        dayOfWeek.setText(["Nie", "Pon", "Wto", "Śro", "Czw", "Pią", "Sob"][day.day_of_week - 1]);
+
+        var days = Gregorian.info(Time.now(), Time.FORMAT_SHORT);
+        var formatedDate = days.day.format("%02d") + ". " + days.month.format("%02d");
+        var daysOfWeek = View.findDrawableById("DaysOfWeek") as Text;
+        daysOfWeek.setText(formatedDate);
 
         
         //Connected
@@ -108,9 +113,9 @@ class gw1View extends WatchUi.WatchFace {
         viewbaterianr.setText(batStr);
 
         //polaczenie
-        var viewBattery = View.findDrawableById("Battery") as Text;
-        viewBattery.setColor(getApp().getProperty("ForegroundColor") as Number);
-        viewBattery.setText("Connected");
+        // var viewBattery = View.findDrawableById("Battery") as Text;
+        // viewBattery.setColor(getApp().getProperty("ForegroundColor") as Number);
+        // viewBattery.setText("Connected");
 
 
 

@@ -1,56 +1,56 @@
-[ @file = "/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen"; @line = 1; ]
+[ @file = "C:\GIT\priv\Garmin\gw1\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 1; ]
 import Toybox.Lang;
-[ @file = "/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen"; @line = 2; ]
+[ @file = "C:\GIT\priv\Garmin\gw1\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 2; ]
 using Toybox.WatchUi;
-[ @file = "/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen"; @line = 3; ]
+[ @file = "C:\GIT\priv\Garmin\gw1\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 3; ]
 using Toybox.WatchUi as :Ui;
-[ @file = "/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen"; @line = 4; ]
+[ @file = "C:\GIT\priv\Garmin\gw1\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 4; ]
 using Toybox.Graphics;
-[ @file = "/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen"; @line = 5; ]
+[ @file = "C:\GIT\priv\Garmin\gw1\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 5; ]
 using Toybox.Graphics as :Gfx;
-[ @file = "/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen"; @line = 7; ]
+[ @file = "C:\GIT\priv\Garmin\gw1\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 7; ]
 module Rez {
-    [ @file = "/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen"; @line = 7; ]
+    [ @file = "C:\GIT\priv\Garmin\gw1\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 7; ]
     <init> {
     }
-    [ @file = "/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen"; @line = 8; ]
+    [ @file = "C:\GIT\priv\Garmin\gw1\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 8; ]
     module Drawables {
-        [ @file = "/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen"; @line = 8; ]
+        [ @file = "C:\GIT\priv\Garmin\gw1\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 8; ]
         <init> {
         }
-        [ @file = "/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen"; @line = 9; @position = 27; initialized = true; ]
+        [ @file = "C:\GIT\priv\Garmin\gw1\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 9; @position = 27; initialized = true; ]
         var back as Symbol;
-        [ @file = "/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen"; @line = 10; @position = 27; initialized = true; ]
+        [ @file = "C:\GIT\priv\Garmin\gw1\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 10; @position = 27; initialized = true; ]
         var LauncherIcon as Symbol;
     }
-    [ @file = "/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen"; @line = 13; ]
+    [ @file = "C:\GIT\priv\Garmin\gw1\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 13; ]
     module Fonts {
-        [ @file = "/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen"; @line = 13; ]
+        [ @file = "C:\GIT\priv\Garmin\gw1\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 13; ]
         <init> {
         }
     }
-    [ @file = "/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen"; @line = 16; ]
+    [ @file = "C:\GIT\priv\Garmin\gw1\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 16; ]
     module JsonData {
-        [ @file = "/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen"; @line = 16; ]
+        [ @file = "C:\GIT\priv\Garmin\gw1\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 16; ]
         <init> {
         }
     }
-    [ @file = "/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen"; @line = 19; ]
+    [ @file = "C:\GIT\priv\Garmin\gw1\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 19; ]
     module Layouts {
-        [ @file = "/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen"; @line = 19; ]
+        [ @file = "C:\GIT\priv\Garmin\gw1\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 19; ]
         <init> {
         }
-        [ @file = "/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen"; @line = 20; ]
+        [ @file = "C:\GIT\priv\Garmin\gw1\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 20; ]
         function WatchFace(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
-_Users_piotr_GIT_Garmin_gw1_bin_gen_006_B2544_00_source_Rez_mcgen_20_73_start:
-[ "/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen" 21 12 ]
-            [ "_Users_piotr_GIT_Garmin_gw1_bin_gen_006_B2544_00_source_Rez_mcgen_20_73_start" "_Users_piotr_GIT_Garmin_gw1_bin_gen_006_B2544_00_source_Rez_mcgen_20_73_stop" ]
-            %rez_cmp_local_custom_drawable_17143377816698693181.1 = local;
+C_GIT_priv_Garmin_gw1_bin_gen_006_B2544_00_source_Rez_mcgen_20_73_start:
+[ "C:\GIT\priv\Garmin\gw1\bin\gen\006-B2544-00\source\Rez.mcgen" 21 12 ]
+            [ "C_GIT_priv_Garmin_gw1_bin_gen_006_B2544_00_source_Rez_mcgen_20_73_start" "C_GIT_priv_Garmin_gw1_bin_gen_006_B2544_00_source_Rez_mcgen_20_73_stop" ]
+            %rez_cmp_local_custom_drawable_17417043121120925905.1 = local;
             %tmp.4 = getv ? :Background;
             %tmp.1 = newc %tmp.4 ();
-            lputv %rez_cmp_local_custom_drawable_17143377816698693181.1 %tmp.1;
-[ "/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen" 23 12 ]
-            [ "_Users_piotr_GIT_Garmin_gw1_bin_gen_006_B2544_00_source_Rez_mcgen_20_73_start" "_Users_piotr_GIT_Garmin_gw1_bin_gen_006_B2544_00_source_Rez_mcgen_20_73_stop" ]
+            lputv %rez_cmp_local_custom_drawable_17417043121120925905.1 %tmp.1;
+[ "C:\GIT\priv\Garmin\gw1\bin\gen\006-B2544-00\source\Rez.mcgen" 23 12 ]
+            [ "C_GIT_priv_Garmin_gw1_bin_gen_006_B2544_00_source_Rez_mcgen_20_73_start" "C_GIT_priv_Garmin_gw1_bin_gen_006_B2544_00_source_Rez_mcgen_20_73_stop" ]
             %rez_cmp_local_bitmap_back.2 = local;
             %tmp.7 = getm $.Toybox.WatchUi;
             %tmp.8 = getv function ? %tmp.7 :Bitmap;
@@ -78,7 +78,7 @@ _Users_piotr_GIT_Garmin_gw1_bin_gen_006_B2544_00_source_Rez_mcgen_20_73_start:
             %tmp.34 = aputv %tmp.33 %tmp.30 %tmp.32;
             %tmp.5 = newc %tmp.8 (%tmp.34);
             lputv %rez_cmp_local_bitmap_back.2 %tmp.5;
-[ "/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen" 24 12 ]
+[ "C:\GIT\priv\Garmin\gw1\bin\gen\006-B2544-00\source\Rez.mcgen" 24 12 ]
             %tmp.35 = lgetv %rez_cmp_local_bitmap_back.2;
             %tmp.36 = getv function %tmp.35 :setLocation;
             %tmp.37 = 218;
@@ -94,329 +94,329 @@ _Users_piotr_GIT_Garmin_gw1_bin_gen_006_B2544_00_source_Rez_mcgen_20_73_start:
             %tmp.47 = 0.5;
             %tmp.48 = mul %tmp.46 %tmp.47;
             invoke %tmp.35 %tmp.36(%tmp.42, %tmp.48);
-[ "/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen" 26 12 ]
-            [ "_Users_piotr_GIT_Garmin_gw1_bin_gen_006_B2544_00_source_Rez_mcgen_20_73_start" "_Users_piotr_GIT_Garmin_gw1_bin_gen_006_B2544_00_source_Rez_mcgen_20_73_stop" ]
-            %rez_cmp_local_text_Date.3 = local;
+[ "C:\GIT\priv\Garmin\gw1\bin\gen\006-B2544-00\source\Rez.mcgen" 26 12 ]
+            [ "C_GIT_priv_Garmin_gw1_bin_gen_006_B2544_00_source_Rez_mcgen_20_73_start" "C_GIT_priv_Garmin_gw1_bin_gen_006_B2544_00_source_Rez_mcgen_20_73_stop" ]
+            %rez_cmp_local_text_MLabel.3 = local;
             %tmp.51 = getm $.Toybox.WatchUi;
             %tmp.52 = getv function ? %tmp.51 :Text;
             %tmp.53 = newd 5;
             %tmp.55 = const :identifier;
-            %tmp.56 = "Date";
+            %tmp.56 = "MLabel";
             %tmp.57 = dup %tmp.53;
             %tmp.58 = aputv %tmp.57 %tmp.55 %tmp.56;
             %tmp.60 = const :locX;
             %tmp.61 = 218;
-            %tmp.62 = 0.5;
-            %tmp.63 = mul %tmp.61 %tmp.62;
-            %tmp.64 = dup %tmp.58;
-            %tmp.65 = aputv %tmp.64 %tmp.60 %tmp.63;
-            %tmp.67 = const :locY;
-            %tmp.68 = 218;
-            %tmp.69 = 10;
-            %tmp.70 = 100.0;
-            %tmp.71 = div %tmp.69 %tmp.70;
-            %tmp.72 = mul %tmp.68 %tmp.71;
-            %tmp.73 = dup %tmp.65;
-            %tmp.74 = aputv %tmp.73 %tmp.67 %tmp.72;
-            %tmp.76 = const :justification;
-            %tmp.77 = getm $.Toybox.Graphics;
-            %tmp.78 = getv %tmp.77 :TEXT_JUSTIFY_CENTER;
-            %tmp.79 = dup %tmp.74;
-            %tmp.80 = aputv %tmp.79 %tmp.76 %tmp.78;
-            %tmp.82 = const :font;
-            %tmp.83 = getm $.Toybox.Graphics;
-            %tmp.84 = getv %tmp.83 :FONT_LARGE;
-            %tmp.85 = dup %tmp.80;
-            %tmp.86 = aputv %tmp.85 %tmp.82 %tmp.84;
-            %tmp.49 = newc %tmp.52 (%tmp.86);
-            lputv %rez_cmp_local_text_Date.3 %tmp.49;
-[ "/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen" 28 12 ]
-            [ "_Users_piotr_GIT_Garmin_gw1_bin_gen_006_B2544_00_source_Rez_mcgen_20_73_start" "_Users_piotr_GIT_Garmin_gw1_bin_gen_006_B2544_00_source_Rez_mcgen_20_73_stop" ]
-            %rez_cmp_local_text_MLabel.4 = local;
-            %tmp.89 = getm $.Toybox.WatchUi;
-            %tmp.90 = getv function ? %tmp.89 :Text;
-            %tmp.91 = newd 5;
-            %tmp.93 = const :identifier;
-            %tmp.94 = "MLabel";
-            %tmp.95 = dup %tmp.91;
-            %tmp.96 = aputv %tmp.95 %tmp.93 %tmp.94;
-            %tmp.98 = const :locX;
-            %tmp.99 = 218;
-            %tmp.100 = 35;
-            %tmp.101 = 100.0;
-            %tmp.102 = div %tmp.100 %tmp.101;
-            %tmp.103 = mul %tmp.99 %tmp.102;
-            %tmp.104 = dup %tmp.96;
-            %tmp.105 = aputv %tmp.104 %tmp.98 %tmp.103;
-            %tmp.107 = const :locY;
-            %tmp.108 = 218;
-            %tmp.109 = 50;
-            %tmp.110 = 100.0;
-            %tmp.111 = div %tmp.109 %tmp.110;
-            %tmp.112 = mul %tmp.108 %tmp.111;
-            %tmp.113 = dup %tmp.105;
-            %tmp.114 = aputv %tmp.113 %tmp.107 %tmp.112;
-            %tmp.116 = const :justification;
-            %tmp.117 = getm $.Toybox.Graphics;
-            %tmp.118 = getv %tmp.117 :TEXT_JUSTIFY_CENTER;
-            %tmp.119 = dup %tmp.114;
-            %tmp.120 = aputv %tmp.119 %tmp.116 %tmp.118;
-            %tmp.122 = const :font;
-            %tmp.123 = getm $.Toybox.Graphics;
-            %tmp.124 = getv %tmp.123 :FONT_SYSTEM_NUMBER_HOT;
-            %tmp.125 = dup %tmp.120;
-            %tmp.126 = aputv %tmp.125 %tmp.122 %tmp.124;
-            %tmp.87 = newc %tmp.90 (%tmp.126);
-            lputv %rez_cmp_local_text_MLabel.4 %tmp.87;
-[ "/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen" 30 12 ]
-            [ "_Users_piotr_GIT_Garmin_gw1_bin_gen_006_B2544_00_source_Rez_mcgen_20_73_start" "_Users_piotr_GIT_Garmin_gw1_bin_gen_006_B2544_00_source_Rez_mcgen_20_73_stop" ]
-            %rez_cmp_local_text_HLabel.5 = local;
-            %tmp.129 = getm $.Toybox.WatchUi;
-            %tmp.130 = getv function ? %tmp.129 :Text;
-            %tmp.131 = newd 5;
-            %tmp.133 = const :identifier;
-            %tmp.134 = "HLabel";
-            %tmp.135 = dup %tmp.131;
-            %tmp.136 = aputv %tmp.135 %tmp.133 %tmp.134;
-            %tmp.138 = const :locX;
-            %tmp.139 = 218;
-            %tmp.140 = 25;
-            %tmp.141 = 100.0;
-            %tmp.142 = div %tmp.140 %tmp.141;
-            %tmp.143 = mul %tmp.139 %tmp.142;
-            %tmp.144 = dup %tmp.136;
-            %tmp.145 = aputv %tmp.144 %tmp.138 %tmp.143;
-            %tmp.147 = const :locY;
-            %tmp.148 = 218;
-            %tmp.149 = 25;
-            %tmp.150 = 100.0;
-            %tmp.151 = div %tmp.149 %tmp.150;
-            %tmp.152 = mul %tmp.148 %tmp.151;
-            %tmp.153 = dup %tmp.145;
-            %tmp.154 = aputv %tmp.153 %tmp.147 %tmp.152;
-            %tmp.156 = const :justification;
-            %tmp.157 = getm $.Toybox.Graphics;
-            %tmp.158 = getv %tmp.157 :TEXT_JUSTIFY_CENTER;
-            %tmp.159 = dup %tmp.154;
-            %tmp.160 = aputv %tmp.159 %tmp.156 %tmp.158;
-            %tmp.162 = const :font;
-            %tmp.163 = getm $.Toybox.Graphics;
-            %tmp.164 = getv %tmp.163 :FONT_SYSTEM_NUMBER_THAI_HOT;
-            %tmp.165 = dup %tmp.160;
-            %tmp.166 = aputv %tmp.165 %tmp.162 %tmp.164;
-            %tmp.127 = newc %tmp.130 (%tmp.166);
-            lputv %rez_cmp_local_text_HLabel.5 %tmp.127;
-[ "/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen" 32 12 ]
-            [ "_Users_piotr_GIT_Garmin_gw1_bin_gen_006_B2544_00_source_Rez_mcgen_20_73_start" "_Users_piotr_GIT_Garmin_gw1_bin_gen_006_B2544_00_source_Rez_mcgen_20_73_stop" ]
-            %rez_cmp_local_text_Steps.6 = local;
-            %tmp.169 = getm $.Toybox.WatchUi;
-            %tmp.170 = getv function ? %tmp.169 :Text;
-            %tmp.171 = newd 5;
-            %tmp.173 = const :identifier;
-            %tmp.174 = "Steps";
-            %tmp.175 = dup %tmp.171;
-            %tmp.176 = aputv %tmp.175 %tmp.173 %tmp.174;
-            %tmp.178 = const :locX;
-            %tmp.179 = 218;
-            %tmp.180 = 65;
-            %tmp.181 = 100.0;
-            %tmp.182 = div %tmp.180 %tmp.181;
-            %tmp.183 = mul %tmp.179 %tmp.182;
-            %tmp.184 = dup %tmp.176;
-            %tmp.185 = aputv %tmp.184 %tmp.178 %tmp.183;
-            %tmp.187 = const :locY;
-            %tmp.188 = 218;
-            %tmp.189 = 10;
-            %tmp.190 = 100.0;
-            %tmp.191 = div %tmp.189 %tmp.190;
-            %tmp.192 = mul %tmp.188 %tmp.191;
-            %tmp.193 = dup %tmp.185;
-            %tmp.194 = aputv %tmp.193 %tmp.187 %tmp.192;
-            %tmp.196 = const :justification;
-            %tmp.197 = getm $.Toybox.Graphics;
-            %tmp.198 = getv %tmp.197 :TEXT_JUSTIFY_CENTER;
-            %tmp.199 = dup %tmp.194;
-            %tmp.200 = aputv %tmp.199 %tmp.196 %tmp.198;
-            %tmp.202 = const :font;
-            %tmp.203 = getm $.Toybox.Graphics;
-            %tmp.204 = getv %tmp.203 :FONT_SMALL;
-            %tmp.205 = dup %tmp.200;
-            %tmp.206 = aputv %tmp.205 %tmp.202 %tmp.204;
-            %tmp.167 = newc %tmp.170 (%tmp.206);
-            lputv %rez_cmp_local_text_Steps.6 %tmp.167;
-[ "/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen" 34 12 ]
-            [ "_Users_piotr_GIT_Garmin_gw1_bin_gen_006_B2544_00_source_Rez_mcgen_20_73_start" "_Users_piotr_GIT_Garmin_gw1_bin_gen_006_B2544_00_source_Rez_mcgen_20_73_stop" ]
-            %rez_cmp_local_text_StepsNumber.7 = local;
-            %tmp.209 = getm $.Toybox.WatchUi;
-            %tmp.210 = getv function ? %tmp.209 :Text;
-            %tmp.211 = newd 5;
-            %tmp.213 = const :identifier;
-            %tmp.214 = "StepsNumber";
-            %tmp.215 = dup %tmp.211;
-            %tmp.216 = aputv %tmp.215 %tmp.213 %tmp.214;
-            %tmp.218 = const :locX;
-            %tmp.219 = 218;
-            %tmp.220 = 65;
-            %tmp.221 = 100.0;
-            %tmp.222 = div %tmp.220 %tmp.221;
-            %tmp.223 = mul %tmp.219 %tmp.222;
-            %tmp.224 = dup %tmp.216;
-            %tmp.225 = aputv %tmp.224 %tmp.218 %tmp.223;
-            %tmp.227 = const :locY;
-            %tmp.228 = 218;
-            %tmp.229 = 18;
-            %tmp.230 = 100.0;
-            %tmp.231 = div %tmp.229 %tmp.230;
-            %tmp.232 = mul %tmp.228 %tmp.231;
-            %tmp.233 = dup %tmp.225;
-            %tmp.234 = aputv %tmp.233 %tmp.227 %tmp.232;
-            %tmp.236 = const :justification;
-            %tmp.237 = getm $.Toybox.Graphics;
-            %tmp.238 = getv %tmp.237 :TEXT_JUSTIFY_CENTER;
-            %tmp.239 = dup %tmp.234;
-            %tmp.240 = aputv %tmp.239 %tmp.236 %tmp.238;
-            %tmp.242 = const :font;
-            %tmp.243 = getm $.Toybox.Graphics;
-            %tmp.244 = getv %tmp.243 :FONT_MEDIUM;
-            %tmp.245 = dup %tmp.240;
-            %tmp.246 = aputv %tmp.245 %tmp.242 %tmp.244;
-            %tmp.207 = newc %tmp.210 (%tmp.246);
-            lputv %rez_cmp_local_text_StepsNumber.7 %tmp.207;
-[ "/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen" 36 12 ]
-            [ "_Users_piotr_GIT_Garmin_gw1_bin_gen_006_B2544_00_source_Rez_mcgen_20_73_start" "_Users_piotr_GIT_Garmin_gw1_bin_gen_006_B2544_00_source_Rez_mcgen_20_73_stop" ]
-            %rez_cmp_local_text_pietra.8 = local;
-            %tmp.249 = getm $.Toybox.WatchUi;
-            %tmp.250 = getv function ? %tmp.249 :Text;
-            %tmp.251 = newd 5;
-            %tmp.253 = const :identifier;
-            %tmp.254 = "pietra";
-            %tmp.255 = dup %tmp.251;
-            %tmp.256 = aputv %tmp.255 %tmp.253 %tmp.254;
-            %tmp.258 = const :locX;
-            %tmp.259 = 218;
-            %tmp.260 = 75;
-            %tmp.261 = 100.0;
-            %tmp.262 = div %tmp.260 %tmp.261;
-            %tmp.263 = mul %tmp.259 %tmp.262;
-            %tmp.264 = dup %tmp.256;
-            %tmp.265 = aputv %tmp.264 %tmp.258 %tmp.263;
-            %tmp.267 = const :locY;
-            %tmp.268 = 218;
-            %tmp.269 = 30;
-            %tmp.270 = 100.0;
-            %tmp.271 = div %tmp.269 %tmp.270;
-            %tmp.272 = mul %tmp.268 %tmp.271;
-            %tmp.273 = dup %tmp.265;
-            %tmp.274 = aputv %tmp.273 %tmp.267 %tmp.272;
-            %tmp.276 = const :justification;
-            %tmp.277 = getm $.Toybox.Graphics;
-            %tmp.278 = getv %tmp.277 :TEXT_JUSTIFY_CENTER;
-            %tmp.279 = dup %tmp.274;
-            %tmp.280 = aputv %tmp.279 %tmp.276 %tmp.278;
-            %tmp.282 = const :font;
-            %tmp.283 = getm $.Toybox.Graphics;
-            %tmp.284 = getv %tmp.283 :FONT_SMALL;
-            %tmp.285 = dup %tmp.280;
-            %tmp.286 = aputv %tmp.285 %tmp.282 %tmp.284;
-            %tmp.247 = newc %tmp.250 (%tmp.286);
-            lputv %rez_cmp_local_text_pietra.8 %tmp.247;
-[ "/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen" 38 12 ]
-            [ "_Users_piotr_GIT_Garmin_gw1_bin_gen_006_B2544_00_source_Rez_mcgen_20_73_start" "_Users_piotr_GIT_Garmin_gw1_bin_gen_006_B2544_00_source_Rez_mcgen_20_73_stop" ]
-            %rez_cmp_local_text_pietranr.9 = local;
-            %tmp.289 = getm $.Toybox.WatchUi;
-            %tmp.290 = getv function ? %tmp.289 :Text;
-            %tmp.291 = newd 5;
-            %tmp.293 = const :identifier;
-            %tmp.294 = "pietranr";
-            %tmp.295 = dup %tmp.291;
-            %tmp.296 = aputv %tmp.295 %tmp.293 %tmp.294;
-            %tmp.298 = const :locX;
-            %tmp.299 = 218;
-            %tmp.300 = 75;
-            %tmp.301 = 100.0;
-            %tmp.302 = div %tmp.300 %tmp.301;
-            %tmp.303 = mul %tmp.299 %tmp.302;
-            %tmp.304 = dup %tmp.296;
-            %tmp.305 = aputv %tmp.304 %tmp.298 %tmp.303;
-            %tmp.307 = const :locY;
-            %tmp.308 = 218;
-            %tmp.309 = 38;
-            %tmp.310 = 100.0;
-            %tmp.311 = div %tmp.309 %tmp.310;
-            %tmp.312 = mul %tmp.308 %tmp.311;
-            %tmp.313 = dup %tmp.305;
-            %tmp.314 = aputv %tmp.313 %tmp.307 %tmp.312;
-            %tmp.316 = const :justification;
-            %tmp.317 = getm $.Toybox.Graphics;
-            %tmp.318 = getv %tmp.317 :TEXT_JUSTIFY_CENTER;
-            %tmp.319 = dup %tmp.314;
-            %tmp.320 = aputv %tmp.319 %tmp.316 %tmp.318;
-            %tmp.322 = const :font;
-            %tmp.323 = getm $.Toybox.Graphics;
-            %tmp.324 = getv %tmp.323 :FONT_MEDIUM;
-            %tmp.325 = dup %tmp.320;
-            %tmp.326 = aputv %tmp.325 %tmp.322 %tmp.324;
-            %tmp.287 = newc %tmp.290 (%tmp.326);
-            lputv %rez_cmp_local_text_pietranr.9 %tmp.287;
-[ "/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen" 40 12 ]
-            [ "_Users_piotr_GIT_Garmin_gw1_bin_gen_006_B2544_00_source_Rez_mcgen_20_73_start" "_Users_piotr_GIT_Garmin_gw1_bin_gen_006_B2544_00_source_Rez_mcgen_20_73_stop" ]
-            %rez_cmp_local_text_bateria.10 = local;
-            %tmp.329 = getm $.Toybox.WatchUi;
-            %tmp.330 = getv function ? %tmp.329 :Text;
-            %tmp.331 = newd 5;
-            %tmp.333 = const :identifier;
-            %tmp.334 = "bateria";
-            %tmp.335 = dup %tmp.331;
-            %tmp.336 = aputv %tmp.335 %tmp.333 %tmp.334;
-            %tmp.338 = const :locX;
-            %tmp.339 = 218;
-            %tmp.340 = 85;
-            %tmp.341 = 100.0;
-            %tmp.342 = div %tmp.340 %tmp.341;
-            %tmp.343 = mul %tmp.339 %tmp.342;
-            %tmp.344 = dup %tmp.336;
-            %tmp.345 = aputv %tmp.344 %tmp.338 %tmp.343;
-            %tmp.347 = const :locY;
-            %tmp.348 = 218;
-            %tmp.349 = 50;
-            %tmp.350 = 100.0;
-            %tmp.351 = div %tmp.349 %tmp.350;
-            %tmp.352 = mul %tmp.348 %tmp.351;
-            %tmp.353 = dup %tmp.345;
-            %tmp.354 = aputv %tmp.353 %tmp.347 %tmp.352;
-            %tmp.356 = const :justification;
-            %tmp.357 = getm $.Toybox.Graphics;
-            %tmp.358 = getv %tmp.357 :TEXT_JUSTIFY_CENTER;
-            %tmp.359 = dup %tmp.354;
-            %tmp.360 = aputv %tmp.359 %tmp.356 %tmp.358;
-            %tmp.362 = const :font;
-            %tmp.363 = getm $.Toybox.Graphics;
-            %tmp.364 = getv %tmp.363 :FONT_SMALL;
-            %tmp.365 = dup %tmp.360;
-            %tmp.366 = aputv %tmp.365 %tmp.362 %tmp.364;
-            %tmp.327 = newc %tmp.330 (%tmp.366);
-            lputv %rez_cmp_local_text_bateria.10 %tmp.327;
-[ "/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen" 42 12 ]
-            [ "_Users_piotr_GIT_Garmin_gw1_bin_gen_006_B2544_00_source_Rez_mcgen_20_73_start" "_Users_piotr_GIT_Garmin_gw1_bin_gen_006_B2544_00_source_Rez_mcgen_20_73_stop" ]
-            %rez_cmp_local_text_baterianr.11 = local;
-            %tmp.369 = getm $.Toybox.WatchUi;
-            %tmp.370 = getv function ? %tmp.369 :Text;
-            %tmp.371 = newd 5;
-            %tmp.373 = const :identifier;
-            %tmp.374 = "baterianr";
-            %tmp.375 = dup %tmp.371;
-            %tmp.376 = aputv %tmp.375 %tmp.373 %tmp.374;
-            %tmp.378 = const :locX;
-            %tmp.379 = 218;
-            %tmp.380 = 85;
-            %tmp.381 = 100.0;
-            %tmp.382 = div %tmp.380 %tmp.381;
-            %tmp.383 = mul %tmp.379 %tmp.382;
-            %tmp.384 = dup %tmp.376;
-            %tmp.385 = aputv %tmp.384 %tmp.378 %tmp.383;
+            %tmp.62 = 45;
+            %tmp.63 = 100.0;
+            %tmp.64 = div %tmp.62 %tmp.63;
+            %tmp.65 = mul %tmp.61 %tmp.64;
+            %tmp.66 = dup %tmp.58;
+            %tmp.67 = aputv %tmp.66 %tmp.60 %tmp.65;
+            %tmp.69 = const :locY;
+            %tmp.70 = 218;
+            %tmp.71 = 60;
+            %tmp.72 = 100.0;
+            %tmp.73 = div %tmp.71 %tmp.72;
+            %tmp.74 = mul %tmp.70 %tmp.73;
+            %tmp.75 = dup %tmp.67;
+            %tmp.76 = aputv %tmp.75 %tmp.69 %tmp.74;
+            %tmp.78 = const :justification;
+            %tmp.79 = getm $.Toybox.Graphics;
+            %tmp.80 = getv %tmp.79 :TEXT_JUSTIFY_CENTER;
+            %tmp.81 = dup %tmp.76;
+            %tmp.82 = aputv %tmp.81 %tmp.78 %tmp.80;
+            %tmp.84 = const :font;
+            %tmp.85 = getm $.Toybox.Graphics;
+            %tmp.86 = getv %tmp.85 :FONT_SYSTEM_NUMBER_HOT;
+            %tmp.87 = dup %tmp.82;
+            %tmp.88 = aputv %tmp.87 %tmp.84 %tmp.86;
+            %tmp.49 = newc %tmp.52 (%tmp.88);
+            lputv %rez_cmp_local_text_MLabel.3 %tmp.49;
+[ "C:\GIT\priv\Garmin\gw1\bin\gen\006-B2544-00\source\Rez.mcgen" 28 12 ]
+            [ "C_GIT_priv_Garmin_gw1_bin_gen_006_B2544_00_source_Rez_mcgen_20_73_start" "C_GIT_priv_Garmin_gw1_bin_gen_006_B2544_00_source_Rez_mcgen_20_73_stop" ]
+            %rez_cmp_local_text_HLabel.4 = local;
+            %tmp.91 = getm $.Toybox.WatchUi;
+            %tmp.92 = getv function ? %tmp.91 :Text;
+            %tmp.93 = newd 5;
+            %tmp.95 = const :identifier;
+            %tmp.96 = "HLabel";
+            %tmp.97 = dup %tmp.93;
+            %tmp.98 = aputv %tmp.97 %tmp.95 %tmp.96;
+            %tmp.100 = const :locX;
+            %tmp.101 = 218;
+            %tmp.102 = 35;
+            %tmp.103 = 100.0;
+            %tmp.104 = div %tmp.102 %tmp.103;
+            %tmp.105 = mul %tmp.101 %tmp.104;
+            %tmp.106 = dup %tmp.98;
+            %tmp.107 = aputv %tmp.106 %tmp.100 %tmp.105;
+            %tmp.109 = const :locY;
+            %tmp.110 = 218;
+            %tmp.111 = 35;
+            %tmp.112 = 100.0;
+            %tmp.113 = div %tmp.111 %tmp.112;
+            %tmp.114 = mul %tmp.110 %tmp.113;
+            %tmp.115 = dup %tmp.107;
+            %tmp.116 = aputv %tmp.115 %tmp.109 %tmp.114;
+            %tmp.118 = const :justification;
+            %tmp.119 = getm $.Toybox.Graphics;
+            %tmp.120 = getv %tmp.119 :TEXT_JUSTIFY_CENTER;
+            %tmp.121 = dup %tmp.116;
+            %tmp.122 = aputv %tmp.121 %tmp.118 %tmp.120;
+            %tmp.124 = const :font;
+            %tmp.125 = getm $.Toybox.Graphics;
+            %tmp.126 = getv %tmp.125 :FONT_SYSTEM_NUMBER_THAI_HOT;
+            %tmp.127 = dup %tmp.122;
+            %tmp.128 = aputv %tmp.127 %tmp.124 %tmp.126;
+            %tmp.89 = newc %tmp.92 (%tmp.128);
+            lputv %rez_cmp_local_text_HLabel.4 %tmp.89;
+[ "C:\GIT\priv\Garmin\gw1\bin\gen\006-B2544-00\source\Rez.mcgen" 30 12 ]
+            [ "C_GIT_priv_Garmin_gw1_bin_gen_006_B2544_00_source_Rez_mcgen_20_73_start" "C_GIT_priv_Garmin_gw1_bin_gen_006_B2544_00_source_Rez_mcgen_20_73_stop" ]
+            %rez_cmp_local_text_Steps.5 = local;
+            %tmp.131 = getm $.Toybox.WatchUi;
+            %tmp.132 = getv function ? %tmp.131 :Text;
+            %tmp.133 = newd 5;
+            %tmp.135 = const :identifier;
+            %tmp.136 = "Steps";
+            %tmp.137 = dup %tmp.133;
+            %tmp.138 = aputv %tmp.137 %tmp.135 %tmp.136;
+            %tmp.140 = const :locX;
+            %tmp.141 = 218;
+            %tmp.142 = 62;
+            %tmp.143 = 100.0;
+            %tmp.144 = div %tmp.142 %tmp.143;
+            %tmp.145 = mul %tmp.141 %tmp.144;
+            %tmp.146 = dup %tmp.138;
+            %tmp.147 = aputv %tmp.146 %tmp.140 %tmp.145;
+            %tmp.149 = const :locY;
+            %tmp.150 = 218;
+            %tmp.151 = 10;
+            %tmp.152 = 100.0;
+            %tmp.153 = div %tmp.151 %tmp.152;
+            %tmp.154 = mul %tmp.150 %tmp.153;
+            %tmp.155 = dup %tmp.147;
+            %tmp.156 = aputv %tmp.155 %tmp.149 %tmp.154;
+            %tmp.158 = const :justification;
+            %tmp.159 = getm $.Toybox.Graphics;
+            %tmp.160 = getv %tmp.159 :TEXT_JUSTIFY_CENTER;
+            %tmp.161 = dup %tmp.156;
+            %tmp.162 = aputv %tmp.161 %tmp.158 %tmp.160;
+            %tmp.164 = const :font;
+            %tmp.165 = getm $.Toybox.Graphics;
+            %tmp.166 = getv %tmp.165 :FONT_SMALL;
+            %tmp.167 = dup %tmp.162;
+            %tmp.168 = aputv %tmp.167 %tmp.164 %tmp.166;
+            %tmp.129 = newc %tmp.132 (%tmp.168);
+            lputv %rez_cmp_local_text_Steps.5 %tmp.129;
+[ "C:\GIT\priv\Garmin\gw1\bin\gen\006-B2544-00\source\Rez.mcgen" 32 12 ]
+            [ "C_GIT_priv_Garmin_gw1_bin_gen_006_B2544_00_source_Rez_mcgen_20_73_start" "C_GIT_priv_Garmin_gw1_bin_gen_006_B2544_00_source_Rez_mcgen_20_73_stop" ]
+            %rez_cmp_local_text_StepsNumber.6 = local;
+            %tmp.171 = getm $.Toybox.WatchUi;
+            %tmp.172 = getv function ? %tmp.171 :Text;
+            %tmp.173 = newd 5;
+            %tmp.175 = const :identifier;
+            %tmp.176 = "StepsNumber";
+            %tmp.177 = dup %tmp.173;
+            %tmp.178 = aputv %tmp.177 %tmp.175 %tmp.176;
+            %tmp.180 = const :locX;
+            %tmp.181 = 218;
+            %tmp.182 = 62;
+            %tmp.183 = 100.0;
+            %tmp.184 = div %tmp.182 %tmp.183;
+            %tmp.185 = mul %tmp.181 %tmp.184;
+            %tmp.186 = dup %tmp.178;
+            %tmp.187 = aputv %tmp.186 %tmp.180 %tmp.185;
+            %tmp.189 = const :locY;
+            %tmp.190 = 218;
+            %tmp.191 = 18;
+            %tmp.192 = 100.0;
+            %tmp.193 = div %tmp.191 %tmp.192;
+            %tmp.194 = mul %tmp.190 %tmp.193;
+            %tmp.195 = dup %tmp.187;
+            %tmp.196 = aputv %tmp.195 %tmp.189 %tmp.194;
+            %tmp.198 = const :justification;
+            %tmp.199 = getm $.Toybox.Graphics;
+            %tmp.200 = getv %tmp.199 :TEXT_JUSTIFY_CENTER;
+            %tmp.201 = dup %tmp.196;
+            %tmp.202 = aputv %tmp.201 %tmp.198 %tmp.200;
+            %tmp.204 = const :font;
+            %tmp.205 = getm $.Toybox.Graphics;
+            %tmp.206 = getv %tmp.205 :FONT_MEDIUM;
+            %tmp.207 = dup %tmp.202;
+            %tmp.208 = aputv %tmp.207 %tmp.204 %tmp.206;
+            %tmp.169 = newc %tmp.172 (%tmp.208);
+            lputv %rez_cmp_local_text_StepsNumber.6 %tmp.169;
+[ "C:\GIT\priv\Garmin\gw1\bin\gen\006-B2544-00\source\Rez.mcgen" 34 12 ]
+            [ "C_GIT_priv_Garmin_gw1_bin_gen_006_B2544_00_source_Rez_mcgen_20_73_start" "C_GIT_priv_Garmin_gw1_bin_gen_006_B2544_00_source_Rez_mcgen_20_73_stop" ]
+            %rez_cmp_local_text_pietra.7 = local;
+            %tmp.211 = getm $.Toybox.WatchUi;
+            %tmp.212 = getv function ? %tmp.211 :Text;
+            %tmp.213 = newd 5;
+            %tmp.215 = const :identifier;
+            %tmp.216 = "pietra";
+            %tmp.217 = dup %tmp.213;
+            %tmp.218 = aputv %tmp.217 %tmp.215 %tmp.216;
+            %tmp.220 = const :locX;
+            %tmp.221 = 218;
+            %tmp.222 = 72;
+            %tmp.223 = 100.0;
+            %tmp.224 = div %tmp.222 %tmp.223;
+            %tmp.225 = mul %tmp.221 %tmp.224;
+            %tmp.226 = dup %tmp.218;
+            %tmp.227 = aputv %tmp.226 %tmp.220 %tmp.225;
+            %tmp.229 = const :locY;
+            %tmp.230 = 218;
+            %tmp.231 = 30;
+            %tmp.232 = 100.0;
+            %tmp.233 = div %tmp.231 %tmp.232;
+            %tmp.234 = mul %tmp.230 %tmp.233;
+            %tmp.235 = dup %tmp.227;
+            %tmp.236 = aputv %tmp.235 %tmp.229 %tmp.234;
+            %tmp.238 = const :justification;
+            %tmp.239 = getm $.Toybox.Graphics;
+            %tmp.240 = getv %tmp.239 :TEXT_JUSTIFY_CENTER;
+            %tmp.241 = dup %tmp.236;
+            %tmp.242 = aputv %tmp.241 %tmp.238 %tmp.240;
+            %tmp.244 = const :font;
+            %tmp.245 = getm $.Toybox.Graphics;
+            %tmp.246 = getv %tmp.245 :FONT_SMALL;
+            %tmp.247 = dup %tmp.242;
+            %tmp.248 = aputv %tmp.247 %tmp.244 %tmp.246;
+            %tmp.209 = newc %tmp.212 (%tmp.248);
+            lputv %rez_cmp_local_text_pietra.7 %tmp.209;
+[ "C:\GIT\priv\Garmin\gw1\bin\gen\006-B2544-00\source\Rez.mcgen" 36 12 ]
+            [ "C_GIT_priv_Garmin_gw1_bin_gen_006_B2544_00_source_Rez_mcgen_20_73_start" "C_GIT_priv_Garmin_gw1_bin_gen_006_B2544_00_source_Rez_mcgen_20_73_stop" ]
+            %rez_cmp_local_text_pietranr.8 = local;
+            %tmp.251 = getm $.Toybox.WatchUi;
+            %tmp.252 = getv function ? %tmp.251 :Text;
+            %tmp.253 = newd 5;
+            %tmp.255 = const :identifier;
+            %tmp.256 = "pietranr";
+            %tmp.257 = dup %tmp.253;
+            %tmp.258 = aputv %tmp.257 %tmp.255 %tmp.256;
+            %tmp.260 = const :locX;
+            %tmp.261 = 218;
+            %tmp.262 = 72;
+            %tmp.263 = 100.0;
+            %tmp.264 = div %tmp.262 %tmp.263;
+            %tmp.265 = mul %tmp.261 %tmp.264;
+            %tmp.266 = dup %tmp.258;
+            %tmp.267 = aputv %tmp.266 %tmp.260 %tmp.265;
+            %tmp.269 = const :locY;
+            %tmp.270 = 218;
+            %tmp.271 = 38;
+            %tmp.272 = 100.0;
+            %tmp.273 = div %tmp.271 %tmp.272;
+            %tmp.274 = mul %tmp.270 %tmp.273;
+            %tmp.275 = dup %tmp.267;
+            %tmp.276 = aputv %tmp.275 %tmp.269 %tmp.274;
+            %tmp.278 = const :justification;
+            %tmp.279 = getm $.Toybox.Graphics;
+            %tmp.280 = getv %tmp.279 :TEXT_JUSTIFY_CENTER;
+            %tmp.281 = dup %tmp.276;
+            %tmp.282 = aputv %tmp.281 %tmp.278 %tmp.280;
+            %tmp.284 = const :font;
+            %tmp.285 = getm $.Toybox.Graphics;
+            %tmp.286 = getv %tmp.285 :FONT_MEDIUM;
+            %tmp.287 = dup %tmp.282;
+            %tmp.288 = aputv %tmp.287 %tmp.284 %tmp.286;
+            %tmp.249 = newc %tmp.252 (%tmp.288);
+            lputv %rez_cmp_local_text_pietranr.8 %tmp.249;
+[ "C:\GIT\priv\Garmin\gw1\bin\gen\006-B2544-00\source\Rez.mcgen" 38 12 ]
+            [ "C_GIT_priv_Garmin_gw1_bin_gen_006_B2544_00_source_Rez_mcgen_20_73_start" "C_GIT_priv_Garmin_gw1_bin_gen_006_B2544_00_source_Rez_mcgen_20_73_stop" ]
+            %rez_cmp_local_text_bateria.9 = local;
+            %tmp.291 = getm $.Toybox.WatchUi;
+            %tmp.292 = getv function ? %tmp.291 :Text;
+            %tmp.293 = newd 5;
+            %tmp.295 = const :identifier;
+            %tmp.296 = "bateria";
+            %tmp.297 = dup %tmp.293;
+            %tmp.298 = aputv %tmp.297 %tmp.295 %tmp.296;
+            %tmp.300 = const :locX;
+            %tmp.301 = 218;
+            %tmp.302 = 82;
+            %tmp.303 = 100.0;
+            %tmp.304 = div %tmp.302 %tmp.303;
+            %tmp.305 = mul %tmp.301 %tmp.304;
+            %tmp.306 = dup %tmp.298;
+            %tmp.307 = aputv %tmp.306 %tmp.300 %tmp.305;
+            %tmp.309 = const :locY;
+            %tmp.310 = 218;
+            %tmp.311 = 50;
+            %tmp.312 = 100.0;
+            %tmp.313 = div %tmp.311 %tmp.312;
+            %tmp.314 = mul %tmp.310 %tmp.313;
+            %tmp.315 = dup %tmp.307;
+            %tmp.316 = aputv %tmp.315 %tmp.309 %tmp.314;
+            %tmp.318 = const :justification;
+            %tmp.319 = getm $.Toybox.Graphics;
+            %tmp.320 = getv %tmp.319 :TEXT_JUSTIFY_CENTER;
+            %tmp.321 = dup %tmp.316;
+            %tmp.322 = aputv %tmp.321 %tmp.318 %tmp.320;
+            %tmp.324 = const :font;
+            %tmp.325 = getm $.Toybox.Graphics;
+            %tmp.326 = getv %tmp.325 :FONT_SMALL;
+            %tmp.327 = dup %tmp.322;
+            %tmp.328 = aputv %tmp.327 %tmp.324 %tmp.326;
+            %tmp.289 = newc %tmp.292 (%tmp.328);
+            lputv %rez_cmp_local_text_bateria.9 %tmp.289;
+[ "C:\GIT\priv\Garmin\gw1\bin\gen\006-B2544-00\source\Rez.mcgen" 40 12 ]
+            [ "C_GIT_priv_Garmin_gw1_bin_gen_006_B2544_00_source_Rez_mcgen_20_73_start" "C_GIT_priv_Garmin_gw1_bin_gen_006_B2544_00_source_Rez_mcgen_20_73_stop" ]
+            %rez_cmp_local_text_baterianr.10 = local;
+            %tmp.331 = getm $.Toybox.WatchUi;
+            %tmp.332 = getv function ? %tmp.331 :Text;
+            %tmp.333 = newd 5;
+            %tmp.335 = const :identifier;
+            %tmp.336 = "baterianr";
+            %tmp.337 = dup %tmp.333;
+            %tmp.338 = aputv %tmp.337 %tmp.335 %tmp.336;
+            %tmp.340 = const :locX;
+            %tmp.341 = 218;
+            %tmp.342 = 82;
+            %tmp.343 = 100.0;
+            %tmp.344 = div %tmp.342 %tmp.343;
+            %tmp.345 = mul %tmp.341 %tmp.344;
+            %tmp.346 = dup %tmp.338;
+            %tmp.347 = aputv %tmp.346 %tmp.340 %tmp.345;
+            %tmp.349 = const :locY;
+            %tmp.350 = 218;
+            %tmp.351 = 58;
+            %tmp.352 = 100.0;
+            %tmp.353 = div %tmp.351 %tmp.352;
+            %tmp.354 = mul %tmp.350 %tmp.353;
+            %tmp.355 = dup %tmp.347;
+            %tmp.356 = aputv %tmp.355 %tmp.349 %tmp.354;
+            %tmp.358 = const :justification;
+            %tmp.359 = getm $.Toybox.Graphics;
+            %tmp.360 = getv %tmp.359 :TEXT_JUSTIFY_CENTER;
+            %tmp.361 = dup %tmp.356;
+            %tmp.362 = aputv %tmp.361 %tmp.358 %tmp.360;
+            %tmp.364 = const :font;
+            %tmp.365 = getm $.Toybox.Graphics;
+            %tmp.366 = getv %tmp.365 :FONT_MEDIUM;
+            %tmp.367 = dup %tmp.362;
+            %tmp.368 = aputv %tmp.367 %tmp.364 %tmp.366;
+            %tmp.329 = newc %tmp.332 (%tmp.368);
+            lputv %rez_cmp_local_text_baterianr.10 %tmp.329;
+[ "C:\GIT\priv\Garmin\gw1\bin\gen\006-B2544-00\source\Rez.mcgen" 42 12 ]
+            [ "C_GIT_priv_Garmin_gw1_bin_gen_006_B2544_00_source_Rez_mcgen_20_73_start" "C_GIT_priv_Garmin_gw1_bin_gen_006_B2544_00_source_Rez_mcgen_20_73_stop" ]
+            %rez_cmp_local_text_Battery.11 = local;
+            %tmp.371 = getm $.Toybox.WatchUi;
+            %tmp.372 = getv function ? %tmp.371 :Text;
+            %tmp.373 = newd 5;
+            %tmp.375 = const :identifier;
+            %tmp.376 = "Battery";
+            %tmp.377 = dup %tmp.373;
+            %tmp.378 = aputv %tmp.377 %tmp.375 %tmp.376;
+            %tmp.380 = const :locX;
+            %tmp.381 = 218;
+            %tmp.382 = 0.5;
+            %tmp.383 = mul %tmp.381 %tmp.382;
+            %tmp.384 = dup %tmp.378;
+            %tmp.385 = aputv %tmp.384 %tmp.380 %tmp.383;
             %tmp.387 = const :locY;
             %tmp.388 = 218;
-            %tmp.389 = 58;
+            %tmp.389 = 80;
             %tmp.390 = 100.0;
             %tmp.391 = div %tmp.389 %tmp.390;
             %tmp.392 = mul %tmp.388 %tmp.391;
@@ -429,168 +429,173 @@ _Users_piotr_GIT_Garmin_gw1_bin_gen_006_B2544_00_source_Rez_mcgen_20_73_start:
             %tmp.400 = aputv %tmp.399 %tmp.396 %tmp.398;
             %tmp.402 = const :font;
             %tmp.403 = getm $.Toybox.Graphics;
-            %tmp.404 = getv %tmp.403 :FONT_MEDIUM;
+            %tmp.404 = getv %tmp.403 :FONT_SMALL;
             %tmp.405 = dup %tmp.400;
             %tmp.406 = aputv %tmp.405 %tmp.402 %tmp.404;
-            %tmp.367 = newc %tmp.370 (%tmp.406);
-            lputv %rez_cmp_local_text_baterianr.11 %tmp.367;
-[ "/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen" 44 12 ]
-            [ "_Users_piotr_GIT_Garmin_gw1_bin_gen_006_B2544_00_source_Rez_mcgen_20_73_start" "_Users_piotr_GIT_Garmin_gw1_bin_gen_006_B2544_00_source_Rez_mcgen_20_73_stop" ]
-            %rez_cmp_local_text_Battery.12 = local;
+            %tmp.369 = newc %tmp.372 (%tmp.406);
+            lputv %rez_cmp_local_text_Battery.11 %tmp.369;
+[ "C:\GIT\priv\Garmin\gw1\bin\gen\006-B2544-00\source\Rez.mcgen" 44 12 ]
+            [ "C_GIT_priv_Garmin_gw1_bin_gen_006_B2544_00_source_Rez_mcgen_20_73_start" "C_GIT_priv_Garmin_gw1_bin_gen_006_B2544_00_source_Rez_mcgen_20_73_stop" ]
+            %rez_cmp_local_text_DayOfWeek.12 = local;
             %tmp.409 = getm $.Toybox.WatchUi;
             %tmp.410 = getv function ? %tmp.409 :Text;
-            %tmp.411 = newd 5;
+            %tmp.411 = newd 6;
             %tmp.413 = const :identifier;
-            %tmp.414 = "Battery";
+            %tmp.414 = "DayOfWeek";
             %tmp.415 = dup %tmp.411;
             %tmp.416 = aputv %tmp.415 %tmp.413 %tmp.414;
-            %tmp.418 = const :locX;
-            %tmp.419 = 218;
-            %tmp.420 = 0.5;
-            %tmp.421 = mul %tmp.419 %tmp.420;
-            %tmp.422 = dup %tmp.416;
-            %tmp.423 = aputv %tmp.422 %tmp.418 %tmp.421;
-            %tmp.425 = const :locY;
-            %tmp.426 = 218;
-            %tmp.427 = 80;
-            %tmp.428 = 100.0;
-            %tmp.429 = div %tmp.427 %tmp.428;
-            %tmp.430 = mul %tmp.426 %tmp.429;
-            %tmp.431 = dup %tmp.423;
-            %tmp.432 = aputv %tmp.431 %tmp.425 %tmp.430;
-            %tmp.434 = const :justification;
-            %tmp.435 = getm $.Toybox.Graphics;
-            %tmp.436 = getv %tmp.435 :TEXT_JUSTIFY_CENTER;
-            %tmp.437 = dup %tmp.432;
-            %tmp.438 = aputv %tmp.437 %tmp.434 %tmp.436;
-            %tmp.440 = const :font;
+            %tmp.418 = const :color;
+            %tmp.419 = getm $.Toybox.Graphics;
+            %tmp.420 = getv %tmp.419 :COLOR_WHITE;
+            %tmp.421 = dup %tmp.416;
+            %tmp.422 = aputv %tmp.421 %tmp.418 %tmp.420;
+            %tmp.424 = const :locX;
+            %tmp.425 = 218;
+            %tmp.426 = 0.5;
+            %tmp.427 = mul %tmp.425 %tmp.426;
+            %tmp.428 = dup %tmp.422;
+            %tmp.429 = aputv %tmp.428 %tmp.424 %tmp.427;
+            %tmp.431 = const :locY;
+            %tmp.432 = 218;
+            %tmp.433 = 85;
+            %tmp.434 = 100.0;
+            %tmp.435 = div %tmp.433 %tmp.434;
+            %tmp.436 = mul %tmp.432 %tmp.435;
+            %tmp.437 = dup %tmp.429;
+            %tmp.438 = aputv %tmp.437 %tmp.431 %tmp.436;
+            %tmp.440 = const :justification;
             %tmp.441 = getm $.Toybox.Graphics;
-            %tmp.442 = getv %tmp.441 :FONT_SMALL;
+            %tmp.442 = getv %tmp.441 :TEXT_JUSTIFY_CENTER;
             %tmp.443 = dup %tmp.438;
             %tmp.444 = aputv %tmp.443 %tmp.440 %tmp.442;
-            %tmp.407 = newc %tmp.410 (%tmp.444);
-            lputv %rez_cmp_local_text_Battery.12 %tmp.407;
-[ "/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen" 46 12 ]
-            [ "_Users_piotr_GIT_Garmin_gw1_bin_gen_006_B2544_00_source_Rez_mcgen_20_73_start" "_Users_piotr_GIT_Garmin_gw1_bin_gen_006_B2544_00_source_Rez_mcgen_20_73_stop" ]
-            %rez_cmp_local_text_DayOfWeek.13 = local;
-            %tmp.447 = getm $.Toybox.WatchUi;
-            %tmp.448 = getv function ? %tmp.447 :Text;
-            %tmp.449 = newd 6;
-            %tmp.451 = const :identifier;
-            %tmp.452 = "DayOfWeek";
-            %tmp.453 = dup %tmp.449;
-            %tmp.454 = aputv %tmp.453 %tmp.451 %tmp.452;
-            %tmp.456 = const :color;
-            %tmp.457 = getm $.Toybox.Graphics;
-            %tmp.458 = getv %tmp.457 :COLOR_WHITE;
-            %tmp.459 = dup %tmp.454;
-            %tmp.460 = aputv %tmp.459 %tmp.456 %tmp.458;
-            %tmp.462 = const :locX;
-            %tmp.463 = 218;
-            %tmp.464 = 30;
-            %tmp.465 = 100.0;
-            %tmp.466 = div %tmp.464 %tmp.465;
-            %tmp.467 = mul %tmp.463 %tmp.466;
-            %tmp.468 = dup %tmp.460;
-            %tmp.469 = aputv %tmp.468 %tmp.462 %tmp.467;
-            %tmp.471 = const :locY;
-            %tmp.472 = 218;
-            %tmp.473 = 10;
-            %tmp.474 = 100.0;
-            %tmp.475 = div %tmp.473 %tmp.474;
-            %tmp.476 = mul %tmp.472 %tmp.475;
-            %tmp.477 = dup %tmp.469;
-            %tmp.478 = aputv %tmp.477 %tmp.471 %tmp.476;
-            %tmp.480 = const :justification;
-            %tmp.481 = getm $.Toybox.Graphics;
-            %tmp.482 = getv %tmp.481 :TEXT_JUSTIFY_CENTER;
-            %tmp.483 = dup %tmp.478;
-            %tmp.484 = aputv %tmp.483 %tmp.480 %tmp.482;
-            %tmp.486 = const :font;
+            %tmp.446 = const :font;
+            %tmp.447 = getm $.Toybox.Graphics;
+            %tmp.448 = getv %tmp.447 :FONT_MEDIUM;
+            %tmp.449 = dup %tmp.444;
+            %tmp.450 = aputv %tmp.449 %tmp.446 %tmp.448;
+            %tmp.407 = newc %tmp.410 (%tmp.450);
+            lputv %rez_cmp_local_text_DayOfWeek.12 %tmp.407;
+[ "C:\GIT\priv\Garmin\gw1\bin\gen\006-B2544-00\source\Rez.mcgen" 46 12 ]
+            [ "C_GIT_priv_Garmin_gw1_bin_gen_006_B2544_00_source_Rez_mcgen_20_73_start" "C_GIT_priv_Garmin_gw1_bin_gen_006_B2544_00_source_Rez_mcgen_20_73_stop" ]
+            %rez_cmp_local_text_DaysOfWeek.13 = local;
+            %tmp.453 = getm $.Toybox.WatchUi;
+            %tmp.454 = getv function ? %tmp.453 :Text;
+            %tmp.455 = newd 6;
+            %tmp.457 = const :identifier;
+            %tmp.458 = "DaysOfWeek";
+            %tmp.459 = dup %tmp.455;
+            %tmp.460 = aputv %tmp.459 %tmp.457 %tmp.458;
+            %tmp.462 = const :color;
+            %tmp.463 = getm $.Toybox.Graphics;
+            %tmp.464 = getv %tmp.463 :COLOR_WHITE;
+            %tmp.465 = dup %tmp.460;
+            %tmp.466 = aputv %tmp.465 %tmp.462 %tmp.464;
+            %tmp.468 = const :locX;
+            %tmp.469 = 218;
+            %tmp.470 = 30;
+            %tmp.471 = 100.0;
+            %tmp.472 = div %tmp.470 %tmp.471;
+            %tmp.473 = mul %tmp.469 %tmp.472;
+            %tmp.474 = dup %tmp.466;
+            %tmp.475 = aputv %tmp.474 %tmp.468 %tmp.473;
+            %tmp.477 = const :locY;
+            %tmp.478 = 218;
+            %tmp.479 = 18;
+            %tmp.480 = 100.0;
+            %tmp.481 = div %tmp.479 %tmp.480;
+            %tmp.482 = mul %tmp.478 %tmp.481;
+            %tmp.483 = dup %tmp.475;
+            %tmp.484 = aputv %tmp.483 %tmp.477 %tmp.482;
+            %tmp.486 = const :justification;
             %tmp.487 = getm $.Toybox.Graphics;
-            %tmp.488 = getv %tmp.487 :FONT_MEDIUM;
+            %tmp.488 = getv %tmp.487 :TEXT_JUSTIFY_CENTER;
             %tmp.489 = dup %tmp.484;
             %tmp.490 = aputv %tmp.489 %tmp.486 %tmp.488;
-            %tmp.445 = newc %tmp.448 (%tmp.490);
-            lputv %rez_cmp_local_text_DayOfWeek.13 %tmp.445;
-[ "/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen" 48 12 ]
-            %tmp.491 = newa Array<WatchUi.Drawable> 13;
-            %tmp.493 = lgetv %rez_cmp_local_custom_drawable_17143377816698693181.1;
-            %tmp.494 = dup %tmp.491;
-            %tmp.495 = aputv %tmp.494 0 %tmp.493;
-            %tmp.497 = lgetv %rez_cmp_local_bitmap_back.2;
-            %tmp.498 = dup %tmp.495;
-            %tmp.499 = aputv %tmp.498 1 %tmp.497;
-            %tmp.501 = lgetv %rez_cmp_local_text_Date.3;
-            %tmp.502 = dup %tmp.499;
-            %tmp.503 = aputv %tmp.502 2 %tmp.501;
-            %tmp.505 = lgetv %rez_cmp_local_text_MLabel.4;
-            %tmp.506 = dup %tmp.503;
-            %tmp.507 = aputv %tmp.506 3 %tmp.505;
-            %tmp.509 = lgetv %rez_cmp_local_text_HLabel.5;
-            %tmp.510 = dup %tmp.507;
-            %tmp.511 = aputv %tmp.510 4 %tmp.509;
-            %tmp.513 = lgetv %rez_cmp_local_text_Steps.6;
-            %tmp.514 = dup %tmp.511;
-            %tmp.515 = aputv %tmp.514 5 %tmp.513;
-            %tmp.517 = lgetv %rez_cmp_local_text_StepsNumber.7;
-            %tmp.518 = dup %tmp.515;
-            %tmp.519 = aputv %tmp.518 6 %tmp.517;
-            %tmp.521 = lgetv %rez_cmp_local_text_pietra.8;
-            %tmp.522 = dup %tmp.519;
-            %tmp.523 = aputv %tmp.522 7 %tmp.521;
-            %tmp.525 = lgetv %rez_cmp_local_text_pietranr.9;
-            %tmp.526 = dup %tmp.523;
-            %tmp.527 = aputv %tmp.526 8 %tmp.525;
-            %tmp.529 = lgetv %rez_cmp_local_text_bateria.10;
-            %tmp.530 = dup %tmp.527;
-            %tmp.531 = aputv %tmp.530 9 %tmp.529;
-            %tmp.533 = lgetv %rez_cmp_local_text_baterianr.11;
-            %tmp.534 = dup %tmp.531;
-            %tmp.535 = aputv %tmp.534 10 %tmp.533;
-            %tmp.537 = lgetv %rez_cmp_local_text_Battery.12;
-            %tmp.538 = dup %tmp.535;
-            %tmp.539 = aputv %tmp.538 11 %tmp.537;
-            %tmp.541 = lgetv %rez_cmp_local_text_DayOfWeek.13;
-            %tmp.542 = dup %tmp.539;
-            %tmp.543 = aputv %tmp.542 12 %tmp.541;
-            ret %tmp.543;
-_Users_piotr_GIT_Garmin_gw1_bin_gen_006_B2544_00_source_Rez_mcgen_20_73_stop:
+            %tmp.492 = const :font;
+            %tmp.493 = getm $.Toybox.Graphics;
+            %tmp.494 = getv %tmp.493 :FONT_MEDIUM;
+            %tmp.495 = dup %tmp.490;
+            %tmp.496 = aputv %tmp.495 %tmp.492 %tmp.494;
+            %tmp.451 = newc %tmp.454 (%tmp.496);
+            lputv %rez_cmp_local_text_DaysOfWeek.13 %tmp.451;
+[ "C:\GIT\priv\Garmin\gw1\bin\gen\006-B2544-00\source\Rez.mcgen" 48 12 ]
+            %tmp.497 = newa Array<WatchUi.Drawable> 13;
+            %tmp.499 = lgetv %rez_cmp_local_custom_drawable_17417043121120925905.1;
+            %tmp.500 = dup %tmp.497;
+            %tmp.501 = aputv %tmp.500 0 %tmp.499;
+            %tmp.503 = lgetv %rez_cmp_local_bitmap_back.2;
+            %tmp.504 = dup %tmp.501;
+            %tmp.505 = aputv %tmp.504 1 %tmp.503;
+            %tmp.507 = lgetv %rez_cmp_local_text_MLabel.3;
+            %tmp.508 = dup %tmp.505;
+            %tmp.509 = aputv %tmp.508 2 %tmp.507;
+            %tmp.511 = lgetv %rez_cmp_local_text_HLabel.4;
+            %tmp.512 = dup %tmp.509;
+            %tmp.513 = aputv %tmp.512 3 %tmp.511;
+            %tmp.515 = lgetv %rez_cmp_local_text_Steps.5;
+            %tmp.516 = dup %tmp.513;
+            %tmp.517 = aputv %tmp.516 4 %tmp.515;
+            %tmp.519 = lgetv %rez_cmp_local_text_StepsNumber.6;
+            %tmp.520 = dup %tmp.517;
+            %tmp.521 = aputv %tmp.520 5 %tmp.519;
+            %tmp.523 = lgetv %rez_cmp_local_text_pietra.7;
+            %tmp.524 = dup %tmp.521;
+            %tmp.525 = aputv %tmp.524 6 %tmp.523;
+            %tmp.527 = lgetv %rez_cmp_local_text_pietranr.8;
+            %tmp.528 = dup %tmp.525;
+            %tmp.529 = aputv %tmp.528 7 %tmp.527;
+            %tmp.531 = lgetv %rez_cmp_local_text_bateria.9;
+            %tmp.532 = dup %tmp.529;
+            %tmp.533 = aputv %tmp.532 8 %tmp.531;
+            %tmp.535 = lgetv %rez_cmp_local_text_baterianr.10;
+            %tmp.536 = dup %tmp.533;
+            %tmp.537 = aputv %tmp.536 9 %tmp.535;
+            %tmp.539 = lgetv %rez_cmp_local_text_Battery.11;
+            %tmp.540 = dup %tmp.537;
+            %tmp.541 = aputv %tmp.540 10 %tmp.539;
+            %tmp.543 = lgetv %rez_cmp_local_text_DayOfWeek.12;
+            %tmp.544 = dup %tmp.541;
+            %tmp.545 = aputv %tmp.544 11 %tmp.543;
+            %tmp.547 = lgetv %rez_cmp_local_text_DaysOfWeek.13;
+            %tmp.548 = dup %tmp.545;
+            %tmp.549 = aputv %tmp.548 12 %tmp.547;
+            ret %tmp.549;
+C_GIT_priv_Garmin_gw1_bin_gen_006_B2544_00_source_Rez_mcgen_20_73_stop:
         }
     }
-    [ @file = "/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen"; @line = 52; ]
+    [ @file = "C:\GIT\priv\Garmin\gw1\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 52; ]
     module Menus {
-        [ @file = "/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen"; @line = 52; ]
+        [ @file = "C:\GIT\priv\Garmin\gw1\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 52; ]
         <init> {
         }
     }
-    [ @file = "/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen"; @line = 55; ]
+    [ @file = "C:\GIT\priv\Garmin\gw1\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 55; ]
     module Strings {
-        [ @file = "/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen"; @line = 55; ]
+        [ @file = "C:\GIT\priv\Garmin\gw1\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 55; ]
         <init> {
         }
-        [ @file = "/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen"; @line = 56; @position = 27; initialized = true; ]
+        [ @file = "C:\GIT\priv\Garmin\gw1\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 56; @position = 27; initialized = true; ]
         var ColorLightGray as Symbol;
-        [ @file = "/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen"; @line = 57; @position = 27; initialized = true; ]
+        [ @file = "C:\GIT\priv\Garmin\gw1\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 57; @position = 27; initialized = true; ]
         var ColorBlue as Symbol;
-        [ @file = "/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen"; @line = 58; @position = 27; initialized = true; ]
+        [ @file = "C:\GIT\priv\Garmin\gw1\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 58; @position = 27; initialized = true; ]
         var ColorRed as Symbol;
-        [ @file = "/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen"; @line = 59; @position = 27; initialized = true; ]
+        [ @file = "C:\GIT\priv\Garmin\gw1\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 59; @position = 27; initialized = true; ]
         var ForegroundColorTitle as Symbol;
-        [ @file = "/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen"; @line = 60; @position = 27; initialized = true; ]
+        [ @file = "C:\GIT\priv\Garmin\gw1\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 60; @position = 27; initialized = true; ]
         var BackgroundColorTitle as Symbol;
-        [ @file = "/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen"; @line = 61; @position = 27; initialized = true; ]
+        [ @file = "C:\GIT\priv\Garmin\gw1\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 61; @position = 27; initialized = true; ]
         var ColorDarkGray as Symbol;
-        [ @file = "/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen"; @line = 62; @position = 27; initialized = true; ]
+        [ @file = "C:\GIT\priv\Garmin\gw1\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 62; @position = 27; initialized = true; ]
         var MilitaryFormatTitle as Symbol;
-        [ @file = "/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen"; @line = 63; @position = 27; initialized = true; ]
+        [ @file = "C:\GIT\priv\Garmin\gw1\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 63; @position = 27; initialized = true; ]
         var ColorBlack as Symbol;
-        [ @file = "/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen"; @line = 64; @position = 27; initialized = true; ]
+        [ @file = "C:\GIT\priv\Garmin\gw1\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 64; @position = 27; initialized = true; ]
         var ColorWhite as Symbol;
-        [ @file = "/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen"; @line = 65; @position = 27; initialized = true; ]
+        [ @file = "C:\GIT\priv\Garmin\gw1\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 65; @position = 27; initialized = true; ]
         var AppName as Symbol;
     }
 }
-[ @file = "/Users/piotr/GIT/Garmin/gw1/bin/gen/006-B2544-00/source/Rez.mcgen"; @line = 1; ]
+[ @file = "C:\GIT\priv\Garmin\gw1\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 1; ]
 <init> {
 }

@@ -1,43 +1,43 @@
-[ @file = "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc"; @line = 1; ]
+[ @file = "C:\GIT\priv\Garmin\gw1\source\gw1View.mc"; @line = 1; ]
 import Toybox.Application;
-[ @file = "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc"; @line = 2; ]
+[ @file = "C:\GIT\priv\Garmin\gw1\source\gw1View.mc"; @line = 2; ]
 import Toybox.Graphics;
-[ @file = "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc"; @line = 3; ]
+[ @file = "C:\GIT\priv\Garmin\gw1\source\gw1View.mc"; @line = 3; ]
 import Toybox.Lang;
-[ @file = "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc"; @line = 4; ]
+[ @file = "C:\GIT\priv\Garmin\gw1\source\gw1View.mc"; @line = 4; ]
 import Toybox.System;
-[ @file = "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc"; @line = 5; ]
+[ @file = "C:\GIT\priv\Garmin\gw1\source\gw1View.mc"; @line = 5; ]
 import Toybox.WatchUi;
-[ @file = "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc"; @line = 6; ]
+[ @file = "C:\GIT\priv\Garmin\gw1\source\gw1View.mc"; @line = 6; ]
 using Toybox.Time.Gregorian;
-[ @file = "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc"; @line = 7; ]
+[ @file = "C:\GIT\priv\Garmin\gw1\source\gw1View.mc"; @line = 7; ]
 using Toybox.Time;
-[ @file = "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc"; @line = 8; ]
+[ @file = "C:\GIT\priv\Garmin\gw1\source\gw1View.mc"; @line = 8; ]
 using Toybox.System;
-[ @file = "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc"; @line = 9; ]
+[ @file = "C:\GIT\priv\Garmin\gw1\source\gw1View.mc"; @line = 9; ]
 using Toybox.ActivityMonitor as :act;
-[ @file = "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc"; @line = 11; ]
+[ @file = "C:\GIT\priv\Garmin\gw1\source\gw1View.mc"; @line = 11; ]
 class gw1View extends WatchUi.WatchFace{
-    [ @file = "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc"; @line = 11; ]
+    [ @file = "C:\GIT\priv\Garmin\gw1\source\gw1View.mc"; @line = 11; ]
     <init> {
     }
-    [ @file = "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc"; @line = 11; ]
+    [ @file = "C:\GIT\priv\Garmin\gw1\source\gw1View.mc"; @line = 11; ]
     static
     <init> {
     }
-    [ @file = "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc"; @line = 13; ]
+    [ @file = "C:\GIT\priv\Garmin\gw1\source\gw1View.mc"; @line = 13; ]
     function initialize() as Void {
-_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_13_26_start:
-[ "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" 14 8 ]
+C_GIT_priv_Garmin_gw1_source_gw1View_mc_13_26_start:
+[ "C:\GIT\priv\Garmin\gw1\source\gw1View.mc" 14 8 ]
         %tmp.2 = getv ? :WatchFace;
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_13_26_stop:
+C_GIT_priv_Garmin_gw1_source_gw1View_mc_13_26_stop:
     }
-    [ @file = "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc"; @line = 18; ]
+    [ @file = "C:\GIT\priv\Garmin\gw1\source\gw1View.mc"; @line = 18; ]
     function onLayout(dc as Dc) as Void {
-_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_18_40_start:
-[ "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" 19 8 ]
+C_GIT_priv_Garmin_gw1_source_gw1View_mc_18_40_start:
+[ "C:\GIT\priv\Garmin\gw1\source\gw1View.mc" 19 8 ]
         %tmp.1 = self;
         %tmp.2 = getv function %tmp.1 :setLayout;
         %tmp.4 = getv ? :Rez;
@@ -46,99 +46,99 @@ _Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_18_40_start:
         %tmp.8 = lgetv %dc;
         %tmp.9 = invoke %tmp.5 %tmp.6(%tmp.8);
         invoke %tmp.1 %tmp.2(%tmp.9);
-_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_18_40_stop:
+C_GIT_priv_Garmin_gw1_source_gw1View_mc_18_40_stop:
     }
-    [ @file = "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc"; @line = 25; ]
+    [ @file = "C:\GIT\priv\Garmin\gw1\source\gw1View.mc"; @line = 25; ]
     function onShow() as Void {
     }
-    [ @file = "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc"; @line = 29; ]
+    [ @file = "C:\GIT\priv\Garmin\gw1\source\gw1View.mc"; @line = 29; ]
     function onUpdate(dc as Dc) as Void {
-_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_29_40_start:
-[ "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" 33 8 ]
-        [ "_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_29_40_start" "_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_29_40_stop" ]
+C_GIT_priv_Garmin_gw1_source_gw1View_mc_29_40_start:
+[ "C:\GIT\priv\Garmin\gw1\source\gw1View.mc" 33 8 ]
+        [ "C_GIT_priv_Garmin_gw1_source_gw1View_mc_29_40_start" "C_GIT_priv_Garmin_gw1_source_gw1View_mc_29_40_stop" ]
         %timeFormat.1 = local;
         %tmp.1 = "$1$:$2$";
         lputv %timeFormat.1 %tmp.1;
-[ "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" 34 8 ]
-        [ "_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_29_40_start" "_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_29_40_stop" ]
+[ "C:\GIT\priv\Garmin\gw1\source\gw1View.mc" 34 8 ]
+        [ "C_GIT_priv_Garmin_gw1_source_gw1View_mc_29_40_start" "C_GIT_priv_Garmin_gw1_source_gw1View_mc_29_40_stop" ]
         %timeFormatH.2 = local;
         %tmp.2 = "$1$";
         lputv %timeFormatH.2 %tmp.2;
-[ "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" 35 8 ]
-        [ "_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_29_40_start" "_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_29_40_stop" ]
+[ "C:\GIT\priv\Garmin\gw1\source\gw1View.mc" 35 8 ]
+        [ "C_GIT_priv_Garmin_gw1_source_gw1View_mc_29_40_start" "C_GIT_priv_Garmin_gw1_source_gw1View_mc_29_40_stop" ]
         %timeFormatM.3 = local;
         %tmp.3 = "$2$";
         lputv %timeFormatM.3 %tmp.3;
-[ "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" 36 8 ]
-        [ "_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_29_40_start" "_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_29_40_stop" ]
+[ "C:\GIT\priv\Garmin\gw1\source\gw1View.mc" 36 8 ]
+        [ "C_GIT_priv_Garmin_gw1_source_gw1View_mc_29_40_start" "C_GIT_priv_Garmin_gw1_source_gw1View_mc_29_40_stop" ]
         %clockTime.4 = local;
         %tmp.4 = getm $.Toybox.System;
         %tmp.5 = getv function %tmp.4 :getClockTime;
         %tmp.6 = invoke %tmp.4 %tmp.5();
         lputv %clockTime.4 %tmp.6;
-[ "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" 37 8 ]
-        [ "_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_29_40_start" "_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_29_40_stop" ]
+[ "C:\GIT\priv\Garmin\gw1\source\gw1View.mc" 37 8 ]
+        [ "C_GIT_priv_Garmin_gw1_source_gw1View_mc_29_40_start" "C_GIT_priv_Garmin_gw1_source_gw1View_mc_29_40_stop" ]
         %hours.5 = local;
         %tmp.7 = lgetv %clockTime.4;
         %tmp.8 = getv %tmp.7 :hour;
         lputv %hours.5 %tmp.8;
-[ "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" 38 8 ]
-_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_38_8_if_stmt:
+[ "C:\GIT\priv\Garmin\gw1\source\gw1View.mc" 38 8 ]
+C_GIT_priv_Garmin_gw1_source_gw1View_mc_38_8_if_stmt:
         %tmp.9 = getm $.Toybox.System;
         %tmp.10 = getv function %tmp.9 :getDeviceSettings;
         %tmp.11 = invoke %tmp.9 %tmp.10();
         %tmp.12 = getv %tmp.11 :is24Hour;
         %tmp.13 = not %tmp.12;
-        bf %tmp.13 @_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_38_8_if_false;
-_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_38_8_if_true:
-_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_38_50_start:
-[ "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" 39 12 ]
-_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_39_12_if_stmt:
+        bf %tmp.13 @C_GIT_priv_Garmin_gw1_source_gw1View_mc_38_8_if_false;
+C_GIT_priv_Garmin_gw1_source_gw1View_mc_38_8_if_true:
+C_GIT_priv_Garmin_gw1_source_gw1View_mc_38_50_start:
+[ "C:\GIT\priv\Garmin\gw1\source\gw1View.mc" 39 12 ]
+C_GIT_priv_Garmin_gw1_source_gw1View_mc_39_12_if_stmt:
         %tmp.15 = lgetv %hours.5;
         %tmp.16 = 24;
         %tmp.17 = gt %tmp.15 %tmp.16;
-        bf %tmp.17 @_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_39_12_if_end;
-_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_39_12_if_true:
-_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_39_28_start:
-[ "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" 40 16 ]
+        bf %tmp.17 @C_GIT_priv_Garmin_gw1_source_gw1View_mc_39_12_if_end;
+C_GIT_priv_Garmin_gw1_source_gw1View_mc_39_12_if_true:
+C_GIT_priv_Garmin_gw1_source_gw1View_mc_39_28_start:
+[ "C:\GIT\priv\Garmin\gw1\source\gw1View.mc" 40 16 ]
         %tmp.19 = lgetv %hours.5;
         %tmp.20 = 24;
         %tmp.21 = sub %tmp.19 %tmp.20;
         lputv %hours.5 %tmp.21;
-_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_39_28_stop:
-        goto @_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_39_12_if_end;
-_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_39_12_if_end:
-_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_38_50_stop:
-        goto @_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_38_8_if_end;
-_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_38_8_if_false:
-_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_42_15_start:
-[ "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" 43 12 ]
-_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_43_12_if_stmt:
+C_GIT_priv_Garmin_gw1_source_gw1View_mc_39_28_stop:
+        goto @C_GIT_priv_Garmin_gw1_source_gw1View_mc_39_12_if_end;
+C_GIT_priv_Garmin_gw1_source_gw1View_mc_39_12_if_end:
+C_GIT_priv_Garmin_gw1_source_gw1View_mc_38_50_stop:
+        goto @C_GIT_priv_Garmin_gw1_source_gw1View_mc_38_8_if_end;
+C_GIT_priv_Garmin_gw1_source_gw1View_mc_38_8_if_false:
+C_GIT_priv_Garmin_gw1_source_gw1View_mc_42_15_start:
+[ "C:\GIT\priv\Garmin\gw1\source\gw1View.mc" 43 12 ]
+C_GIT_priv_Garmin_gw1_source_gw1View_mc_43_12_if_stmt:
         %tmp.22 = self;
         %tmp.23 = getv function %tmp.22 :getApp;
         %tmp.24 = invoke %tmp.22 %tmp.23();
         %tmp.25 = getv function %tmp.24 :getProperty;
         %tmp.26 = "UseMilitaryFormat";
         %tmp.27 = invoke %tmp.24 %tmp.25(%tmp.26);
-        bf %tmp.27 @_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_43_12_if_end;
-_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_43_12_if_true:
-_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_43_59_start:
-[ "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" 44 16 ]
+        bf %tmp.27 @C_GIT_priv_Garmin_gw1_source_gw1View_mc_43_12_if_end;
+C_GIT_priv_Garmin_gw1_source_gw1View_mc_43_12_if_true:
+C_GIT_priv_Garmin_gw1_source_gw1View_mc_43_59_start:
+[ "C:\GIT\priv\Garmin\gw1\source\gw1View.mc" 44 16 ]
         %tmp.28 = "$1$$2$";
         lputv %timeFormat.1 %tmp.28;
-[ "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" 45 16 ]
+[ "C:\GIT\priv\Garmin\gw1\source\gw1View.mc" 45 16 ]
         %tmp.29 = lgetv %hours.5;
         %tmp.30 = getv function %tmp.29 :format;
         %tmp.31 = "%02d";
         %tmp.32 = invoke %tmp.29 %tmp.30(%tmp.31);
         lputv %hours.5 %tmp.32;
-_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_43_59_stop:
-        goto @_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_43_12_if_end;
-_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_43_12_if_end:
-_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_42_15_stop:
-_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_38_8_if_end:
-[ "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" 48 8 ]
-        [ "_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_29_40_start" "_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_29_40_stop" ]
+C_GIT_priv_Garmin_gw1_source_gw1View_mc_43_59_stop:
+        goto @C_GIT_priv_Garmin_gw1_source_gw1View_mc_43_12_if_end;
+C_GIT_priv_Garmin_gw1_source_gw1View_mc_43_12_if_end:
+C_GIT_priv_Garmin_gw1_source_gw1View_mc_42_15_stop:
+C_GIT_priv_Garmin_gw1_source_gw1View_mc_38_8_if_end:
+[ "C:\GIT\priv\Garmin\gw1\source\gw1View.mc" 48 8 ]
+        [ "C_GIT_priv_Garmin_gw1_source_gw1View_mc_29_40_start" "C_GIT_priv_Garmin_gw1_source_gw1View_mc_29_40_stop" ]
         %timeStringH.6 = local;
         %tmp.33 = getm $.Toybox.Lang;
         %tmp.34 = getv function %tmp.33 :format;
@@ -156,8 +156,8 @@ _Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_38_8_if_end:
         %tmp.48 = aputv %tmp.47 1 %tmp.46;
         %tmp.49 = invoke %tmp.33 %tmp.34(%tmp.36, %tmp.48);
         lputv %timeStringH.6 %tmp.49;
-[ "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" 49 8 ]
-        [ "_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_29_40_start" "_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_29_40_stop" ]
+[ "C:\GIT\priv\Garmin\gw1\source\gw1View.mc" 49 8 ]
+        [ "C_GIT_priv_Garmin_gw1_source_gw1View_mc_29_40_start" "C_GIT_priv_Garmin_gw1_source_gw1View_mc_29_40_stop" ]
         %timeStringM.7 = local;
         %tmp.50 = getm $.Toybox.Lang;
         %tmp.51 = getv function %tmp.50 :format;
@@ -175,8 +175,8 @@ _Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_38_8_if_end:
         %tmp.65 = aputv %tmp.64 1 %tmp.63;
         %tmp.66 = invoke %tmp.50 %tmp.51(%tmp.53, %tmp.65);
         lputv %timeStringM.7 %tmp.66;
-[ "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" 53 8 ]
-        [ "_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_29_40_start" "_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_29_40_stop" ]
+[ "C:\GIT\priv\Garmin\gw1\source\gw1View.mc" 53 8 ]
+        [ "C_GIT_priv_Garmin_gw1_source_gw1View_mc_29_40_start" "C_GIT_priv_Garmin_gw1_source_gw1View_mc_29_40_stop" ]
         %viewH.8 = local;
         %tmp.68 = getv ? :View;
         %tmp.69 = getv function %tmp.68 :findDrawableById;
@@ -184,7 +184,7 @@ _Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_38_8_if_end:
         %tmp.71 = invoke %tmp.68 %tmp.69(%tmp.70);
         %tmp.72 = as %tmp.71 Text;
         lputv %viewH.8 %tmp.72;
-[ "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" 54 8 ]
+[ "C:\GIT\priv\Garmin\gw1\source\gw1View.mc" 54 8 ]
         %tmp.73 = lgetv %viewH.8;
         %tmp.74 = getv function %tmp.73 :setColor;
         %tmp.75 = self;
@@ -195,13 +195,13 @@ _Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_38_8_if_end:
         %tmp.80 = invoke %tmp.77 %tmp.78(%tmp.79);
         %tmp.81 = as %tmp.80 Number;
         invoke %tmp.73 %tmp.74(%tmp.81);
-[ "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" 55 8 ]
+[ "C:\GIT\priv\Garmin\gw1\source\gw1View.mc" 55 8 ]
         %tmp.82 = lgetv %viewH.8;
         %tmp.83 = getv function %tmp.82 :setText;
         %tmp.85 = lgetv %timeStringH.6;
         invoke %tmp.82 %tmp.83(%tmp.85);
-[ "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" 57 8 ]
-        [ "_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_29_40_start" "_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_29_40_stop" ]
+[ "C:\GIT\priv\Garmin\gw1\source\gw1View.mc" 57 8 ]
+        [ "C_GIT_priv_Garmin_gw1_source_gw1View_mc_29_40_start" "C_GIT_priv_Garmin_gw1_source_gw1View_mc_29_40_stop" ]
         %viewM.9 = local;
         %tmp.87 = getv ? :View;
         %tmp.88 = getv function %tmp.87 :findDrawableById;
@@ -209,7 +209,7 @@ _Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_38_8_if_end:
         %tmp.90 = invoke %tmp.87 %tmp.88(%tmp.89);
         %tmp.91 = as %tmp.90 Text;
         lputv %viewM.9 %tmp.91;
-[ "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" 58 8 ]
+[ "C:\GIT\priv\Garmin\gw1\source\gw1View.mc" 58 8 ]
         %tmp.92 = lgetv %viewM.9;
         %tmp.93 = getv function %tmp.92 :setColor;
         %tmp.94 = self;
@@ -220,14 +220,14 @@ _Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_38_8_if_end:
         %tmp.99 = invoke %tmp.96 %tmp.97(%tmp.98);
         %tmp.100 = as %tmp.99 Number;
         invoke %tmp.92 %tmp.93(%tmp.100);
-[ "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" 59 8 ]
+[ "C:\GIT\priv\Garmin\gw1\source\gw1View.mc" 59 8 ]
         %tmp.101 = lgetv %viewM.9;
         %tmp.102 = getv function %tmp.101 :setText;
         %tmp.104 = lgetv %timeStringM.7;
         invoke %tmp.101 %tmp.102(%tmp.104);
-[ "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" 62 8 ]
-        [ "_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_29_40_start" "_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_29_40_stop" ]
-        %date.10 = local;
+[ "C:\GIT\priv\Garmin\gw1\source\gw1View.mc" 62 8 ]
+        [ "C_GIT_priv_Garmin_gw1_source_gw1View_mc_29_40_start" "C_GIT_priv_Garmin_gw1_source_gw1View_mc_29_40_stop" ]
+        %day.10 = local;
         %tmp.105 = getm $.Toybox.Time.Gregorian;
         %tmp.106 = getv function %tmp.105 :info;
         %tmp.107 = getm $.Toybox.Time;
@@ -236,9 +236,9 @@ _Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_38_8_if_end:
         %tmp.110 = getm $.Toybox.Time;
         %tmp.111 = getv %tmp.110 :FORMAT_SHORT;
         %tmp.112 = invoke %tmp.105 %tmp.106(%tmp.109, %tmp.111);
-        lputv %date.10 %tmp.112;
-[ "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" 63 8 ]
-        [ "_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_29_40_start" "_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_29_40_stop" ]
+        lputv %day.10 %tmp.112;
+[ "C:\GIT\priv\Garmin\gw1\source\gw1View.mc" 63 8 ]
+        [ "C_GIT_priv_Garmin_gw1_source_gw1View_mc_29_40_start" "C_GIT_priv_Garmin_gw1_source_gw1View_mc_29_40_stop" ]
         %dayOfWeek.11 = local;
         %tmp.114 = getv ? :View;
         %tmp.115 = getv function %tmp.114 :findDrawableById;
@@ -246,7 +246,7 @@ _Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_38_8_if_end:
         %tmp.117 = invoke %tmp.114 %tmp.115(%tmp.116);
         %tmp.118 = as %tmp.117 Text;
         lputv %dayOfWeek.11 %tmp.118;
-[ "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" 64 8 ]
+[ "C:\GIT\priv\Garmin\gw1\source\gw1View.mc" 64 8 ]
         %tmp.119 = lgetv %dayOfWeek.11;
         %tmp.120 = getv function %tmp.119 :setText;
         %tmp.121 = newa 7;
@@ -271,264 +271,282 @@ _Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_38_8_if_end:
         %tmp.140 = "Sob";
         %tmp.141 = dup %tmp.139;
         %tmp.142 = aputv %tmp.141 6 %tmp.140;
-        %tmp.143 = lgetv %date.10;
+        %tmp.143 = lgetv %day.10;
         %tmp.144 = getv %tmp.143 :day_of_week;
         %tmp.145 = 1;
         %tmp.146 = sub %tmp.144 %tmp.145;
         %tmp.147 = agetv %tmp.142 %tmp.146;
         invoke %tmp.119 %tmp.120(%tmp.147);
-[ "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" 73 8 ]
-        [ "_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_29_40_start" "_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_29_40_stop" ]
-        %stats.12 = local;
-        %tmp.148 = getm $.Toybox.System;
-        %tmp.149 = getv function %tmp.148 :getSystemStats;
-        %tmp.150 = invoke %tmp.148 %tmp.149();
-        lputv %stats.12 %tmp.150;
-[ "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" 74 8 ]
-        [ "_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_29_40_start" "_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_29_40_stop" ]
-        %pwr.13 = local;
-        %tmp.151 = lgetv %stats.12;
-        %tmp.152 = getv %tmp.151 :battery;
-        lputv %pwr.13 %tmp.152;
-[ "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" 75 8 ]
-        [ "_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_29_40_start" "_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_29_40_stop" ]
-        %batStr.14 = local;
-        %tmp.153 = getm $.Toybox.Lang;
-        %tmp.154 = getv function %tmp.153 :format;
-        %tmp.155 = "$1$%";
-        %tmp.156 = newa 1;
-        %tmp.157 = lgetv %pwr.13;
+[ "C:\GIT\priv\Garmin\gw1\source\gw1View.mc" 66 8 ]
+        [ "C_GIT_priv_Garmin_gw1_source_gw1View_mc_29_40_start" "C_GIT_priv_Garmin_gw1_source_gw1View_mc_29_40_stop" ]
+        %days.12 = local;
+        %tmp.148 = getm $.Toybox.Time.Gregorian;
+        %tmp.149 = getv function %tmp.148 :info;
+        %tmp.150 = getm $.Toybox.Time;
+        %tmp.151 = getv function %tmp.150 :now;
+        %tmp.152 = invoke %tmp.150 %tmp.151();
+        %tmp.153 = getm $.Toybox.Time;
+        %tmp.154 = getv %tmp.153 :FORMAT_SHORT;
+        %tmp.155 = invoke %tmp.148 %tmp.149(%tmp.152, %tmp.154);
+        lputv %days.12 %tmp.155;
+[ "C:\GIT\priv\Garmin\gw1\source\gw1View.mc" 67 8 ]
+        [ "C_GIT_priv_Garmin_gw1_source_gw1View_mc_29_40_start" "C_GIT_priv_Garmin_gw1_source_gw1View_mc_29_40_stop" ]
+        %formatedDate.13 = local;
+        %tmp.156 = lgetv %days.12;
+        %tmp.157 = getv %tmp.156 :day;
         %tmp.158 = getv function %tmp.157 :format;
-        %tmp.159 = "%2d";
+        %tmp.159 = "%02d";
         %tmp.160 = invoke %tmp.157 %tmp.158(%tmp.159);
-        %tmp.161 = dup %tmp.156;
-        %tmp.162 = aputv %tmp.161 0 %tmp.160;
-        %tmp.163 = invoke %tmp.153 %tmp.154(%tmp.155, %tmp.162);
-        lputv %batStr.14 %tmp.163;
-[ "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" 79 8 ]
-        [ "_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_29_40_start" "_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_29_40_stop" ]
-        %step.15 = local;
-        %tmp.165 = getv ? :ActivityMonitor;
-        %tmp.166 = getv function %tmp.165 :getInfo;
-        %tmp.167 = invoke %tmp.165 %tmp.166();
-        %tmp.168 = getv %tmp.167 :steps;
-        lputv %step.15 %tmp.168;
-[ "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" 80 8 ]
-        [ "_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_29_40_start" "_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_29_40_stop" ]
-        %stepsString.16 = local;
-        %tmp.169 = lgetv %step.15;
-        %tmp.170 = getv function %tmp.169 :format;
-        %tmp.171 = "%d";
-        %tmp.172 = invoke %tmp.169 %tmp.170(%tmp.171);
-        lputv %stepsString.16 %tmp.172;
-[ "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" 81 8 ]
-        [ "_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_29_40_start" "_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_29_40_stop" ]
-        %viewStep.17 = local;
-        %tmp.174 = getv ? :View;
-        %tmp.175 = getv function %tmp.174 :findDrawableById;
-        %tmp.176 = "Steps";
-        %tmp.177 = invoke %tmp.174 %tmp.175(%tmp.176);
-        %tmp.178 = as %tmp.177 Text;
-        lputv %viewStep.17 %tmp.178;
-[ "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" 82 8 ]
-        %tmp.179 = lgetv %viewStep.17;
-        %tmp.180 = getv function %tmp.179 :setColor;
-        %tmp.181 = self;
-        %tmp.182 = getv function %tmp.181 :getApp;
-        %tmp.183 = invoke %tmp.181 %tmp.182();
-        %tmp.184 = getv function %tmp.183 :getProperty;
-        %tmp.185 = "ForegroundColor";
-        %tmp.186 = invoke %tmp.183 %tmp.184(%tmp.185);
-        %tmp.187 = as %tmp.186 Number;
-        invoke %tmp.179 %tmp.180(%tmp.187);
-[ "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" 83 8 ]
-        %tmp.188 = lgetv %viewStep.17;
-        %tmp.189 = getv function %tmp.188 :setText;
-        %tmp.190 = "Kroki";
-        invoke %tmp.188 %tmp.189(%tmp.190);
-[ "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" 85 8 ]
-        [ "_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_29_40_start" "_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_29_40_stop" ]
-        %viewStepN.18 = local;
-        %tmp.192 = getv ? :View;
-        %tmp.193 = getv function %tmp.192 :findDrawableById;
-        %tmp.194 = "StepsNumber";
-        %tmp.195 = invoke %tmp.192 %tmp.193(%tmp.194);
-        %tmp.196 = as %tmp.195 Text;
-        lputv %viewStepN.18 %tmp.196;
-[ "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" 86 8 ]
-        %tmp.197 = lgetv %viewStepN.18;
-        %tmp.198 = getv function %tmp.197 :setColor;
-        %tmp.199 = self;
-        %tmp.200 = getv function %tmp.199 :getApp;
-        %tmp.201 = invoke %tmp.199 %tmp.200();
-        %tmp.202 = getv function %tmp.201 :getProperty;
-        %tmp.203 = "ForegroundColor";
-        %tmp.204 = invoke %tmp.201 %tmp.202(%tmp.203);
-        %tmp.205 = as %tmp.204 Number;
-        invoke %tmp.197 %tmp.198(%tmp.205);
-[ "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" 87 8 ]
-        %tmp.206 = lgetv %viewStepN.18;
-        %tmp.207 = getv function %tmp.206 :setText;
-        %tmp.209 = lgetv %stepsString.16;
-        invoke %tmp.206 %tmp.207(%tmp.209);
-[ "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" 91 8 ]
-        [ "_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_29_40_start" "_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_29_40_stop" ]
-        %floors.19 = local;
-        %tmp.211 = getv ? :ActivityMonitor;
-        %tmp.212 = getv function %tmp.211 :getInfo;
-        %tmp.213 = invoke %tmp.211 %tmp.212();
-        %tmp.214 = getv %tmp.213 :floorsClimbed;
-        lputv %floors.19 %tmp.214;
-[ "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" 92 8 ]
-        [ "_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_29_40_start" "_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_29_40_stop" ]
-        %floorsString.20 = local;
-        %tmp.215 = lgetv %floors.19;
-        %tmp.216 = getv function %tmp.215 :format;
-        %tmp.217 = "%d";
-        %tmp.218 = invoke %tmp.215 %tmp.216(%tmp.217);
-        lputv %floorsString.20 %tmp.218;
-[ "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" 93 8 ]
-        [ "_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_29_40_start" "_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_29_40_stop" ]
-        %viewpietra.21 = local;
-        %tmp.220 = getv ? :View;
-        %tmp.221 = getv function %tmp.220 :findDrawableById;
-        %tmp.222 = "pietra";
-        %tmp.223 = invoke %tmp.220 %tmp.221(%tmp.222);
-        %tmp.224 = as %tmp.223 Text;
-        lputv %viewpietra.21 %tmp.224;
-[ "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" 94 8 ]
-        %tmp.225 = lgetv %viewpietra.21;
-        %tmp.226 = getv function %tmp.225 :setColor;
-        %tmp.227 = self;
-        %tmp.228 = getv function %tmp.227 :getApp;
-        %tmp.229 = invoke %tmp.227 %tmp.228();
-        %tmp.230 = getv function %tmp.229 :getProperty;
-        %tmp.231 = "ForegroundColor";
-        %tmp.232 = invoke %tmp.229 %tmp.230(%tmp.231);
-        %tmp.233 = as %tmp.232 Number;
-        invoke %tmp.225 %tmp.226(%tmp.233);
-[ "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" 95 8 ]
-        %tmp.234 = lgetv %viewpietra.21;
-        %tmp.235 = getv function %tmp.234 :setText;
-        %tmp.236 = "Piętra";
-        invoke %tmp.234 %tmp.235(%tmp.236);
-[ "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" 97 8 ]
-        [ "_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_29_40_start" "_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_29_40_stop" ]
-        %viewpietranr.22 = local;
-        %tmp.238 = getv ? :View;
-        %tmp.239 = getv function %tmp.238 :findDrawableById;
-        %tmp.240 = "pietranr";
-        %tmp.241 = invoke %tmp.238 %tmp.239(%tmp.240);
-        %tmp.242 = as %tmp.241 Text;
-        lputv %viewpietranr.22 %tmp.242;
-[ "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" 98 8 ]
-        %tmp.243 = lgetv %viewpietranr.22;
-        %tmp.244 = getv function %tmp.243 :setColor;
-        %tmp.245 = self;
-        %tmp.246 = getv function %tmp.245 :getApp;
-        %tmp.247 = invoke %tmp.245 %tmp.246();
-        %tmp.248 = getv function %tmp.247 :getProperty;
-        %tmp.249 = "ForegroundColor";
-        %tmp.250 = invoke %tmp.247 %tmp.248(%tmp.249);
-        %tmp.251 = as %tmp.250 Number;
-        invoke %tmp.243 %tmp.244(%tmp.251);
-[ "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" 99 8 ]
-        %tmp.252 = lgetv %viewpietranr.22;
-        %tmp.253 = getv function %tmp.252 :setText;
-        %tmp.255 = lgetv %floorsString.20;
-        invoke %tmp.252 %tmp.253(%tmp.255);
-[ "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" 102 8 ]
-        [ "_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_29_40_start" "_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_29_40_stop" ]
-        %viewbateria.23 = local;
-        %tmp.257 = getv ? :View;
-        %tmp.258 = getv function %tmp.257 :findDrawableById;
-        %tmp.259 = "bateria";
-        %tmp.260 = invoke %tmp.257 %tmp.258(%tmp.259);
-        %tmp.261 = as %tmp.260 Text;
-        lputv %viewbateria.23 %tmp.261;
-[ "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" 103 8 ]
-        %tmp.262 = lgetv %viewbateria.23;
-        %tmp.263 = getv function %tmp.262 :setColor;
-        %tmp.264 = self;
-        %tmp.265 = getv function %tmp.264 :getApp;
-        %tmp.266 = invoke %tmp.264 %tmp.265();
-        %tmp.267 = getv function %tmp.266 :getProperty;
-        %tmp.268 = "ForegroundColor";
-        %tmp.269 = invoke %tmp.266 %tmp.267(%tmp.268);
-        %tmp.270 = as %tmp.269 Number;
-        invoke %tmp.262 %tmp.263(%tmp.270);
-[ "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" 104 8 ]
-        %tmp.271 = lgetv %viewbateria.23;
-        %tmp.272 = getv function %tmp.271 :setText;
-        %tmp.273 = "Bateria";
-        invoke %tmp.271 %tmp.272(%tmp.273);
-[ "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" 106 8 ]
-        [ "_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_29_40_start" "_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_29_40_stop" ]
-        %viewbaterianr.24 = local;
-        %tmp.275 = getv ? :View;
-        %tmp.276 = getv function %tmp.275 :findDrawableById;
-        %tmp.277 = "baterianr";
-        %tmp.278 = invoke %tmp.275 %tmp.276(%tmp.277);
-        %tmp.279 = as %tmp.278 Text;
-        lputv %viewbaterianr.24 %tmp.279;
-[ "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" 107 8 ]
-        %tmp.280 = lgetv %viewbaterianr.24;
-        %tmp.281 = getv function %tmp.280 :setColor;
-        %tmp.282 = self;
-        %tmp.283 = getv function %tmp.282 :getApp;
-        %tmp.284 = invoke %tmp.282 %tmp.283();
-        %tmp.285 = getv function %tmp.284 :getProperty;
-        %tmp.286 = "ForegroundColor";
-        %tmp.287 = invoke %tmp.284 %tmp.285(%tmp.286);
-        %tmp.288 = as %tmp.287 Number;
-        invoke %tmp.280 %tmp.281(%tmp.288);
-[ "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" 108 8 ]
-        %tmp.289 = lgetv %viewbaterianr.24;
-        %tmp.290 = getv function %tmp.289 :setText;
-        %tmp.292 = lgetv %batStr.14;
-        invoke %tmp.289 %tmp.290(%tmp.292);
-[ "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" 111 8 ]
-        [ "_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_29_40_start" "_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_29_40_stop" ]
-        %viewBattery.25 = local;
-        %tmp.294 = getv ? :View;
-        %tmp.295 = getv function %tmp.294 :findDrawableById;
-        %tmp.296 = "Battery";
-        %tmp.297 = invoke %tmp.294 %tmp.295(%tmp.296);
-        %tmp.298 = as %tmp.297 Text;
-        lputv %viewBattery.25 %tmp.298;
-[ "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" 112 8 ]
-        %tmp.299 = lgetv %viewBattery.25;
-        %tmp.300 = getv function %tmp.299 :setColor;
-        %tmp.301 = self;
-        %tmp.302 = getv function %tmp.301 :getApp;
-        %tmp.303 = invoke %tmp.301 %tmp.302();
-        %tmp.304 = getv function %tmp.303 :getProperty;
-        %tmp.305 = "ForegroundColor";
-        %tmp.306 = invoke %tmp.303 %tmp.304(%tmp.305);
-        %tmp.307 = as %tmp.306 Number;
-        invoke %tmp.299 %tmp.300(%tmp.307);
-[ "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" 113 8 ]
-        %tmp.308 = lgetv %viewBattery.25;
-        %tmp.309 = getv function %tmp.308 :setText;
-        %tmp.310 = "Connected";
-        invoke %tmp.308 %tmp.309(%tmp.310);
-[ "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc" 126 8 ]
-        %tmp.312 = getv ? :View;
-        %tmp.313 = getv function %tmp.312 :onUpdate;
-        %tmp.315 = lgetv %dc;
-        invoke %tmp.312 %tmp.313(%tmp.315);
-_Users_piotr_GIT_Garmin_gw1_source_gw1View_mc_29_40_stop:
+        %tmp.161 = ". ";
+        %tmp.162 = add %tmp.160 %tmp.161;
+        %tmp.163 = lgetv %days.12;
+        %tmp.164 = getv %tmp.163 :month;
+        %tmp.165 = getv function %tmp.164 :format;
+        %tmp.166 = "%02d";
+        %tmp.167 = invoke %tmp.164 %tmp.165(%tmp.166);
+        %tmp.168 = add %tmp.162 %tmp.167;
+        lputv %formatedDate.13 %tmp.168;
+[ "C:\GIT\priv\Garmin\gw1\source\gw1View.mc" 68 8 ]
+        [ "C_GIT_priv_Garmin_gw1_source_gw1View_mc_29_40_start" "C_GIT_priv_Garmin_gw1_source_gw1View_mc_29_40_stop" ]
+        %daysOfWeek.14 = local;
+        %tmp.170 = getv ? :View;
+        %tmp.171 = getv function %tmp.170 :findDrawableById;
+        %tmp.172 = "DaysOfWeek";
+        %tmp.173 = invoke %tmp.170 %tmp.171(%tmp.172);
+        %tmp.174 = as %tmp.173 Text;
+        lputv %daysOfWeek.14 %tmp.174;
+[ "C:\GIT\priv\Garmin\gw1\source\gw1View.mc" 69 8 ]
+        %tmp.175 = lgetv %daysOfWeek.14;
+        %tmp.176 = getv function %tmp.175 :setText;
+        %tmp.178 = lgetv %formatedDate.13;
+        invoke %tmp.175 %tmp.176(%tmp.178);
+[ "C:\GIT\priv\Garmin\gw1\source\gw1View.mc" 78 8 ]
+        [ "C_GIT_priv_Garmin_gw1_source_gw1View_mc_29_40_start" "C_GIT_priv_Garmin_gw1_source_gw1View_mc_29_40_stop" ]
+        %stats.15 = local;
+        %tmp.179 = getm $.Toybox.System;
+        %tmp.180 = getv function %tmp.179 :getSystemStats;
+        %tmp.181 = invoke %tmp.179 %tmp.180();
+        lputv %stats.15 %tmp.181;
+[ "C:\GIT\priv\Garmin\gw1\source\gw1View.mc" 79 8 ]
+        [ "C_GIT_priv_Garmin_gw1_source_gw1View_mc_29_40_start" "C_GIT_priv_Garmin_gw1_source_gw1View_mc_29_40_stop" ]
+        %pwr.16 = local;
+        %tmp.182 = lgetv %stats.15;
+        %tmp.183 = getv %tmp.182 :battery;
+        lputv %pwr.16 %tmp.183;
+[ "C:\GIT\priv\Garmin\gw1\source\gw1View.mc" 80 8 ]
+        [ "C_GIT_priv_Garmin_gw1_source_gw1View_mc_29_40_start" "C_GIT_priv_Garmin_gw1_source_gw1View_mc_29_40_stop" ]
+        %batStr.17 = local;
+        %tmp.184 = getm $.Toybox.Lang;
+        %tmp.185 = getv function %tmp.184 :format;
+        %tmp.186 = "$1$%";
+        %tmp.187 = newa 1;
+        %tmp.188 = lgetv %pwr.16;
+        %tmp.189 = getv function %tmp.188 :format;
+        %tmp.190 = "%2d";
+        %tmp.191 = invoke %tmp.188 %tmp.189(%tmp.190);
+        %tmp.192 = dup %tmp.187;
+        %tmp.193 = aputv %tmp.192 0 %tmp.191;
+        %tmp.194 = invoke %tmp.184 %tmp.185(%tmp.186, %tmp.193);
+        lputv %batStr.17 %tmp.194;
+[ "C:\GIT\priv\Garmin\gw1\source\gw1View.mc" 84 8 ]
+        [ "C_GIT_priv_Garmin_gw1_source_gw1View_mc_29_40_start" "C_GIT_priv_Garmin_gw1_source_gw1View_mc_29_40_stop" ]
+        %step.18 = local;
+        %tmp.196 = getv ? :ActivityMonitor;
+        %tmp.197 = getv function %tmp.196 :getInfo;
+        %tmp.198 = invoke %tmp.196 %tmp.197();
+        %tmp.199 = getv %tmp.198 :steps;
+        lputv %step.18 %tmp.199;
+[ "C:\GIT\priv\Garmin\gw1\source\gw1View.mc" 85 8 ]
+        [ "C_GIT_priv_Garmin_gw1_source_gw1View_mc_29_40_start" "C_GIT_priv_Garmin_gw1_source_gw1View_mc_29_40_stop" ]
+        %stepsString.19 = local;
+        %tmp.200 = lgetv %step.18;
+        %tmp.201 = getv function %tmp.200 :format;
+        %tmp.202 = "%d";
+        %tmp.203 = invoke %tmp.200 %tmp.201(%tmp.202);
+        lputv %stepsString.19 %tmp.203;
+[ "C:\GIT\priv\Garmin\gw1\source\gw1View.mc" 86 8 ]
+        [ "C_GIT_priv_Garmin_gw1_source_gw1View_mc_29_40_start" "C_GIT_priv_Garmin_gw1_source_gw1View_mc_29_40_stop" ]
+        %viewStep.20 = local;
+        %tmp.205 = getv ? :View;
+        %tmp.206 = getv function %tmp.205 :findDrawableById;
+        %tmp.207 = "Steps";
+        %tmp.208 = invoke %tmp.205 %tmp.206(%tmp.207);
+        %tmp.209 = as %tmp.208 Text;
+        lputv %viewStep.20 %tmp.209;
+[ "C:\GIT\priv\Garmin\gw1\source\gw1View.mc" 87 8 ]
+        %tmp.210 = lgetv %viewStep.20;
+        %tmp.211 = getv function %tmp.210 :setColor;
+        %tmp.212 = self;
+        %tmp.213 = getv function %tmp.212 :getApp;
+        %tmp.214 = invoke %tmp.212 %tmp.213();
+        %tmp.215 = getv function %tmp.214 :getProperty;
+        %tmp.216 = "ForegroundColor";
+        %tmp.217 = invoke %tmp.214 %tmp.215(%tmp.216);
+        %tmp.218 = as %tmp.217 Number;
+        invoke %tmp.210 %tmp.211(%tmp.218);
+[ "C:\GIT\priv\Garmin\gw1\source\gw1View.mc" 88 8 ]
+        %tmp.219 = lgetv %viewStep.20;
+        %tmp.220 = getv function %tmp.219 :setText;
+        %tmp.221 = "Kroki";
+        invoke %tmp.219 %tmp.220(%tmp.221);
+[ "C:\GIT\priv\Garmin\gw1\source\gw1View.mc" 90 8 ]
+        [ "C_GIT_priv_Garmin_gw1_source_gw1View_mc_29_40_start" "C_GIT_priv_Garmin_gw1_source_gw1View_mc_29_40_stop" ]
+        %viewStepN.21 = local;
+        %tmp.223 = getv ? :View;
+        %tmp.224 = getv function %tmp.223 :findDrawableById;
+        %tmp.225 = "StepsNumber";
+        %tmp.226 = invoke %tmp.223 %tmp.224(%tmp.225);
+        %tmp.227 = as %tmp.226 Text;
+        lputv %viewStepN.21 %tmp.227;
+[ "C:\GIT\priv\Garmin\gw1\source\gw1View.mc" 91 8 ]
+        %tmp.228 = lgetv %viewStepN.21;
+        %tmp.229 = getv function %tmp.228 :setColor;
+        %tmp.230 = self;
+        %tmp.231 = getv function %tmp.230 :getApp;
+        %tmp.232 = invoke %tmp.230 %tmp.231();
+        %tmp.233 = getv function %tmp.232 :getProperty;
+        %tmp.234 = "ForegroundColor";
+        %tmp.235 = invoke %tmp.232 %tmp.233(%tmp.234);
+        %tmp.236 = as %tmp.235 Number;
+        invoke %tmp.228 %tmp.229(%tmp.236);
+[ "C:\GIT\priv\Garmin\gw1\source\gw1View.mc" 92 8 ]
+        %tmp.237 = lgetv %viewStepN.21;
+        %tmp.238 = getv function %tmp.237 :setText;
+        %tmp.240 = lgetv %stepsString.19;
+        invoke %tmp.237 %tmp.238(%tmp.240);
+[ "C:\GIT\priv\Garmin\gw1\source\gw1View.mc" 96 8 ]
+        [ "C_GIT_priv_Garmin_gw1_source_gw1View_mc_29_40_start" "C_GIT_priv_Garmin_gw1_source_gw1View_mc_29_40_stop" ]
+        %floors.22 = local;
+        %tmp.242 = getv ? :ActivityMonitor;
+        %tmp.243 = getv function %tmp.242 :getInfo;
+        %tmp.244 = invoke %tmp.242 %tmp.243();
+        %tmp.245 = getv %tmp.244 :floorsClimbed;
+        lputv %floors.22 %tmp.245;
+[ "C:\GIT\priv\Garmin\gw1\source\gw1View.mc" 97 8 ]
+        [ "C_GIT_priv_Garmin_gw1_source_gw1View_mc_29_40_start" "C_GIT_priv_Garmin_gw1_source_gw1View_mc_29_40_stop" ]
+        %floorsString.23 = local;
+        %tmp.246 = lgetv %floors.22;
+        %tmp.247 = getv function %tmp.246 :format;
+        %tmp.248 = "%d";
+        %tmp.249 = invoke %tmp.246 %tmp.247(%tmp.248);
+        lputv %floorsString.23 %tmp.249;
+[ "C:\GIT\priv\Garmin\gw1\source\gw1View.mc" 98 8 ]
+        [ "C_GIT_priv_Garmin_gw1_source_gw1View_mc_29_40_start" "C_GIT_priv_Garmin_gw1_source_gw1View_mc_29_40_stop" ]
+        %viewpietra.24 = local;
+        %tmp.251 = getv ? :View;
+        %tmp.252 = getv function %tmp.251 :findDrawableById;
+        %tmp.253 = "pietra";
+        %tmp.254 = invoke %tmp.251 %tmp.252(%tmp.253);
+        %tmp.255 = as %tmp.254 Text;
+        lputv %viewpietra.24 %tmp.255;
+[ "C:\GIT\priv\Garmin\gw1\source\gw1View.mc" 99 8 ]
+        %tmp.256 = lgetv %viewpietra.24;
+        %tmp.257 = getv function %tmp.256 :setColor;
+        %tmp.258 = self;
+        %tmp.259 = getv function %tmp.258 :getApp;
+        %tmp.260 = invoke %tmp.258 %tmp.259();
+        %tmp.261 = getv function %tmp.260 :getProperty;
+        %tmp.262 = "ForegroundColor";
+        %tmp.263 = invoke %tmp.260 %tmp.261(%tmp.262);
+        %tmp.264 = as %tmp.263 Number;
+        invoke %tmp.256 %tmp.257(%tmp.264);
+[ "C:\GIT\priv\Garmin\gw1\source\gw1View.mc" 100 8 ]
+        %tmp.265 = lgetv %viewpietra.24;
+        %tmp.266 = getv function %tmp.265 :setText;
+        %tmp.267 = "Piętra";
+        invoke %tmp.265 %tmp.266(%tmp.267);
+[ "C:\GIT\priv\Garmin\gw1\source\gw1View.mc" 102 8 ]
+        [ "C_GIT_priv_Garmin_gw1_source_gw1View_mc_29_40_start" "C_GIT_priv_Garmin_gw1_source_gw1View_mc_29_40_stop" ]
+        %viewpietranr.25 = local;
+        %tmp.269 = getv ? :View;
+        %tmp.270 = getv function %tmp.269 :findDrawableById;
+        %tmp.271 = "pietranr";
+        %tmp.272 = invoke %tmp.269 %tmp.270(%tmp.271);
+        %tmp.273 = as %tmp.272 Text;
+        lputv %viewpietranr.25 %tmp.273;
+[ "C:\GIT\priv\Garmin\gw1\source\gw1View.mc" 103 8 ]
+        %tmp.274 = lgetv %viewpietranr.25;
+        %tmp.275 = getv function %tmp.274 :setColor;
+        %tmp.276 = self;
+        %tmp.277 = getv function %tmp.276 :getApp;
+        %tmp.278 = invoke %tmp.276 %tmp.277();
+        %tmp.279 = getv function %tmp.278 :getProperty;
+        %tmp.280 = "ForegroundColor";
+        %tmp.281 = invoke %tmp.278 %tmp.279(%tmp.280);
+        %tmp.282 = as %tmp.281 Number;
+        invoke %tmp.274 %tmp.275(%tmp.282);
+[ "C:\GIT\priv\Garmin\gw1\source\gw1View.mc" 104 8 ]
+        %tmp.283 = lgetv %viewpietranr.25;
+        %tmp.284 = getv function %tmp.283 :setText;
+        %tmp.286 = lgetv %floorsString.23;
+        invoke %tmp.283 %tmp.284(%tmp.286);
+[ "C:\GIT\priv\Garmin\gw1\source\gw1View.mc" 107 8 ]
+        [ "C_GIT_priv_Garmin_gw1_source_gw1View_mc_29_40_start" "C_GIT_priv_Garmin_gw1_source_gw1View_mc_29_40_stop" ]
+        %viewbateria.26 = local;
+        %tmp.288 = getv ? :View;
+        %tmp.289 = getv function %tmp.288 :findDrawableById;
+        %tmp.290 = "bateria";
+        %tmp.291 = invoke %tmp.288 %tmp.289(%tmp.290);
+        %tmp.292 = as %tmp.291 Text;
+        lputv %viewbateria.26 %tmp.292;
+[ "C:\GIT\priv\Garmin\gw1\source\gw1View.mc" 108 8 ]
+        %tmp.293 = lgetv %viewbateria.26;
+        %tmp.294 = getv function %tmp.293 :setColor;
+        %tmp.295 = self;
+        %tmp.296 = getv function %tmp.295 :getApp;
+        %tmp.297 = invoke %tmp.295 %tmp.296();
+        %tmp.298 = getv function %tmp.297 :getProperty;
+        %tmp.299 = "ForegroundColor";
+        %tmp.300 = invoke %tmp.297 %tmp.298(%tmp.299);
+        %tmp.301 = as %tmp.300 Number;
+        invoke %tmp.293 %tmp.294(%tmp.301);
+[ "C:\GIT\priv\Garmin\gw1\source\gw1View.mc" 109 8 ]
+        %tmp.302 = lgetv %viewbateria.26;
+        %tmp.303 = getv function %tmp.302 :setText;
+        %tmp.304 = "Bateria";
+        invoke %tmp.302 %tmp.303(%tmp.304);
+[ "C:\GIT\priv\Garmin\gw1\source\gw1View.mc" 111 8 ]
+        [ "C_GIT_priv_Garmin_gw1_source_gw1View_mc_29_40_start" "C_GIT_priv_Garmin_gw1_source_gw1View_mc_29_40_stop" ]
+        %viewbaterianr.27 = local;
+        %tmp.306 = getv ? :View;
+        %tmp.307 = getv function %tmp.306 :findDrawableById;
+        %tmp.308 = "baterianr";
+        %tmp.309 = invoke %tmp.306 %tmp.307(%tmp.308);
+        %tmp.310 = as %tmp.309 Text;
+        lputv %viewbaterianr.27 %tmp.310;
+[ "C:\GIT\priv\Garmin\gw1\source\gw1View.mc" 112 8 ]
+        %tmp.311 = lgetv %viewbaterianr.27;
+        %tmp.312 = getv function %tmp.311 :setColor;
+        %tmp.313 = self;
+        %tmp.314 = getv function %tmp.313 :getApp;
+        %tmp.315 = invoke %tmp.313 %tmp.314();
+        %tmp.316 = getv function %tmp.315 :getProperty;
+        %tmp.317 = "ForegroundColor";
+        %tmp.318 = invoke %tmp.315 %tmp.316(%tmp.317);
+        %tmp.319 = as %tmp.318 Number;
+        invoke %tmp.311 %tmp.312(%tmp.319);
+[ "C:\GIT\priv\Garmin\gw1\source\gw1View.mc" 113 8 ]
+        %tmp.320 = lgetv %viewbaterianr.27;
+        %tmp.321 = getv function %tmp.320 :setText;
+        %tmp.323 = lgetv %batStr.17;
+        invoke %tmp.320 %tmp.321(%tmp.323);
+[ "C:\GIT\priv\Garmin\gw1\source\gw1View.mc" 131 8 ]
+        %tmp.325 = getv ? :View;
+        %tmp.326 = getv function %tmp.325 :onUpdate;
+        %tmp.328 = lgetv %dc;
+        invoke %tmp.325 %tmp.326(%tmp.328);
+C_GIT_priv_Garmin_gw1_source_gw1View_mc_29_40_stop:
     }
-    [ @file = "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc"; @line = 132; ]
+    [ @file = "C:\GIT\priv\Garmin\gw1\source\gw1View.mc"; @line = 137; ]
     function onHide() as Void {
     }
-    [ @file = "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc"; @line = 136; ]
+    [ @file = "C:\GIT\priv\Garmin\gw1\source\gw1View.mc"; @line = 141; ]
     function onExitSleep() as Void {
     }
-    [ @file = "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc"; @line = 140; ]
+    [ @file = "C:\GIT\priv\Garmin\gw1\source\gw1View.mc"; @line = 145; ]
     function onEnterSleep() as Void {
     }
 }
-[ @file = "/Users/piotr/GIT/Garmin/gw1/source/gw1View.mc"; @line = 1; ]
+[ @file = "C:\GIT\priv\Garmin\gw1\source\gw1View.mc"; @line = 1; ]
 <init> {
 }

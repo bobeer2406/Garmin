@@ -1,21 +1,21 @@
 <layout id="WatchFace">
     <drawable class="Background" />
     <bitmap id="back"  x="center" y="center" filename="../images/bg.png" />
-    <label  id="Date"  x="center" y="10%"   font="Graphics.FONT_LARGE"                  justification="Graphics.TEXT_JUSTIFY_CENTER" />
-    <label id="MLabel" x="35%"    y="50%"   font="Graphics.FONT_SYSTEM_NUMBER_HOT"      justification="Graphics.TEXT_JUSTIFY_CENTER"  />
-    <label id="HLabel" x="25%"    y="25%"   font="Graphics.FONT_SYSTEM_NUMBER_THAI_HOT" justification="Graphics.TEXT_JUSTIFY_CENTER" />
+
+    <label id="MLabel" x="45%"    y="60%"   font="Graphics.FONT_SYSTEM_NUMBER_HOT"      justification="Graphics.TEXT_JUSTIFY_CENTER"  />
+    <label id="HLabel" x="35%"    y="35%"   font="Graphics.FONT_SYSTEM_NUMBER_THAI_HOT" justification="Graphics.TEXT_JUSTIFY_CENTER" />
    
-    <label id="Steps"  x="65%" y="10%"   font="Graphics.FONT_SMALL"                  justification="Graphics.TEXT_JUSTIFY_CENTER" />
-     <label id="StepsNumber"  x="65%" y="18%"   font="Graphics.FONT_MEDIUM"                  justification="Graphics.TEXT_JUSTIFY_CENTER" />
+    <label id="Steps"  x="62%" y="10%"   font="Graphics.FONT_SMALL"                  justification="Graphics.TEXT_JUSTIFY_CENTER" />
+     <label id="StepsNumber"  x="62%" y="18%"   font="Graphics.FONT_MEDIUM"                  justification="Graphics.TEXT_JUSTIFY_CENTER" />
 
-     <label id="pietra"  x="75%" y="30%"   font="Graphics.FONT_SMALL"                  justification="Graphics.TEXT_JUSTIFY_CENTER" />
-     <label id="pietranr"  x="75%" y="38%"   font="Graphics.FONT_MEDIUM"                  justification="Graphics.TEXT_JUSTIFY_CENTER" />
+     <label id="pietra"  x="72%" y="30%"   font="Graphics.FONT_SMALL"                  justification="Graphics.TEXT_JUSTIFY_CENTER" />
+     <label id="pietranr"  x="72%" y="38%"   font="Graphics.FONT_MEDIUM"                  justification="Graphics.TEXT_JUSTIFY_CENTER" />
 
-     <label id="bateria"  x="85%" y="50%"   font="Graphics.FONT_SMALL"                  justification="Graphics.TEXT_JUSTIFY_CENTER" />
-     <label id="baterianr"  x="85%" y="58%"   font="Graphics.FONT_MEDIUM"                  justification="Graphics.TEXT_JUSTIFY_CENTER" />
+     <label id="bateria"  x="82%" y="50%"   font="Graphics.FONT_SMALL"                  justification="Graphics.TEXT_JUSTIFY_CENTER" />
+     <label id="baterianr"  x="82%" y="58%"   font="Graphics.FONT_MEDIUM"                  justification="Graphics.TEXT_JUSTIFY_CENTER" />
 
     <label id="Battery" x="center" y="80%"    font="Graphics.FONT_SMALL"           justification="Graphics.TEXT_JUSTIFY_CENTER" />
 
-    <label id="DayOfWeek" x="30%"  y="10%"  font="Graphics.FONT_MEDIUM"  justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_WHITE" />
-    
+    <label id="DayOfWeek" x="center"  y="85%"  font="Graphics.FONT_MEDIUM"  justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_WHITE" />
+    <label id="DaysOfWeek" x="30%"  y="18%"  font="Graphics.FONT_MEDIUM"  justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_WHITE" />
 </layout>
