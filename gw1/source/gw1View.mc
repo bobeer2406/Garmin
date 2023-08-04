@@ -1,12 +1,11 @@
 import Toybox.Application;
 import Toybox.Graphics;
 import Toybox.Lang;
-import Toybox.System;
 import Toybox.WatchUi;
 using Toybox.Time.Gregorian;
-using Toybox.Time;
-using Toybox.System;
-using Toybox.ActivityMonitor as act;
+using Toybox.Time as T;
+using Toybox.System as S;
+using Toybox.ActivityMonitor as AM;
 
 class gw1View extends WatchUi.WatchFace {
 
@@ -30,18 +29,17 @@ class gw1View extends WatchUi.WatchFace {
         //TIME  CENTER
 
         // Get the current time and format it correctly
-        var timeFormat = "$1$:$2$";
+        //var timeFormat = "$1$:$2$";
         var timeFormatH = "$1$";
         var timeFormatM = "$2$";
-        var clockTime = System.getClockTime();
+        var clockTime = S.getClockTime();
         var hours = clockTime.hour;
-        if (!System.getDeviceSettings().is24Hour) {
+        if (!S.getDeviceSettings().is24Hour) {
             if (hours > 24) {
                 hours = hours - 24;
             }
         } else {
             if (getApp().getProperty("UseMilitaryFormat")) {
-                timeFormat = "$1$$2$";
                 hours = hours.format("%02d");
             }
         }
@@ -51,81 +49,49 @@ class gw1View extends WatchUi.WatchFace {
         // var timeStringM = Lang.format(timeFormat, [hours]);
         // Update the view
         var viewH = View.findDrawableById("HLabel") as Text;
-        viewH.setColor(getApp().getProperty("ForegroundColor") as Number);
         viewH.setText(timeStringH);
 
         var viewM = View.findDrawableById("MLabel") as Text;
-        viewM.setColor(getApp().getProperty("ForegroundColor") as Number);
         viewM.setText(timeStringM);
 
         //DayOfWeek 
-        var day = Gregorian.info(Time.now(), Time.FORMAT_SHORT);
+        var day = Gregorian.info(T.now(), T.FORMAT_SHORT);
         var dayOfWeek = View.findDrawableById("DayOfWeek") as Text;
         dayOfWeek.setText(["Nie", "Pon", "Wto", "Śro", "Czw", "Pią", "Sob"][day.day_of_week - 1]);
 
-        var days = Gregorian.info(Time.now(), Time.FORMAT_SHORT);
-        var formatedDate = days.day.format("%02d") + ". " + days.month.format("%02d");
-        var daysOfWeek = View.findDrawableById("DaysOfWeek") as Text;
-        daysOfWeek.setText(formatedDate);
-
+        var date = Gregorian.info(T.now(), T.FORMAT_SHORT);
+        var formatedDate = date.day.format("%02d") + "." + date.month.format("%02d");
+        var fullDate = View.findDrawableById("Date") as Text;
+        fullDate.setText(formatedDate);
         
-        //Connected
-
-
-        
-        //BUTTON Battery
-        //
-        var stats = System.getSystemStats();
+        //BATTERY
+        var stats = S.getSystemStats();
         var pwr = stats.battery;
         var batStr = Lang.format( "$1$%", [ pwr.format( "%2d" ) ] );
+        var viewbateria = View.findDrawableById("Bat") as Text;
+        viewbateria.setText("Battery");
 
-
-        //STEPS
-        var step = ActivityMonitor.getInfo().steps;
-        var stepsString = step.format("%d");
-        var viewStep = View.findDrawableById("Steps") as Text;
-        viewStep.setColor(getApp().getProperty("ForegroundColor") as Number);
-        viewStep.setText("Kroki");
-
-        var viewStepN = View.findDrawableById("StepsNumber") as Text;
-        viewStepN.setColor(getApp().getProperty("ForegroundColor") as Number);
-        viewStepN.setText(stepsString);
-        
-        
-        //Piętra
-        var floors = ActivityMonitor.getInfo().floorsClimbed;
-        var floorsString = floors.format("%d");
-        var viewpietra = View.findDrawableById("pietra") as Text;
-        viewpietra.setColor(getApp().getProperty("ForegroundColor") as Number);
-        viewpietra.setText("Piętra");
-
-        var viewpietranr = View.findDrawableById("pietranr") as Text;
-        viewpietranr.setColor(getApp().getProperty("ForegroundColor") as Number);
-        viewpietranr.setText(floorsString);
-
-        //Bateria
-        var viewbateria = View.findDrawableById("bateria") as Text;
-        viewbateria.setColor(getApp().getProperty("ForegroundColor") as Number);
-        viewbateria.setText("Bateria");
-
-        var viewbaterianr = View.findDrawableById("baterianr") as Text;
-        viewbaterianr.setColor(getApp().getProperty("ForegroundColor") as Number);
+        var viewbaterianr = View.findDrawableById("BatN") as Text;
         viewbaterianr.setText(batStr);
 
-        //polaczenie
-        // var viewBattery = View.findDrawableById("Battery") as Text;
-        // viewBattery.setColor(getApp().getProperty("ForegroundColor") as Number);
-        // viewBattery.setText("Connected");
+        //STEPS
+        var step = AM.getInfo().steps;
+        var stepsString = step.format("%d");
+        var viewStep = View.findDrawableById("Step") as Text;
+        //viewStep.setColor(getApp().getProperty("ForegroundColor") as Number);
+        viewStep.setText("Steps");
 
-
-
-
+        var viewStepN = View.findDrawableById("StepN") as Text;
+        viewStepN.setText(stepsString);
         
-        // var date = Gregorian.info(Time.now(),Time.FORMAT_SHORT);
-        // var systemStats =System.getSystemStats();
-        // var viewDate = View.findDrawableById("Date").setText(
-        //     date.year.format("%4") + "-" + date.month.format("%02d") + "-" + date.day.format("%02d"));
-        //     viewDate.setColor(getApp().getProperty("ForegroundColor") as Number);
+        //Floors
+        var floors = AM.getInfo().floorsClimbed;
+        var floorsString = floors.format("%d");
+        var viewpietra = View.findDrawableById("Floor") as Text;
+        viewpietra.setText("Floors");
+
+        var viewpietranr = View.findDrawableById("FloorN") as Text;
+        viewpietranr.setText(floorsString);
 
         // Call the parent onUpdate function to redraw the layout
         View.onUpdate(dc);
