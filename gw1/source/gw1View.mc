@@ -57,7 +57,7 @@ class gw1View extends WatchUi.WatchFace {
         //DayOfWeek 
         var day = Gregorian.info(T.now(), T.FORMAT_SHORT);
         var dayOfWeek = View.findDrawableById("DayOfWeek") as Text;
-        dayOfWeek.setText(["Nie", "Pon", "Wto", "Śro", "Czw", "Pią", "Sob"][day.day_of_week - 1]);
+        dayOfWeek.setText(["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"][day.day_of_week - 1]);
 
         var date = Gregorian.info(T.now(), T.FORMAT_SHORT);
         var formatedDate = date.day.format("%02d") + "." + date.month.format("%02d");

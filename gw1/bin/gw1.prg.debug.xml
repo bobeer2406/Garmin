@@ -178,7 +178,7 @@
         <entry endPc="268436950" name="viewpietra" stackId="26" startPc="268435828"/>
         <entry endPc="268436950" name="viewpietranr" stackId="27" startPc="268435828"/>
         <entry arg="true" endPc="268438395" name="dc" stackId="1" startPc="268436952"/>
-        <entry endPc="268438395" name="rez_cmp_local_custom_drawable_60959133094673739183" stackId="2" startPc="268436964"/>
+        <entry endPc="268438395" name="rez_cmp_local_custom_drawable_11845714906459979931" stackId="2" startPc="268436964"/>
         <entry endPc="268438395" name="rez_cmp_local_bitmap_back" stackId="3" startPc="268436964"/>
         <entry endPc="268438395" name="rez_cmp_local_text_MLabel" stackId="4" startPc="268436964"/>
         <entry endPc="268438395" name="rez_cmp_local_text_HLabel" stackId="5" startPc="268436964"/>
