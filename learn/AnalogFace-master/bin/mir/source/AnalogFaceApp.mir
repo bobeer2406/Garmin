@@ -1,0 +1,42 @@
+[ @file = "/Users/piotr/GIT/AnalogFace-master/source/AnalogFaceApp.mc"; @line = 1; ]
+using Toybox.Application;
+[ @file = "/Users/piotr/GIT/AnalogFace-master/source/AnalogFaceApp.mc"; @line = 3; ]
+class AnalogFaceApp extends Application.AppBase{
+    [ @file = "/Users/piotr/GIT/AnalogFace-master/source/AnalogFaceApp.mc"; @line = 3; ]
+    <init> {
+    }
+    [ @file = "/Users/piotr/GIT/AnalogFace-master/source/AnalogFaceApp.mc"; @line = 3; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/piotr/GIT/AnalogFace-master/source/AnalogFaceApp.mc"; @line = 5; ]
+    function initialize() as Void {
+_Users_piotr_GIT_AnalogFace_master_source_AnalogFaceApp_mc_5_26_start:
+[ "/Users/piotr/GIT/AnalogFace-master/source/AnalogFaceApp.mc" 6 8 ]
+        %tmp.2 = getv ? :AppBase;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+_Users_piotr_GIT_AnalogFace_master_source_AnalogFaceApp_mc_5_26_stop:
+    }
+    [ @file = "/Users/piotr/GIT/AnalogFace-master/source/AnalogFaceApp.mc"; @line = 10; ]
+    function onStart(state) {
+    }
+    [ @file = "/Users/piotr/GIT/AnalogFace-master/source/AnalogFaceApp.mc"; @line = 14; ]
+    function onStop(state) {
+    }
+    [ @file = "/Users/piotr/GIT/AnalogFace-master/source/AnalogFaceApp.mc"; @line = 18; ]
+    function getInitialView() {
+_Users_piotr_GIT_AnalogFace_master_source_AnalogFaceApp_mc_18_30_start:
+[ "/Users/piotr/GIT/AnalogFace-master/source/AnalogFaceApp.mc" 19 8 ]
+        %tmp.1 = newa 1;
+        %tmp.5 = getv ? :AnalogFaceView;
+        %tmp.2 = newc %tmp.5 ();
+        %tmp.6 = dup %tmp.1;
+        %tmp.7 = aputv %tmp.6 0 %tmp.2;
+        ret %tmp.7;
+_Users_piotr_GIT_AnalogFace_master_source_AnalogFaceApp_mc_18_30_stop:
+    }
+}
+[ @file = "/Users/piotr/GIT/AnalogFace-master/source/AnalogFaceApp.mc"; @line = 1; ]
+<init> {
+}

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+<manifest filename="/Users/piotr/GIT/garmin new wf/wf2/WF2/manifest.xml"/>
+<pcToLineNum>
+<entry filename="/Users/piotr/GIT/garmin new wf/wf2/WF2/source/WF2View.mc" id="1" lineNum="14" parent="globals/WF2View" pc="268435460" symbol="&lt;init&gt;"/>
+<entry filename="/Users/piotr/GIT/garmin new wf/wf2/WF2/source/WF2View.mc" id="2" lineNum="66" parent="globals/WF2View" pc="268435479" symbol="onExitSleep"/>
+<entry filename="/Users/piotr/GIT/garmin new wf/wf2/WF2/source/WF2View.mc" id="2" lineNum="67" parent="globals/WF2View" pc="268435481" symbol="onExitSleep"/>
+<entry filename="/Users/piotr/GIT/garmin new wf/wf2/WF2/source/WF2View.mc" id="3" lineNum="26" parent="globals/WF2View" pc="268435492" symbol="onLayout"/>
+<entry filename="/Users/piotr/GIT/garmin new wf/wf2/WF2/source/WF2View.mc" id="3" lineNum="27" parent="globals/WF2View" pc="268435494" symbol="onLayout"/>
+<entry filename="/Users/piotr/GIT/garmin new wf/wf2/WF2/source/WF2View.mc" id="3" lineNum="28" parent="globals/WF2View" pc="268435541" symbol="onLayout"/>
+<entry filename="/Users/piotr/GIT/garmin new wf/wf2/WF2/source/WF2View.mc" id="3" lineNum="29" parent="globals/WF2View" pc="268435588" symbol="onLayout"/>
+<entry filename="/Users/piotr/GIT/garmin new wf/wf2/WF2/source/WF2View.mc" id="4" lineNum="71" parent="globals/WF2View" pc="268435636" symbol="onEnterSleep"/>
+<entry filename="/Users/piotr/GIT/garmin new wf/wf2/WF2/source/WF2View.mc" id="4" lineNum="72" parent="globals/WF2View" pc="268435638" symbol="onEnterSleep"/>
+<entry filename="/Users/piotr/GIT/garmin new wf/wf2/WF2/source/WF2View.mc" id="5" lineNum="21" parent="globals/WF2View" pc="268435649" symbol="initialize"/>
+<entry filename="/Users/piotr/GIT/garmin new wf/wf2/WF2/source/WF2View.mc" id="5" lineNum="22" parent="globals/WF2View" pc="268435651" symbol="initialize"/>
+<entry filename="/Users/piotr/GIT/garmin new wf/wf2/WF2/source/WF2View.mc" id="7" lineNum="34" parent="globals/WF2View" pc="268435670" symbol="onUpdate"/>
+<entry filename="/Users/piotr/GIT/garmin new wf/wf2/WF2/source/WF2View.mc" id="7" lineNum="35" parent="globals/WF2View" pc="268435674" symbol="onUpdate"/>
+<entry filename="/Users/piotr/GIT/garmin new wf/wf2/WF2/source/WF2View.mc" id="7" lineNum="36" parent="globals/WF2View" pc="268435698" symbol="onUpdate"/>
+<entry filename="/Users/piotr/GIT/garmin new wf/wf2/WF2/source/WF2View.mc" id="7" lineNum="37" parent="globals/WF2View" pc="268435711" symbol="onUpdate"/>
+<entry filename="/Users/piotr/GIT/garmin new wf/wf2/WF2/source/WF2View.mc" id="7" lineNum="41" parent="globals/WF2View" pc="268435724" symbol="onUpdate"/>
+<entry filename="/Users/piotr/GIT/garmin new wf/wf2/WF2/source/WF2View.mc" id="7" lineNum="42" parent="globals/WF2View" pc="268435746" symbol="onUpdate"/>
+<entry filename="/Users/piotr/GIT/garmin new wf/wf2/WF2/source/WF2View.mc" id="7" lineNum="43" parent="globals/WF2View" pc="268435783" symbol="onUpdate"/>
+<entry filename="/Users/piotr/GIT/garmin new wf/wf2/WF2/source/WF2View.mc" id="7" lineNum="45" parent="globals/WF2View" pc="268435832" symbol="onUpdate"/>
+<entry filename="/Users/piotr/GIT/garmin new wf/wf2/WF2/source/WF2View.mc" id="7" lineNum="46" parent="globals/WF2View" pc="268435854" symbol="onUpdate"/>
+<entry filename="/Users/piotr/GIT/garmin new wf/wf2/WF2/source/WF2View.mc" id="7" lineNum="47" parent="globals/WF2View" pc="268435891" symbol="onUpdate"/>
+<entry filename="/Users/piotr/GIT/garmin new wf/wf2/WF2/source/WF2View.mc" id="7" lineNum="49" parent="globals/WF2View" pc="268435940" symbol="onUpdate"/>
+<entry filename="/Users/piotr/GIT/garmin new wf/wf2/WF2/source/WF2View.mc" id="7" lineNum="50" parent="globals/WF2View" pc="268435962" symbol="onUpdate"/>
+<entry filename="/Users/piotr/GIT/garmin new wf/wf2/WF2/source/WF2View.mc" id="7" lineNum="51" parent="globals/WF2View" pc="268435999" symbol="onUpdate"/>
+<entry filename="/Users/piotr/GIT/garmin new wf/wf2/WF2/source/WF2App.mc" id="8" lineNum="26" parent="globals" pc="268436049" symbol="getApp"/>
+<entry filename="/Users/piotr/GIT/garmin new wf/wf2/WF2/source/WF2App.mc" id="8" lineNum="27" parent="globals" pc="268436059" symbol="getApp"/>
+<entry filename="/Users/piotr/GIT/garmin new wf/wf2/WF2/bin/gen/006-B2544-00/source/Rez.mcgen" id="9" lineNum="7" parent="globals/Rez" pc="268436075" symbol="&lt;init&gt;"/>
+<entry filename="/Users/piotr/GIT/garmin new wf/wf2/WF2/source/WF2App.mc" id="10" lineNum="5" parent="globals/WF2App" pc="268436099" symbol="&lt;init&gt;"/>
+<entry filename="/Users/piotr/GIT/garmin new wf/wf2/WF2/source/WF2App.mc" id="11" lineNum="12" parent="globals/WF2App" pc="268436118" symbol="onStart"/>
+<entry filename="/Users/piotr/GIT/garmin new wf/wf2/WF2/source/WF2App.mc" id="12" lineNum="20" parent="globals/WF2App" pc="268436121" symbol="getInitialView"/>
+<entry filename="/Users/piotr/GIT/garmin new wf/wf2/WF2/source/WF2App.mc" id="12" lineNum="21" parent="globals/WF2App" pc="268436123" symbol="getInitialView"/>
+<entry filename="/Users/piotr/GIT/garmin new wf/wf2/WF2/source/WF2App.mc" id="13" lineNum="7" parent="globals/WF2App" pc="268436164" symbol="initialize"/>
+<entry filename="/Users/piotr/GIT/garmin new wf/wf2/WF2/source/WF2App.mc" id="13" lineNum="8" parent="globals/WF2App" pc="268436166" symbol="initialize"/>
+<entry filename="/Users/piotr/GIT/garmin new wf/wf2/WF2/source/WF2App.mc" id="14" lineNum="16" parent="globals/WF2App" pc="268436185" symbol="onStop"/>
+<entry filename="/Users/piotr/GIT/garmin new wf/wf2/WF2/bin/gen/006-B2544-00/source/Rez.mcgen" id="15" lineNum="24" parent="globals/Rez/Layouts" pc="268436188" symbol="WatchFace"/>
+<entry filename="/Users/piotr/GIT/garmin new wf/wf2/WF2/bin/gen/006-B2544-00/source/Rez.mcgen" id="15" lineNum="25" parent="globals/Rez/Layouts" pc="268436200" symbol="WatchFace"/>
+<entry filename="/Users/piotr/GIT/garmin new wf/wf2/WF2/bin/gen/006-B2544-00/source/Rez.mcgen" id="15" lineNum="27" parent="globals/Rez/Layouts" pc="268436335" symbol="WatchFace"/>
+</pcToLineNum>
+<symbolTable>
+<entry id="8388639" module="true" symbol="Graphics"/>
+<entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+<entry field="true" id="23" symbol="trebuchetMS_75"/>
+<entry id="7" module="true" symbol="globals/Rez/Menus"/>
+<entry field="true" id="22" symbol="trebuchetMS_65"/>
+<entry field="true" id="21" symbol="trebuchetMS_50"/>
+<entry id="9" object="true" symbol="WF2App"/>
+<entry field="true" id="8388611" module="true" symbol="Toybox"/>
+<entry field="true" id="24" symbol="AppName"/>
+<entry id="8388633" module="true" symbol="ActivityMonitor"/>
+<entry id="8" module="true" symbol="globals/Rez/Strings"/>
+<entry id="8388772" module="true" object="true" symbol="Fonts"/>
+<entry field="true" id="13" symbol="customFont75"/>
+<entry field="true" id="12" symbol="customFont65"/>
+<entry id="8388648" module="true" symbol="WatchUi"/>
+<entry id="10" object="true" symbol="WF2View"/>
+<entry id="2" module="true" symbol="globals/Rez"/>
+<entry field="true" id="15" symbol="lowPowerMode"/>
+<entry field="true" id="14" symbol="heart80"/>
+<entry id="8389124" method="true" symbol="onUpdate"/>
+<entry id="8389375" method="true" object="true" symbol="WatchFace"/>
+<entry field="true" id="8389065" symbol="locY"/>
+<entry field="true" id="8389064" symbol="locX"/>
+<entry id="8388771" module="true" object="true" symbol="Drawables"/>
+<entry id="8389348" symbol="font"/>
+<entry id="17" module="true" symbol="Menus"/>
+<entry id="8389275" method="true" symbol="getApp"/>
+<entry id="6" module="true" symbol="globals/Rez/Layouts"/>
+<entry id="8389122" method="true" symbol="onLayout"/>
+<entry id="8389376" method="true" symbol="onEnterSleep"/>
+<entry field="true" id="8389063" symbol="identifier"/>
+<entry id="8389349" symbol="justification"/>
+<entry field="true" id="19" symbol="mvBoliFont100"/>
+<entry id="5" module="true" symbol="globals/Rez/JsonData"/>
+<entry field="true" id="20" symbol="mvBoliFont50"/>
+<entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+<entry field="true" id="11" symbol="customFont"/>
+<entry id="8389377" method="true" symbol="onExitSleep"/>
+<entry id="8388644" module="true" symbol="System"/>
+<entry id="8388645" module="true" symbol="Time"/>
+<entry id="8388769" module="true" object="true" symbol="Rez"/>
+<entry id="8388640" module="true" symbol="Lang"/>
+<entry id="8390088" module="true" object="true" symbol="JsonData"/>
+<entry field="true" id="18" symbol="LauncherIcon"/>
+<entry id="8388610" symbol="statics"/>
+<entry id="8389350" module="true" symbol="globals"/>
+<entry id="8388770" module="true" object="true" symbol="Strings"/>
+<entry id="8388702" method="true" symbol="initialize"/>
+<entry id="8389279" method="true" symbol="onStart"/>
+<entry id="8388641" module="true" symbol="Math"/>
+<entry id="8389280" method="true" symbol="getInitialView"/>
+<entry id="8389281" method="true" symbol="onStop"/>
+<entry id="8389347" symbol="color"/>
+<entry id="16" module="true" symbol="Layouts"/>
+<entry id="4" module="true" symbol="globals/Rez/Fonts"/>
+<entry id="8389125" method="true" symbol="onHide"/>
+<entry id="8388635" module="true" symbol="Application"/>
+</symbolTable>
+<localVars>
+<entry arg="true" endPc="268435635" name="dc" stackId="1" startPc="268435492"/>
+<entry arg="true" endPc="268436048" name="dc" stackId="1" startPc="268435670"/>
+<entry endPc="268436047" name="width" stackId="2" startPc="268435674"/>
+<entry endPc="268436047" name="height" stackId="3" startPc="268435674"/>
+<entry endPc="268436047" name="dateInfo" stackId="4" startPc="268435674"/>
+<entry endPc="268436047" name="dateInfo2" stackId="5" startPc="268435674"/>
+<entry endPc="268436047" name="dateInfo3" stackId="6" startPc="268435674"/>
+<entry arg="true" endPc="268436351" name="dc" stackId="1" startPc="268436188"/>
+<entry endPc="268436351" name="rez_cmp_local_text_TimeLabel" stackId="2" startPc="268436200"/>
+</localVars>
+<annotations>
+<annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="mvBoliFont50"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+<annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="mvBoliFont100"/>
+<annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="trebuchetMS_50"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+<annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="trebuchetMS_75"/>
+<annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="trebuchetMS_65"/>
+</annotations>
+<dataEntryOffsetMappings>
+<dataEntry label="globals" offset="87" parentId="" symbolId="globals" type="module"/>
+<dataEntry label="globals/WF2View" offset="158" parentId="globals" symbolId="WF2View" type="class"/>
+<dataEntry label="globals/Rez" offset="285" parentId="globals" symbolId="Rez" type="module"/>
+<dataEntry label="globals/WF2App" offset="364" parentId="globals" symbolId="WF2App" type="class"/>
+<dataEntry label="globals/Rez/Drawables" offset="435" parentId="Rez" symbolId="Drawables" type="module"/>
+<dataEntry label="globals/Rez/Layouts" offset="474" parentId="Rez" symbolId="Layouts" type="module"/>
+<dataEntry label="globals/Rez/Menus" offset="513" parentId="Rez" symbolId="Menus" type="module"/>
+<dataEntry label="globals/Rez/Fonts" offset="544" parentId="Rez" symbolId="Fonts" type="module"/>
+<dataEntry label="globals/Rez/Strings" offset="615" parentId="Rez" symbolId="Strings" type="module"/>
+<dataEntry label="globals/Rez/JsonData" offset="654" parentId="Rez" symbolId="JsonData" type="module"/>
+</dataEntryOffsetMappings>
+<functions>
+<functionEntry accessMode="public" endPc="268435478" name="&lt;init&gt;" parent="WF2View" startPc="268435460">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435491" name="onExitSleep" parent="WF2View" startPc="268435479">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435635" name="onLayout" parent="WF2View" startPc="268435492">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435648" name="onEnterSleep" parent="WF2View" startPc="268435636">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435669" name="initialize" parent="WF2View" startPc="268435649">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onHide" parent="WF2View">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436048" name="onUpdate" parent="WF2View" startPc="268435670">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436074" name="getApp" startPc="268436049">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436098" name="&lt;init&gt;" parent="Rez" startPc="268436075">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436117" name="&lt;init&gt;" parent="WF2App" startPc="268436099">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436120" name="onStart" parent="WF2App" startPc="268436118">
+<param id="state"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436163" name="getInitialView" parent="WF2App" startPc="268436121">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436184" name="initialize" parent="WF2App" startPc="268436164">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436187" name="onStop" parent="WF2App" startPc="268436185">
+<param id="state"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Layouts">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Menus">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Fonts">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="JsonData">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436351" name="WatchFace" parent="Layouts" startPc="268436188">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+</functions>
+</debugInfo>

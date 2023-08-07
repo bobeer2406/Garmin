@@ -18,7 +18,7 @@ module Rez {
 
     module Layouts {
         function WatchFace(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
-            var rez_cmp_local_custom_drawable_11845714906459979931 = new Background();
+            var rez_cmp_local_custom_drawable_17405528232143568635 = new Background();
 
             var rez_cmp_local_bitmap_back = new WatchUi.Bitmap({:identifier=>"back", :rezId=>$.Rez.Drawables.back, :locX=>WatchUi.LAYOUT_HALIGN_CENTER, :locY=>WatchUi.LAYOUT_VALIGN_CENTER});
             rez_cmp_local_bitmap_back.setLocation(((218 - rez_cmp_local_bitmap_back.width) * 0.5), ((218 - rez_cmp_local_bitmap_back.height) * 0.5));
@@ -43,7 +43,7 @@ module Rez {
 
             var rez_cmp_local_text_Date = new WatchUi.Text({:identifier=>"Date", :color=>Graphics.COLOR_WHITE, :locX=>(218 * (30 / 100.0)), :locY=>(218 * (18 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_MEDIUM});
 
-            return [rez_cmp_local_custom_drawable_11845714906459979931, rez_cmp_local_bitmap_back, rez_cmp_local_text_MLabel, rez_cmp_local_text_HLabel, rez_cmp_local_text_Step, rez_cmp_local_text_StepN, rez_cmp_local_text_Floor, rez_cmp_local_text_FloorN, rez_cmp_local_text_Bat, rez_cmp_local_text_BatN, rez_cmp_local_text_DayOfWeek, rez_cmp_local_text_Date] as Array<WatchUi.Drawable>;
+            return [rez_cmp_local_custom_drawable_17405528232143568635, rez_cmp_local_bitmap_back, rez_cmp_local_text_MLabel, rez_cmp_local_text_HLabel, rez_cmp_local_text_Step, rez_cmp_local_text_StepN, rez_cmp_local_text_Floor, rez_cmp_local_text_FloorN, rez_cmp_local_text_Bat, rez_cmp_local_text_BatN, rez_cmp_local_text_DayOfWeek, rez_cmp_local_text_Date] as Array<WatchUi.Drawable>;
         }
     } // Layouts
 
