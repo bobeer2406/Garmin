@@ -1,0 +1,6 @@
+<fonts> 
+  <font id="QSandFS" filename="QSandFS.fnt" filter="0123456789.:-ftpedslor {}+_"/>
+  <font id="QSand" filename="QSand.fnt" filter="0123456789.:-"/>
+  <font id="QSand28" filename="QSand28.fnt" filter="0123456789.:-"/>
+   <font id="QSand_100" filename="QSand_100.fnt" filter="0123456789.:-"/>
+</fonts>

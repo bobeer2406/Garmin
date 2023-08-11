@@ -1,0 +1,14 @@
+<drawables>
+    <bitmap id="Tapeta" filename="tapeta5.png" />
+    <bitmap id="LauncherIcon" filename="launcher_icon.png" />
+    <bitmap id="Battery" filename="battery.png" />
+    <bitmap id="Battery15" filename="battery15.png" />
+    <bitmap id="Battery32" filename="battery32.png" />
+    <bitmap id="Battery50" filename="battery50.png" />
+    <bitmap id="Battery66" filename="battery66.png" />
+    <bitmap id="Battery83" filename="battery83.png" />
+    <bitmap id="BT" filename="BT.png" />
+    <bitmap id="BTn" filename="BTn.png" />
+
+
+</drawables>
