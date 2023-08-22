@@ -1,0 +1,1234 @@
+[ @file = "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc"; @line = 2; ]
+import Toybox.Lang;
+[ @file = "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc"; @line = 3; ]
+import Toybox.WatchUi;
+[ @file = "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc"; @line = 4; ]
+import Toybox.ActivityMonitor;
+[ @file = "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc"; @line = 5; ]
+import Toybox.Math;
+[ @file = "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc"; @line = 6; ]
+using Toybox.Graphics as :Gfx;
+[ @file = "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc"; @line = 7; ]
+using Toybox.Time.Gregorian as :Calendar;
+[ @file = "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc"; @line = 8; ]
+using Toybox.Time as :Time;
+[ @file = "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc"; @line = 9; ]
+using Toybox.ActivityMonitor as :AM;
+[ @file = "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc"; @line = 10; ]
+using Toybox.System as :S;
+[ @file = "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc"; @line = 11; ]
+using Toybox.BluetoothLowEnergy as :BT;
+[ @file = "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc"; @line = 13; ]
+class GWView extends WatchUi.WatchFace{
+    [ @file = "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc"; @line = 13; ]
+    <init> {
+    }
+    [ @file = "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc"; @line = 13; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc"; @line = 14; @position = 6; ]
+    var customLat_85 = true;
+    [ @file = "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc"; @line = 15; @position = 6; ]
+    var customLat_20 = true;
+    [ @file = "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc"; @line = 16; @position = 6; ]
+    var lowPowerMode = true;
+    [ @file = "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc"; @line = 17; @position = 6; ]
+    var customQSand = null;
+    [ @file = "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc"; @line = 18; @position = 6; ]
+    var customQSand28 = null;
+    [ @file = "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc"; @line = 19; @position = 6; ]
+    var customQSand_100 = null;
+    [ @file = "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc"; @line = 20; @position = 6; ]
+    var bt = null;
+    [ @file = "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc"; @line = 21; @position = 6; ]
+    var btn = null;
+    [ @file = "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc"; @line = 23; ]
+    function initialize() as Void {
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_23_24_start:
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 23 26 ]
+        %tmp.2 = getv ? :WatchFace;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_23_24_stop:
+    }
+    [ @file = "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc"; @line = 26; ]
+    function onLayout(dc) {
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_26_24_start:
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 27 4 ]
+        %tmp.1 = getm $.Toybox.WatchUi;
+        %tmp.2 = getv function %tmp.1 :loadResource;
+        %tmp.4 = getv ? :Rez;
+        %tmp.5 = getv %tmp.4 :Fonts;
+        %tmp.6 = getv %tmp.5 :Latin_85;
+        %tmp.7 = invoke %tmp.1 %tmp.2(%tmp.6);
+        putv self :customLat_85 %tmp.7;
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 28 4 ]
+        %tmp.8 = getm $.Toybox.WatchUi;
+        %tmp.9 = getv function %tmp.8 :loadResource;
+        %tmp.11 = getv ? :Rez;
+        %tmp.12 = getv %tmp.11 :Fonts;
+        %tmp.13 = getv %tmp.12 :Latin_20;
+        %tmp.14 = invoke %tmp.8 %tmp.9(%tmp.13);
+        putv self :customLat_20 %tmp.14;
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 29 4 ]
+        %tmp.15 = getm $.Toybox.WatchUi;
+        %tmp.16 = getv function %tmp.15 :loadResource;
+        %tmp.18 = getv ? :Rez;
+        %tmp.19 = getv %tmp.18 :Fonts;
+        %tmp.20 = getv %tmp.19 :QSand;
+        %tmp.21 = invoke %tmp.15 %tmp.16(%tmp.20);
+        putv self :customQSand %tmp.21;
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 30 4 ]
+        %tmp.22 = getm $.Toybox.WatchUi;
+        %tmp.23 = getv function %tmp.22 :loadResource;
+        %tmp.25 = getv ? :Rez;
+        %tmp.26 = getv %tmp.25 :Fonts;
+        %tmp.27 = getv %tmp.26 :QSand28;
+        %tmp.28 = invoke %tmp.22 %tmp.23(%tmp.27);
+        putv self :customQSand28 %tmp.28;
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 31 4 ]
+        %tmp.29 = getm $.Toybox.WatchUi;
+        %tmp.30 = getv function %tmp.29 :loadResource;
+        %tmp.32 = getv ? :Rez;
+        %tmp.33 = getv %tmp.32 :Fonts;
+        %tmp.34 = getv %tmp.33 :QSand_100;
+        %tmp.35 = invoke %tmp.29 %tmp.30(%tmp.34);
+        putv self :customQSand_100 %tmp.35;
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 32 4 ]
+        %tmp.36 = getm $.Toybox.WatchUi;
+        %tmp.37 = getv function %tmp.36 :loadResource;
+        %tmp.39 = getv ? :Rez;
+        %tmp.40 = getv %tmp.39 :Drawables;
+        %tmp.41 = getv %tmp.40 :BT;
+        %tmp.42 = invoke %tmp.36 %tmp.37(%tmp.41);
+        putv self :bt %tmp.42;
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 33 4 ]
+        %tmp.43 = getm $.Toybox.WatchUi;
+        %tmp.44 = getv function %tmp.43 :loadResource;
+        %tmp.46 = getv ? :Rez;
+        %tmp.47 = getv %tmp.46 :Drawables;
+        %tmp.48 = getv %tmp.47 :BTn;
+        %tmp.49 = invoke %tmp.43 %tmp.44(%tmp.48);
+        putv self :btn %tmp.49;
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_26_24_stop:
+    }
+    [ @file = "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc"; @line = 37; ]
+    function onUpdate(dc) {
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_37_24_start:
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 38 4 ]
+        %tmp.2 = getv ? :View;
+        %tmp.3 = getv function %tmp.2 :onUpdate;
+        %tmp.5 = lgetv %dc;
+        invoke %tmp.2 %tmp.3(%tmp.5);
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 41 4 ]
+        %tmp.6 = lgetv %dc;
+        %tmp.7 = getv function %tmp.6 :setColor;
+        %tmp.8 = getm $.Toybox.Graphics;
+        %tmp.9 = getv %tmp.8 :COLOR_LT_GRAY;
+        %tmp.10 = getm $.Toybox.Graphics;
+        %tmp.11 = getv %tmp.10 :COLOR_TRANSPARENT;
+        invoke %tmp.6 %tmp.7(%tmp.9, %tmp.11);
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 42 4 ]
+        [ "C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_37_24_start" "C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_37_24_stop" ]
+        %time.1 = local;
+        %tmp.13 = getv ? :System;
+        %tmp.14 = getv function %tmp.13 :getClockTime;
+        %tmp.15 = invoke %tmp.13 %tmp.14();
+        lputv %time.1 %tmp.15;
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 43 4 ]
+        [ "C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_37_24_start" "C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_37_24_stop" ]
+        %tFormatH.2 = local;
+        %tmp.16 = lgetv %time.1;
+        %tmp.17 = getv %tmp.16 :hour;
+        %tmp.18 = getv function %tmp.17 :format;
+        %tmp.19 = "%02d";
+        %tmp.20 = invoke %tmp.17 %tmp.18(%tmp.19);
+        lputv %tFormatH.2 %tmp.20;
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 44 4 ]
+        [ "C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_37_24_start" "C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_37_24_stop" ]
+        %tFormatM.3 = local;
+        %tmp.21 = lgetv %time.1;
+        %tmp.22 = getv %tmp.21 :min;
+        %tmp.23 = getv function %tmp.22 :format;
+        %tmp.24 = "%02d";
+        %tmp.25 = invoke %tmp.22 %tmp.23(%tmp.24);
+        lputv %tFormatM.3 %tmp.25;
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 46 4 ]
+        %tmp.26 = lgetv %dc;
+        %tmp.27 = getv function %tmp.26 :setColor;
+        %tmp.28 = getm $.Toybox.Graphics;
+        %tmp.29 = getv %tmp.28 :COLOR_WHITE;
+        %tmp.30 = getm $.Toybox.Graphics;
+        %tmp.31 = getv %tmp.30 :COLOR_TRANSPARENT;
+        invoke %tmp.26 %tmp.27(%tmp.29, %tmp.31);
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 47 4 ]
+        %tmp.32 = lgetv %dc;
+        %tmp.33 = getv function %tmp.32 :drawText;
+        %tmp.34 = 90;
+        %tmp.35 = 30;
+        %tmp.37 = getv ? :customLat_85;
+        %tmp.39 = lgetv %tFormatH.2;
+        %tmp.40 = getm $.Toybox.Graphics;
+        %tmp.41 = getv %tmp.40 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.32 %tmp.33(%tmp.34, %tmp.35, %tmp.37, %tmp.39, %tmp.41);
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 48 4 ]
+        %tmp.42 = lgetv %dc;
+        %tmp.43 = getv function %tmp.42 :setColor;
+        %tmp.44 = getm $.Toybox.Graphics;
+        %tmp.45 = getv %tmp.44 :COLOR_LT_GRAY;
+        %tmp.46 = getm $.Toybox.Graphics;
+        %tmp.47 = getv %tmp.46 :COLOR_TRANSPARENT;
+        invoke %tmp.42 %tmp.43(%tmp.45, %tmp.47);
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 49 4 ]
+        %tmp.48 = lgetv %dc;
+        %tmp.49 = getv function %tmp.48 :drawText;
+        %tmp.50 = 125;
+        %tmp.51 = 95;
+        %tmp.53 = getv ? :customLat_85;
+        %tmp.55 = lgetv %tFormatM.3;
+        %tmp.56 = getm $.Toybox.Graphics;
+        %tmp.57 = getv %tmp.56 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.48 %tmp.49(%tmp.50, %tmp.51, %tmp.53, %tmp.55, %tmp.57);
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 50 4 ]
+        %tmp.58 = lgetv %dc;
+        %tmp.59 = getv function %tmp.58 :setColor;
+        %tmp.60 = getm $.Toybox.Graphics;
+        %tmp.61 = getv %tmp.60 :COLOR_BLUE;
+        %tmp.62 = getm $.Toybox.Graphics;
+        %tmp.63 = getv %tmp.62 :COLOR_TRANSPARENT;
+        invoke %tmp.58 %tmp.59(%tmp.61, %tmp.63);
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 52 4 ]
+        [ "C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_37_24_start" "C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_37_24_stop" ]
+        %mySystem.4 = local;
+        %tmp.65 = getv ? :System;
+        %tmp.66 = getv function %tmp.65 :getDeviceSettings;
+        %tmp.67 = invoke %tmp.65 %tmp.66();
+        lputv %mySystem.4 %tmp.67;
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 53 4 ]
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_53_4_if_stmt:
+        %tmp.68 = lgetv %mySystem.4;
+        %tmp.69 = getv %tmp.68 :phoneConnected;
+        bf %tmp.69 @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_53_4_if_false;
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_53_4_if_true:
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_53_33_start:
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 54 6 ]
+        %tmp.70 = lgetv %dc;
+        %tmp.71 = getv function %tmp.70 :setColor;
+        %tmp.72 = getm $.Toybox.Graphics;
+        %tmp.73 = getv %tmp.72 :COLOR_BLUE;
+        %tmp.74 = getm $.Toybox.Graphics;
+        %tmp.75 = getv %tmp.74 :COLOR_TRANSPARENT;
+        invoke %tmp.70 %tmp.71(%tmp.73, %tmp.75);
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_53_33_stop:
+        goto @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_53_4_if_end;
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_53_4_if_false:
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_55_11_start:
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 56 7 ]
+        %tmp.76 = lgetv %dc;
+        %tmp.77 = getv function %tmp.76 :setColor;
+        %tmp.78 = getm $.Toybox.Graphics;
+        %tmp.79 = getv %tmp.78 :COLOR_RED;
+        %tmp.80 = getm $.Toybox.Graphics;
+        %tmp.81 = getv %tmp.80 :COLOR_TRANSPARENT;
+        invoke %tmp.76 %tmp.77(%tmp.79, %tmp.81);
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_55_11_stop:
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_53_4_if_end:
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 59 4 ]
+        %tmp.82 = lgetv %dc;
+        %tmp.83 = getv function %tmp.82 :drawLine;
+        %tmp.84 = 38;
+        %tmp.85 = 105;
+        %tmp.86 = 130;
+        %tmp.87 = 105;
+        invoke %tmp.82 %tmp.83(%tmp.84, %tmp.85, %tmp.86, %tmp.87);
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 61 4 ]
+        %tmp.88 = lgetv %dc;
+        %tmp.89 = getv function %tmp.88 :drawLine;
+        %tmp.90 = 38;
+        %tmp.91 = 107;
+        %tmp.92 = 130;
+        %tmp.93 = 107;
+        invoke %tmp.88 %tmp.89(%tmp.90, %tmp.91, %tmp.92, %tmp.93);
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 64 4 ]
+        %tmp.94 = lgetv %dc;
+        %tmp.95 = getv function %tmp.94 :setColor;
+        %tmp.96 = getm $.Toybox.Graphics;
+        %tmp.97 = getv %tmp.96 :COLOR_LT_GRAY;
+        %tmp.98 = getm $.Toybox.Graphics;
+        %tmp.99 = getv %tmp.98 :COLOR_TRANSPARENT;
+        invoke %tmp.94 %tmp.95(%tmp.97, %tmp.99);
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 65 4 ]
+        [ "C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_37_24_start" "C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_37_24_stop" ]
+        %dateInfo4.5 = local;
+        %tmp.100 = getm $.Toybox.Time.Gregorian;
+        %tmp.101 = getv function %tmp.100 :info;
+        %tmp.102 = getm $.Toybox.Time;
+        %tmp.103 = getv function %tmp.102 :now;
+        %tmp.104 = invoke %tmp.102 %tmp.103();
+        %tmp.105 = getm $.Toybox.Time;
+        %tmp.106 = getv %tmp.105 :FORMAT_MEDIUM;
+        %tmp.107 = invoke %tmp.100 %tmp.101(%tmp.104, %tmp.106);
+        lputv %dateInfo4.5 %tmp.107;
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 66 4 ]
+        [ "C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_37_24_start" "C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_37_24_stop" ]
+        %dateInfo.6 = local;
+        %tmp.108 = getm $.Toybox.Time.Gregorian;
+        %tmp.109 = getv function %tmp.108 :info;
+        %tmp.110 = getm $.Toybox.Time;
+        %tmp.111 = getv function %tmp.110 :now;
+        %tmp.112 = invoke %tmp.110 %tmp.111();
+        %tmp.113 = getm $.Toybox.Time;
+        %tmp.114 = getv %tmp.113 :FORMAT_SHORT;
+        %tmp.115 = invoke %tmp.108 %tmp.109(%tmp.112, %tmp.114);
+        lputv %dateInfo.6 %tmp.115;
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 67 4 ]
+        [ "C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_37_24_start" "C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_37_24_stop" ]
+        %dateformat.7 = local;
+        %tmp.116 = lgetv %dateInfo4.5;
+        %tmp.117 = getv %tmp.116 :day;
+        %tmp.118 = getv function %tmp.117 :format;
+        %tmp.119 = "%02d";
+        %tmp.120 = invoke %tmp.117 %tmp.118(%tmp.119);
+        %tmp.121 = ".";
+        %tmp.122 = add %tmp.120 %tmp.121;
+        %tmp.123 = lgetv %dateInfo.6;
+        %tmp.124 = getv %tmp.123 :month;
+        %tmp.125 = getv function %tmp.124 :format;
+        %tmp.126 = "%02d";
+        %tmp.127 = invoke %tmp.124 %tmp.125(%tmp.126);
+        %tmp.128 = add %tmp.122 %tmp.127;
+        lputv %dateformat.7 %tmp.128;
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 69 5 ]
+        %tmp.129 = lgetv %dc;
+        %tmp.130 = getv function %tmp.129 :drawText;
+        %tmp.131 = 180;
+        %tmp.132 = 50;
+        %tmp.134 = getv ? :customLat_20;
+        %tmp.135 = "DT: ";
+        %tmp.136 = getm $.Toybox.Graphics;
+        %tmp.137 = getv %tmp.136 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.129 %tmp.130(%tmp.131, %tmp.132, %tmp.134, %tmp.135, %tmp.137);
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 70 5 ]
+        %tmp.138 = lgetv %dc;
+        %tmp.139 = getv function %tmp.138 :drawText;
+        %tmp.140 = 180;
+        %tmp.141 = 70;
+        %tmp.143 = getv ? :customLat_20;
+        %tmp.145 = lgetv %dateformat.7;
+        %tmp.146 = getm $.Toybox.Graphics;
+        %tmp.147 = getv %tmp.146 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.138 %tmp.139(%tmp.140, %tmp.141, %tmp.143, %tmp.145, %tmp.147);
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 73 4 ]
+        %tmp.148 = lgetv %dc;
+        %tmp.149 = getv function %tmp.148 :setColor;
+        %tmp.150 = getm $.Toybox.Graphics;
+        %tmp.151 = getv %tmp.150 :COLOR_WHITE;
+        %tmp.152 = getm $.Toybox.Graphics;
+        %tmp.153 = getv %tmp.152 :COLOR_TRANSPARENT;
+        invoke %tmp.148 %tmp.149(%tmp.151, %tmp.153);
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 74 4 ]
+        [ "C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_37_24_start" "C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_37_24_stop" ]
+        %step.8 = local;
+        %tmp.154 = getm $.Toybox.ActivityMonitor;
+        %tmp.155 = getv function %tmp.154 :getInfo;
+        %tmp.156 = invoke %tmp.154 %tmp.155();
+        %tmp.157 = getv %tmp.156 :steps;
+        lputv %step.8 %tmp.157;
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 75 4 ]
+        [ "C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_37_24_start" "C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_37_24_stop" ]
+        %stepGoal.9 = local;
+        %tmp.158 = getm $.Toybox.ActivityMonitor;
+        %tmp.159 = getv function %tmp.158 :getInfo;
+        %tmp.160 = invoke %tmp.158 %tmp.159();
+        %tmp.161 = getv %tmp.160 :stepGoal;
+        lputv %stepGoal.9 %tmp.161;
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 76 4 ]
+        [ "C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_37_24_start" "C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_37_24_stop" ]
+        %step10.10 = local;
+        %tmp.163 = lgetv %stepGoal.9;
+        %tmp.164 = 0.1;
+        %tmp.165 = mul %tmp.163 %tmp.164;
+        lputv %step10.10 %tmp.165;
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 77 4 ]
+        [ "C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_37_24_start" "C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_37_24_stop" ]
+        %step30.11 = local;
+        %tmp.167 = lgetv %stepGoal.9;
+        %tmp.168 = 0.3;
+        %tmp.169 = mul %tmp.167 %tmp.168;
+        lputv %step30.11 %tmp.169;
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 78 4 ]
+        [ "C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_37_24_start" "C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_37_24_stop" ]
+        %step50.12 = local;
+        %tmp.171 = lgetv %stepGoal.9;
+        %tmp.172 = 0.5;
+        %tmp.173 = mul %tmp.171 %tmp.172;
+        lputv %step50.12 %tmp.173;
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 79 4 ]
+        [ "C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_37_24_start" "C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_37_24_stop" ]
+        %step70.13 = local;
+        %tmp.175 = lgetv %stepGoal.9;
+        %tmp.176 = 0.7;
+        %tmp.177 = mul %tmp.175 %tmp.176;
+        lputv %step70.13 %tmp.177;
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 80 4 ]
+        [ "C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_37_24_start" "C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_37_24_stop" ]
+        %step90.14 = local;
+        %tmp.179 = lgetv %stepGoal.9;
+        %tmp.180 = 0.9;
+        %tmp.181 = mul %tmp.179 %tmp.180;
+        lputv %step90.14 %tmp.181;
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 81 4 ]
+        [ "C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_37_24_start" "C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_37_24_stop" ]
+        %step100.15 = local;
+        %tmp.183 = lgetv %stepGoal.9;
+        %tmp.184 = 1;
+        %tmp.185 = mul %tmp.183 %tmp.184;
+        lputv %step100.15 %tmp.185;
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 83 4 ]
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_83_4_if_stmt:
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_83_7_begin:
+        %tmp.187 = lgetv %step.8;
+        %tmp.188 = 0;
+        %tmp.189 = gte %tmp.187 %tmp.188;
+        %tmp.190 = dup %tmp.189;
+        bf %tmp.190 @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_83_20_end;
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_83_20_true:
+        %tmp.192 = lgetv %step.8;
+        %tmp.194 = lgetv %step10.10;
+        %tmp.195 = lte %tmp.192 %tmp.194;
+        %tmp.196 = and %tmp.189 %tmp.195;
+        push %tmp.196;
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_83_20_end:
+        %tmp.197 = phi [%tmp.190 @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_83_7_begin] [%tmp.196 @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_83_20_true] [%tmp.197 @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_83_20_end];
+        bf %tmp.197 @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_83_4_if_false;
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_83_4_if_true:
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_83_35_start:
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 84 6 ]
+        %tmp.198 = lgetv %dc;
+        %tmp.199 = getv function %tmp.198 :setColor;
+        %tmp.200 = getm $.Toybox.Graphics;
+        %tmp.201 = getv %tmp.200 :COLOR_RED;
+        %tmp.202 = getm $.Toybox.Graphics;
+        %tmp.203 = getv %tmp.202 :COLOR_TRANSPARENT;
+        invoke %tmp.198 %tmp.199(%tmp.201, %tmp.203);
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_83_35_stop:
+        goto @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_83_4_if_end;
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_83_4_if_false:
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 85 10 ]
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_85_10_if_stmt:
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_85_13_begin:
+        %tmp.205 = lgetv %step.8;
+        %tmp.207 = lgetv %step10.10;
+        %tmp.208 = gt %tmp.205 %tmp.207;
+        %tmp.209 = dup %tmp.208;
+        bf %tmp.209 @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_85_30_end;
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_85_30_true:
+        %tmp.211 = lgetv %step.8;
+        %tmp.213 = lgetv %step30.11;
+        %tmp.214 = lte %tmp.211 %tmp.213;
+        %tmp.215 = and %tmp.208 %tmp.214;
+        push %tmp.215;
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_85_30_end:
+        %tmp.216 = phi [%tmp.209 @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_85_13_begin] [%tmp.215 @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_85_30_true] [%tmp.216 @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_85_30_end];
+        bf %tmp.216 @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_85_10_if_false;
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_85_10_if_true:
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_85_45_start:
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 86 6 ]
+        %tmp.217 = lgetv %dc;
+        %tmp.218 = getv function %tmp.217 :setColor;
+        %tmp.219 = getm $.Toybox.Graphics;
+        %tmp.220 = getv %tmp.219 :COLOR_YELLOW;
+        %tmp.221 = getm $.Toybox.Graphics;
+        %tmp.222 = getv %tmp.221 :COLOR_TRANSPARENT;
+        invoke %tmp.217 %tmp.218(%tmp.220, %tmp.222);
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_85_45_stop:
+        goto @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_85_10_if_end;
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_85_10_if_false:
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 87 10 ]
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_87_10_if_stmt:
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_87_13_begin:
+        %tmp.224 = lgetv %step.8;
+        %tmp.226 = lgetv %step30.11;
+        %tmp.227 = gt %tmp.224 %tmp.226;
+        %tmp.228 = dup %tmp.227;
+        bf %tmp.228 @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_87_30_end;
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_87_30_true:
+        %tmp.230 = lgetv %step.8;
+        %tmp.232 = lgetv %step50.12;
+        %tmp.233 = lte %tmp.230 %tmp.232;
+        %tmp.234 = and %tmp.227 %tmp.233;
+        push %tmp.234;
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_87_30_end:
+        %tmp.235 = phi [%tmp.228 @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_87_13_begin] [%tmp.234 @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_87_30_true] [%tmp.235 @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_87_30_end];
+        bf %tmp.235 @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_87_10_if_false;
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_87_10_if_true:
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_87_45_start:
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 88 6 ]
+        %tmp.236 = lgetv %dc;
+        %tmp.237 = getv function %tmp.236 :setColor;
+        %tmp.238 = getm $.Toybox.Graphics;
+        %tmp.239 = getv %tmp.238 :COLOR_GREEN;
+        %tmp.240 = getm $.Toybox.Graphics;
+        %tmp.241 = getv %tmp.240 :COLOR_TRANSPARENT;
+        invoke %tmp.236 %tmp.237(%tmp.239, %tmp.241);
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_87_45_stop:
+        goto @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_87_10_if_end;
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_87_10_if_false:
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 89 10 ]
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_89_10_if_stmt:
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_89_13_begin:
+        %tmp.243 = lgetv %step.8;
+        %tmp.245 = lgetv %step50.12;
+        %tmp.246 = gt %tmp.243 %tmp.245;
+        %tmp.247 = dup %tmp.246;
+        bf %tmp.247 @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_89_30_end;
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_89_30_true:
+        %tmp.249 = lgetv %step.8;
+        %tmp.251 = lgetv %step70.13;
+        %tmp.252 = lte %tmp.249 %tmp.251;
+        %tmp.253 = and %tmp.246 %tmp.252;
+        push %tmp.253;
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_89_30_end:
+        %tmp.254 = phi [%tmp.247 @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_89_13_begin] [%tmp.253 @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_89_30_true] [%tmp.254 @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_89_30_end];
+        bf %tmp.254 @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_89_10_if_false;
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_89_10_if_true:
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_89_45_start:
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 90 6 ]
+        %tmp.255 = lgetv %dc;
+        %tmp.256 = getv function %tmp.255 :setColor;
+        %tmp.257 = getm $.Toybox.Graphics;
+        %tmp.258 = getv %tmp.257 :COLOR_PURPLE;
+        %tmp.259 = getm $.Toybox.Graphics;
+        %tmp.260 = getv %tmp.259 :COLOR_TRANSPARENT;
+        invoke %tmp.255 %tmp.256(%tmp.258, %tmp.260);
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_89_45_stop:
+        goto @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_89_10_if_end;
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_89_10_if_false:
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 91 10 ]
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_91_10_if_stmt:
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_91_13_begin:
+        %tmp.262 = lgetv %step.8;
+        %tmp.264 = lgetv %step70.13;
+        %tmp.265 = gt %tmp.262 %tmp.264;
+        %tmp.266 = dup %tmp.265;
+        bf %tmp.266 @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_91_30_end;
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_91_30_true:
+        %tmp.268 = lgetv %step.8;
+        %tmp.270 = lgetv %step90.14;
+        %tmp.271 = lte %tmp.268 %tmp.270;
+        %tmp.272 = and %tmp.265 %tmp.271;
+        push %tmp.272;
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_91_30_end:
+        %tmp.273 = phi [%tmp.266 @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_91_13_begin] [%tmp.272 @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_91_30_true] [%tmp.273 @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_91_30_end];
+        bf %tmp.273 @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_91_10_if_false;
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_91_10_if_true:
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_91_45_start:
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 92 6 ]
+        %tmp.274 = lgetv %dc;
+        %tmp.275 = getv function %tmp.274 :setColor;
+        %tmp.276 = getm $.Toybox.Graphics;
+        %tmp.277 = getv %tmp.276 :COLOR_ORANGE;
+        %tmp.278 = getm $.Toybox.Graphics;
+        %tmp.279 = getv %tmp.278 :COLOR_TRANSPARENT;
+        invoke %tmp.274 %tmp.275(%tmp.277, %tmp.279);
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_91_45_stop:
+        goto @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_91_10_if_end;
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_91_10_if_false:
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 93 10 ]
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_93_10_if_stmt:
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_93_13_begin:
+        %tmp.281 = lgetv %step.8;
+        %tmp.283 = lgetv %step90.14;
+        %tmp.284 = gt %tmp.281 %tmp.283;
+        %tmp.285 = dup %tmp.284;
+        bf %tmp.285 @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_93_30_end;
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_93_30_true:
+        %tmp.287 = lgetv %step.8;
+        %tmp.289 = lgetv %step100.15;
+        %tmp.290 = lt %tmp.287 %tmp.289;
+        %tmp.291 = and %tmp.284 %tmp.290;
+        push %tmp.291;
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_93_30_end:
+        %tmp.292 = phi [%tmp.285 @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_93_13_begin] [%tmp.291 @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_93_30_true] [%tmp.292 @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_93_30_end];
+        bf %tmp.292 @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_93_10_if_end;
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_93_10_if_true:
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_93_45_start:
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 94 6 ]
+        %tmp.293 = lgetv %dc;
+        %tmp.294 = getv function %tmp.293 :setColor;
+        %tmp.295 = getm $.Toybox.Graphics;
+        %tmp.296 = getv %tmp.295 :COLOR_BLUE;
+        %tmp.297 = getm $.Toybox.Graphics;
+        %tmp.298 = getv %tmp.297 :COLOR_TRANSPARENT;
+        invoke %tmp.293 %tmp.294(%tmp.296, %tmp.298);
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_93_45_stop:
+        goto @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_93_10_if_end;
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_93_10_if_end:
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_91_10_if_end:
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_89_10_if_end:
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_87_10_if_end:
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_85_10_if_end:
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_83_4_if_end:
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 97 4 ]
+        %tmp.299 = lgetv %dc;
+        %tmp.300 = getv function %tmp.299 :drawText;
+        %tmp.301 = 115;
+        %tmp.302 = 10;
+        %tmp.304 = getv ? :customLat_20;
+        %tmp.305 = "ST:";
+        %tmp.307 = lgetv %step.8;
+        %tmp.308 = add %tmp.305 %tmp.307;
+        %tmp.309 = getm $.Toybox.Graphics;
+        %tmp.310 = getv %tmp.309 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.299 %tmp.300(%tmp.301, %tmp.302, %tmp.304, %tmp.308, %tmp.310);
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 100 4 ]
+        %tmp.311 = lgetv %dc;
+        %tmp.312 = getv function %tmp.311 :setColor;
+        %tmp.313 = getm $.Toybox.Graphics;
+        %tmp.314 = getv %tmp.313 :COLOR_RED;
+        %tmp.315 = getm $.Toybox.Graphics;
+        %tmp.316 = getv %tmp.315 :COLOR_TRANSPARENT;
+        invoke %tmp.311 %tmp.312(%tmp.314, %tmp.316);
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 101 4 ]
+        %tmp.317 = lgetv %dc;
+        %tmp.318 = getv function %tmp.317 :drawCircle;
+        %tmp.319 = 82;
+        %tmp.320 = 35;
+        %tmp.321 = 3;
+        invoke %tmp.317 %tmp.318(%tmp.319, %tmp.320, %tmp.321);
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 102 4 ]
+        %tmp.322 = lgetv %dc;
+        %tmp.323 = getv function %tmp.322 :setColor;
+        %tmp.324 = getm $.Toybox.Graphics;
+        %tmp.325 = getv %tmp.324 :COLOR_YELLOW;
+        %tmp.326 = getm $.Toybox.Graphics;
+        %tmp.327 = getv %tmp.326 :COLOR_TRANSPARENT;
+        invoke %tmp.322 %tmp.323(%tmp.325, %tmp.327);
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 103 4 ]
+        %tmp.328 = lgetv %dc;
+        %tmp.329 = getv function %tmp.328 :drawCircle;
+        %tmp.330 = 92;
+        %tmp.331 = 35;
+        %tmp.332 = 3;
+        invoke %tmp.328 %tmp.329(%tmp.330, %tmp.331, %tmp.332);
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 104 4 ]
+        %tmp.333 = lgetv %dc;
+        %tmp.334 = getv function %tmp.333 :setColor;
+        %tmp.335 = getm $.Toybox.Graphics;
+        %tmp.336 = getv %tmp.335 :COLOR_GREEN;
+        %tmp.337 = getm $.Toybox.Graphics;
+        %tmp.338 = getv %tmp.337 :COLOR_TRANSPARENT;
+        invoke %tmp.333 %tmp.334(%tmp.336, %tmp.338);
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 105 4 ]
+        %tmp.339 = lgetv %dc;
+        %tmp.340 = getv function %tmp.339 :drawCircle;
+        %tmp.341 = 102;
+        %tmp.342 = 35;
+        %tmp.343 = 3;
+        invoke %tmp.339 %tmp.340(%tmp.341, %tmp.342, %tmp.343);
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 106 4 ]
+        %tmp.344 = lgetv %dc;
+        %tmp.345 = getv function %tmp.344 :setColor;
+        %tmp.346 = getm $.Toybox.Graphics;
+        %tmp.347 = getv %tmp.346 :COLOR_PURPLE;
+        %tmp.348 = getm $.Toybox.Graphics;
+        %tmp.349 = getv %tmp.348 :COLOR_TRANSPARENT;
+        invoke %tmp.344 %tmp.345(%tmp.347, %tmp.349);
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 107 4 ]
+        %tmp.350 = lgetv %dc;
+        %tmp.351 = getv function %tmp.350 :drawCircle;
+        %tmp.352 = 122;
+        %tmp.353 = 35;
+        %tmp.354 = 3;
+        invoke %tmp.350 %tmp.351(%tmp.352, %tmp.353, %tmp.354);
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 108 4 ]
+        %tmp.355 = lgetv %dc;
+        %tmp.356 = getv function %tmp.355 :setColor;
+        %tmp.357 = getm $.Toybox.Graphics;
+        %tmp.358 = getv %tmp.357 :COLOR_ORANGE;
+        %tmp.359 = getm $.Toybox.Graphics;
+        %tmp.360 = getv %tmp.359 :COLOR_TRANSPARENT;
+        invoke %tmp.355 %tmp.356(%tmp.358, %tmp.360);
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 109 4 ]
+        %tmp.361 = lgetv %dc;
+        %tmp.362 = getv function %tmp.361 :drawCircle;
+        %tmp.363 = 132;
+        %tmp.364 = 35;
+        %tmp.365 = 3;
+        invoke %tmp.361 %tmp.362(%tmp.363, %tmp.364, %tmp.365);
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 110 4 ]
+        %tmp.366 = lgetv %dc;
+        %tmp.367 = getv function %tmp.366 :setColor;
+        %tmp.368 = getm $.Toybox.Graphics;
+        %tmp.369 = getv %tmp.368 :COLOR_BLUE;
+        %tmp.370 = getm $.Toybox.Graphics;
+        %tmp.371 = getv %tmp.370 :COLOR_TRANSPARENT;
+        invoke %tmp.366 %tmp.367(%tmp.369, %tmp.371);
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 111 4 ]
+        %tmp.372 = lgetv %dc;
+        %tmp.373 = getv function %tmp.372 :drawCircle;
+        %tmp.374 = 142;
+        %tmp.375 = 35;
+        %tmp.376 = 3;
+        invoke %tmp.372 %tmp.373(%tmp.374, %tmp.375, %tmp.376);
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 113 4 ]
+        %tmp.377 = lgetv %dc;
+        %tmp.378 = getv function %tmp.377 :setColor;
+        %tmp.379 = getm $.Toybox.Graphics;
+        %tmp.380 = getv %tmp.379 :COLOR_WHITE;
+        %tmp.381 = getm $.Toybox.Graphics;
+        %tmp.382 = getv %tmp.381 :COLOR_TRANSPARENT;
+        invoke %tmp.377 %tmp.378(%tmp.380, %tmp.382);
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 114 4 ]
+        [ "C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_37_24_start" "C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_37_24_stop" ]
+        %floor.16 = local;
+        %tmp.383 = getm $.Toybox.ActivityMonitor;
+        %tmp.384 = getv function %tmp.383 :getInfo;
+        %tmp.385 = invoke %tmp.383 %tmp.384();
+        %tmp.386 = getv %tmp.385 :floorsClimbed;
+        lputv %floor.16 %tmp.386;
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 115 4 ]
+        [ "C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_37_24_start" "C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_37_24_stop" ]
+        %floorGoal.17 = local;
+        %tmp.387 = getm $.Toybox.ActivityMonitor;
+        %tmp.388 = getv function %tmp.387 :getInfo;
+        %tmp.389 = invoke %tmp.387 %tmp.388();
+        %tmp.390 = getv %tmp.389 :floorsClimbedGoal;
+        lputv %floorGoal.17 %tmp.390;
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 116 4 ]
+        [ "C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_37_24_start" "C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_37_24_stop" ]
+        %floorGoal10.18 = local;
+        %tmp.392 = lgetv %floorGoal.17;
+        %tmp.393 = 0.1;
+        %tmp.394 = mul %tmp.392 %tmp.393;
+        lputv %floorGoal10.18 %tmp.394;
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 117 4 ]
+        [ "C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_37_24_start" "C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_37_24_stop" ]
+        %floorGoal30.19 = local;
+        %tmp.396 = lgetv %floorGoal.17;
+        %tmp.397 = 0.3;
+        %tmp.398 = mul %tmp.396 %tmp.397;
+        lputv %floorGoal30.19 %tmp.398;
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 118 4 ]
+        [ "C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_37_24_start" "C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_37_24_stop" ]
+        %floorGoal50.20 = local;
+        %tmp.400 = lgetv %floorGoal.17;
+        %tmp.401 = 0.5;
+        %tmp.402 = mul %tmp.400 %tmp.401;
+        lputv %floorGoal50.20 %tmp.402;
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 119 4 ]
+        [ "C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_37_24_start" "C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_37_24_stop" ]
+        %floorGoal70.21 = local;
+        %tmp.404 = lgetv %floorGoal.17;
+        %tmp.405 = 0.7;
+        %tmp.406 = mul %tmp.404 %tmp.405;
+        lputv %floorGoal70.21 %tmp.406;
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 120 4 ]
+        [ "C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_37_24_start" "C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_37_24_stop" ]
+        %floorGoal90.22 = local;
+        %tmp.408 = lgetv %floorGoal.17;
+        %tmp.409 = 0.9;
+        %tmp.410 = mul %tmp.408 %tmp.409;
+        lputv %floorGoal90.22 %tmp.410;
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 121 4 ]
+        [ "C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_37_24_start" "C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_37_24_stop" ]
+        %floorGoal100.23 = local;
+        %tmp.412 = lgetv %floorGoal.17;
+        %tmp.413 = 1;
+        %tmp.414 = mul %tmp.412 %tmp.413;
+        lputv %floorGoal100.23 %tmp.414;
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 122 4 ]
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_122_4_if_stmt:
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_122_7_begin:
+        %tmp.416 = lgetv %floor.16;
+        %tmp.417 = 0;
+        %tmp.418 = gte %tmp.416 %tmp.417;
+        %tmp.419 = dup %tmp.418;
+        bf %tmp.419 @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_122_21_end;
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_122_21_true:
+        %tmp.421 = lgetv %floor.16;
+        %tmp.423 = lgetv %floorGoal10.18;
+        %tmp.424 = lte %tmp.421 %tmp.423;
+        %tmp.425 = and %tmp.418 %tmp.424;
+        push %tmp.425;
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_122_21_end:
+        %tmp.426 = phi [%tmp.419 @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_122_7_begin] [%tmp.425 @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_122_21_true] [%tmp.426 @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_122_21_end];
+        bf %tmp.426 @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_122_4_if_false;
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_122_4_if_true:
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_122_42_start:
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 123 6 ]
+        %tmp.427 = lgetv %dc;
+        %tmp.428 = getv function %tmp.427 :setColor;
+        %tmp.429 = getm $.Toybox.Graphics;
+        %tmp.430 = getv %tmp.429 :COLOR_RED;
+        %tmp.431 = getm $.Toybox.Graphics;
+        %tmp.432 = getv %tmp.431 :COLOR_TRANSPARENT;
+        invoke %tmp.427 %tmp.428(%tmp.430, %tmp.432);
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_122_42_stop:
+        goto @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_122_4_if_end;
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_122_4_if_false:
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 125 10 ]
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_125_10_if_stmt:
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_125_13_begin:
+        %tmp.434 = lgetv %floor.16;
+        %tmp.436 = lgetv %floorGoal10.18;
+        %tmp.437 = gt %tmp.434 %tmp.436;
+        %tmp.438 = dup %tmp.437;
+        bf %tmp.438 @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_125_36_end;
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_125_36_true:
+        %tmp.440 = lgetv %floor.16;
+        %tmp.442 = lgetv %floorGoal30.19;
+        %tmp.443 = lte %tmp.440 %tmp.442;
+        %tmp.444 = and %tmp.437 %tmp.443;
+        push %tmp.444;
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_125_36_end:
+        %tmp.445 = phi [%tmp.438 @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_125_13_begin] [%tmp.444 @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_125_36_true] [%tmp.445 @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_125_36_end];
+        bf %tmp.445 @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_125_10_if_false;
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_125_10_if_true:
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_125_57_start:
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 126 6 ]
+        %tmp.446 = lgetv %dc;
+        %tmp.447 = getv function %tmp.446 :setColor;
+        %tmp.448 = getm $.Toybox.Graphics;
+        %tmp.449 = getv %tmp.448 :COLOR_YELLOW;
+        %tmp.450 = getm $.Toybox.Graphics;
+        %tmp.451 = getv %tmp.450 :COLOR_TRANSPARENT;
+        invoke %tmp.446 %tmp.447(%tmp.449, %tmp.451);
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_125_57_stop:
+        goto @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_125_10_if_end;
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_125_10_if_false:
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 128 10 ]
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_128_10_if_stmt:
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_128_13_begin:
+        %tmp.453 = lgetv %floor.16;
+        %tmp.455 = lgetv %floorGoal30.19;
+        %tmp.456 = gt %tmp.453 %tmp.455;
+        %tmp.457 = dup %tmp.456;
+        bf %tmp.457 @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_128_36_end;
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_128_36_true:
+        %tmp.459 = lgetv %floor.16;
+        %tmp.461 = lgetv %floorGoal50.20;
+        %tmp.462 = lte %tmp.459 %tmp.461;
+        %tmp.463 = and %tmp.456 %tmp.462;
+        push %tmp.463;
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_128_36_end:
+        %tmp.464 = phi [%tmp.457 @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_128_13_begin] [%tmp.463 @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_128_36_true] [%tmp.464 @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_128_36_end];
+        bf %tmp.464 @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_128_10_if_false;
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_128_10_if_true:
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_128_57_start:
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 129 6 ]
+        %tmp.465 = lgetv %dc;
+        %tmp.466 = getv function %tmp.465 :setColor;
+        %tmp.467 = getm $.Toybox.Graphics;
+        %tmp.468 = getv %tmp.467 :COLOR_GREEN;
+        %tmp.469 = getm $.Toybox.Graphics;
+        %tmp.470 = getv %tmp.469 :COLOR_TRANSPARENT;
+        invoke %tmp.465 %tmp.466(%tmp.468, %tmp.470);
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_128_57_stop:
+        goto @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_128_10_if_end;
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_128_10_if_false:
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 131 10 ]
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_131_10_if_stmt:
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_131_13_begin:
+        %tmp.472 = lgetv %floor.16;
+        %tmp.474 = lgetv %floorGoal50.20;
+        %tmp.475 = gt %tmp.472 %tmp.474;
+        %tmp.476 = dup %tmp.475;
+        bf %tmp.476 @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_131_36_end;
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_131_36_true:
+        %tmp.478 = lgetv %floor.16;
+        %tmp.480 = lgetv %floorGoal70.21;
+        %tmp.481 = lte %tmp.478 %tmp.480;
+        %tmp.482 = and %tmp.475 %tmp.481;
+        push %tmp.482;
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_131_36_end:
+        %tmp.483 = phi [%tmp.476 @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_131_13_begin] [%tmp.482 @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_131_36_true] [%tmp.483 @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_131_36_end];
+        bf %tmp.483 @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_131_10_if_false;
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_131_10_if_true:
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_131_57_start:
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 132 6 ]
+        %tmp.484 = lgetv %dc;
+        %tmp.485 = getv function %tmp.484 :setColor;
+        %tmp.486 = getm $.Toybox.Graphics;
+        %tmp.487 = getv %tmp.486 :COLOR_PURPLE;
+        %tmp.488 = getm $.Toybox.Graphics;
+        %tmp.489 = getv %tmp.488 :COLOR_TRANSPARENT;
+        invoke %tmp.484 %tmp.485(%tmp.487, %tmp.489);
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_131_57_stop:
+        goto @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_131_10_if_end;
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_131_10_if_false:
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 134 10 ]
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_134_10_if_stmt:
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_134_13_begin:
+        %tmp.491 = lgetv %floor.16;
+        %tmp.493 = lgetv %floorGoal70.21;
+        %tmp.494 = gt %tmp.491 %tmp.493;
+        %tmp.495 = dup %tmp.494;
+        bf %tmp.495 @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_134_36_end;
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_134_36_true:
+        %tmp.497 = lgetv %floor.16;
+        %tmp.499 = lgetv %floorGoal90.22;
+        %tmp.500 = lte %tmp.497 %tmp.499;
+        %tmp.501 = and %tmp.494 %tmp.500;
+        push %tmp.501;
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_134_36_end:
+        %tmp.502 = phi [%tmp.495 @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_134_13_begin] [%tmp.501 @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_134_36_true] [%tmp.502 @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_134_36_end];
+        bf %tmp.502 @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_134_10_if_false;
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_134_10_if_true:
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_134_57_start:
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 135 6 ]
+        %tmp.503 = lgetv %dc;
+        %tmp.504 = getv function %tmp.503 :setColor;
+        %tmp.505 = getm $.Toybox.Graphics;
+        %tmp.506 = getv %tmp.505 :COLOR_ORANGE;
+        %tmp.507 = getm $.Toybox.Graphics;
+        %tmp.508 = getv %tmp.507 :COLOR_TRANSPARENT;
+        invoke %tmp.503 %tmp.504(%tmp.506, %tmp.508);
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_134_57_stop:
+        goto @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_134_10_if_end;
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_134_10_if_false:
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 137 10 ]
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_137_10_if_stmt:
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_137_13_begin:
+        %tmp.510 = lgetv %floor.16;
+        %tmp.512 = lgetv %floorGoal90.22;
+        %tmp.513 = gt %tmp.510 %tmp.512;
+        %tmp.514 = dup %tmp.513;
+        bf %tmp.514 @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_137_36_end;
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_137_36_true:
+        %tmp.516 = lgetv %floor.16;
+        %tmp.518 = lgetv %floorGoal100.23;
+        %tmp.519 = lt %tmp.516 %tmp.518;
+        %tmp.520 = and %tmp.513 %tmp.519;
+        push %tmp.520;
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_137_36_end:
+        %tmp.521 = phi [%tmp.514 @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_137_13_begin] [%tmp.520 @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_137_36_true] [%tmp.521 @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_137_36_end];
+        bf %tmp.521 @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_137_10_if_end;
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_137_10_if_true:
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_137_57_start:
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 138 6 ]
+        %tmp.522 = lgetv %dc;
+        %tmp.523 = getv function %tmp.522 :setColor;
+        %tmp.524 = getm $.Toybox.Graphics;
+        %tmp.525 = getv %tmp.524 :COLOR_BLUE;
+        %tmp.526 = getm $.Toybox.Graphics;
+        %tmp.527 = getv %tmp.526 :COLOR_TRANSPARENT;
+        invoke %tmp.522 %tmp.523(%tmp.525, %tmp.527);
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_137_57_stop:
+        goto @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_137_10_if_end;
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_137_10_if_end:
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_134_10_if_end:
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_131_10_if_end:
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_128_10_if_end:
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_125_10_if_end:
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_122_4_if_end:
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 140 4 ]
+        %tmp.528 = lgetv %dc;
+        %tmp.529 = getv function %tmp.528 :drawText;
+        %tmp.530 = 115;
+        %tmp.531 = 180;
+        %tmp.533 = getv ? :customLat_20;
+        %tmp.534 = "CL:";
+        %tmp.536 = lgetv %floor.16;
+        %tmp.537 = add %tmp.534 %tmp.536;
+        %tmp.538 = getm $.Toybox.Graphics;
+        %tmp.539 = getv %tmp.538 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.528 %tmp.529(%tmp.530, %tmp.531, %tmp.533, %tmp.537, %tmp.539);
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 142 4 ]
+        %tmp.540 = lgetv %dc;
+        %tmp.541 = getv function %tmp.540 :setColor;
+        %tmp.542 = getm $.Toybox.Graphics;
+        %tmp.543 = getv %tmp.542 :COLOR_RED;
+        %tmp.544 = getm $.Toybox.Graphics;
+        %tmp.545 = getv %tmp.544 :COLOR_TRANSPARENT;
+        invoke %tmp.540 %tmp.541(%tmp.543, %tmp.545);
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 143 4 ]
+        %tmp.546 = lgetv %dc;
+        %tmp.547 = getv function %tmp.546 :drawCircle;
+        %tmp.548 = 82;
+        %tmp.549 = 205;
+        %tmp.550 = 3;
+        invoke %tmp.546 %tmp.547(%tmp.548, %tmp.549, %tmp.550);
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 144 4 ]
+        %tmp.551 = lgetv %dc;
+        %tmp.552 = getv function %tmp.551 :setColor;
+        %tmp.553 = getm $.Toybox.Graphics;
+        %tmp.554 = getv %tmp.553 :COLOR_YELLOW;
+        %tmp.555 = getm $.Toybox.Graphics;
+        %tmp.556 = getv %tmp.555 :COLOR_TRANSPARENT;
+        invoke %tmp.551 %tmp.552(%tmp.554, %tmp.556);
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 145 4 ]
+        %tmp.557 = lgetv %dc;
+        %tmp.558 = getv function %tmp.557 :drawCircle;
+        %tmp.559 = 92;
+        %tmp.560 = 205;
+        %tmp.561 = 3;
+        invoke %tmp.557 %tmp.558(%tmp.559, %tmp.560, %tmp.561);
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 146 4 ]
+        %tmp.562 = lgetv %dc;
+        %tmp.563 = getv function %tmp.562 :setColor;
+        %tmp.564 = getm $.Toybox.Graphics;
+        %tmp.565 = getv %tmp.564 :COLOR_GREEN;
+        %tmp.566 = getm $.Toybox.Graphics;
+        %tmp.567 = getv %tmp.566 :COLOR_TRANSPARENT;
+        invoke %tmp.562 %tmp.563(%tmp.565, %tmp.567);
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 147 4 ]
+        %tmp.568 = lgetv %dc;
+        %tmp.569 = getv function %tmp.568 :drawCircle;
+        %tmp.570 = 102;
+        %tmp.571 = 205;
+        %tmp.572 = 3;
+        invoke %tmp.568 %tmp.569(%tmp.570, %tmp.571, %tmp.572);
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 148 4 ]
+        %tmp.573 = lgetv %dc;
+        %tmp.574 = getv function %tmp.573 :setColor;
+        %tmp.575 = getm $.Toybox.Graphics;
+        %tmp.576 = getv %tmp.575 :COLOR_PURPLE;
+        %tmp.577 = getm $.Toybox.Graphics;
+        %tmp.578 = getv %tmp.577 :COLOR_TRANSPARENT;
+        invoke %tmp.573 %tmp.574(%tmp.576, %tmp.578);
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 149 4 ]
+        %tmp.579 = lgetv %dc;
+        %tmp.580 = getv function %tmp.579 :drawCircle;
+        %tmp.581 = 122;
+        %tmp.582 = 205;
+        %tmp.583 = 3;
+        invoke %tmp.579 %tmp.580(%tmp.581, %tmp.582, %tmp.583);
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 150 4 ]
+        %tmp.584 = lgetv %dc;
+        %tmp.585 = getv function %tmp.584 :setColor;
+        %tmp.586 = getm $.Toybox.Graphics;
+        %tmp.587 = getv %tmp.586 :COLOR_ORANGE;
+        %tmp.588 = getm $.Toybox.Graphics;
+        %tmp.589 = getv %tmp.588 :COLOR_TRANSPARENT;
+        invoke %tmp.584 %tmp.585(%tmp.587, %tmp.589);
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 151 4 ]
+        %tmp.590 = lgetv %dc;
+        %tmp.591 = getv function %tmp.590 :drawCircle;
+        %tmp.592 = 132;
+        %tmp.593 = 205;
+        %tmp.594 = 3;
+        invoke %tmp.590 %tmp.591(%tmp.592, %tmp.593, %tmp.594);
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 152 4 ]
+        %tmp.595 = lgetv %dc;
+        %tmp.596 = getv function %tmp.595 :setColor;
+        %tmp.597 = getm $.Toybox.Graphics;
+        %tmp.598 = getv %tmp.597 :COLOR_BLUE;
+        %tmp.599 = getm $.Toybox.Graphics;
+        %tmp.600 = getv %tmp.599 :COLOR_TRANSPARENT;
+        invoke %tmp.595 %tmp.596(%tmp.598, %tmp.600);
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 153 4 ]
+        %tmp.601 = lgetv %dc;
+        %tmp.602 = getv function %tmp.601 :drawCircle;
+        %tmp.603 = 142;
+        %tmp.604 = 205;
+        %tmp.605 = 3;
+        invoke %tmp.601 %tmp.602(%tmp.603, %tmp.604, %tmp.605);
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 155 4 ]
+        [ "C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_37_24_start" "C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_37_24_stop" ]
+        %bat.24 = local;
+        %tmp.607 = getv ? :System;
+        %tmp.608 = getv function %tmp.607 :getSystemStats;
+        %tmp.609 = invoke %tmp.607 %tmp.608();
+        %tmp.610 = getv %tmp.609 :battery;
+        lputv %bat.24 %tmp.610;
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 156 5 ]
+        [ "C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_37_24_start" "C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_37_24_stop" ]
+        %batF.25 = local;
+        %tmp.611 = getm $.Toybox.Lang;
+        %tmp.612 = getv function %tmp.611 :format;
+        %tmp.613 = "$1$%";
+        %tmp.614 = newa 1;
+        %tmp.615 = lgetv %bat.24;
+        %tmp.616 = getv function %tmp.615 :format;
+        %tmp.617 = "%2d";
+        %tmp.618 = invoke %tmp.615 %tmp.616(%tmp.617);
+        %tmp.619 = dup %tmp.614;
+        %tmp.620 = aputv %tmp.619 0 %tmp.618;
+        %tmp.621 = invoke %tmp.611 %tmp.612(%tmp.613, %tmp.620);
+        lputv %batF.25 %tmp.621;
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 158 4 ]
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_158_4_if_stmt:
+        %tmp.623 = lgetv %bat.24;
+        %tmp.624 = 90;
+        %tmp.625 = gt %tmp.623 %tmp.624;
+        bf %tmp.625 @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_158_4_if_false;
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_158_4_if_true:
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_158_18_start:
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 159 6 ]
+        %tmp.626 = lgetv %dc;
+        %tmp.627 = getv function %tmp.626 :setColor;
+        %tmp.628 = getm $.Toybox.Graphics;
+        %tmp.629 = getv %tmp.628 :COLOR_GREEN;
+        %tmp.630 = getm $.Toybox.Graphics;
+        %tmp.631 = getv %tmp.630 :COLOR_TRANSPARENT;
+        invoke %tmp.626 %tmp.627(%tmp.629, %tmp.631);
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_158_18_stop:
+        goto @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_158_4_if_end;
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_158_4_if_false:
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 160 10 ]
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_160_10_if_stmt:
+        %tmp.633 = lgetv %bat.24;
+        %tmp.634 = 75;
+        %tmp.635 = gt %tmp.633 %tmp.634;
+        bf %tmp.635 @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_160_10_if_false;
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_160_10_if_true:
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_160_22_start:
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 161 6 ]
+        %tmp.636 = lgetv %dc;
+        %tmp.637 = getv function %tmp.636 :setColor;
+        %tmp.638 = getm $.Toybox.Graphics;
+        %tmp.639 = getv %tmp.638 :COLOR_DK_GREEN;
+        %tmp.640 = getm $.Toybox.Graphics;
+        %tmp.641 = getv %tmp.640 :COLOR_TRANSPARENT;
+        invoke %tmp.636 %tmp.637(%tmp.639, %tmp.641);
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_160_22_stop:
+        goto @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_160_10_if_end;
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_160_10_if_false:
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 162 10 ]
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_162_10_if_stmt:
+        %tmp.643 = lgetv %bat.24;
+        %tmp.644 = 50;
+        %tmp.645 = gt %tmp.643 %tmp.644;
+        bf %tmp.645 @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_162_10_if_false;
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_162_10_if_true:
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_162_22_start:
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 163 6 ]
+        %tmp.646 = lgetv %dc;
+        %tmp.647 = getv function %tmp.646 :setColor;
+        %tmp.648 = getm $.Toybox.Graphics;
+        %tmp.649 = getv %tmp.648 :COLOR_BLUE;
+        %tmp.650 = getm $.Toybox.Graphics;
+        %tmp.651 = getv %tmp.650 :COLOR_TRANSPARENT;
+        invoke %tmp.646 %tmp.647(%tmp.649, %tmp.651);
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_162_22_stop:
+        goto @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_162_10_if_end;
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_162_10_if_false:
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 164 10 ]
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_164_10_if_stmt:
+        %tmp.653 = lgetv %bat.24;
+        %tmp.654 = 35;
+        %tmp.655 = gt %tmp.653 %tmp.654;
+        bf %tmp.655 @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_164_10_if_false;
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_164_10_if_true:
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_164_22_start:
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 165 6 ]
+        %tmp.656 = lgetv %dc;
+        %tmp.657 = getv function %tmp.656 :setColor;
+        %tmp.658 = getm $.Toybox.Graphics;
+        %tmp.659 = getv %tmp.658 :COLOR_PURPLE;
+        %tmp.660 = getm $.Toybox.Graphics;
+        %tmp.661 = getv %tmp.660 :COLOR_TRANSPARENT;
+        invoke %tmp.656 %tmp.657(%tmp.659, %tmp.661);
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_164_22_stop:
+        goto @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_164_10_if_end;
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_164_10_if_false:
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 166 10 ]
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_166_10_if_stmt:
+        %tmp.663 = lgetv %bat.24;
+        %tmp.664 = 20;
+        %tmp.665 = gt %tmp.663 %tmp.664;
+        bf %tmp.665 @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_166_10_if_false;
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_166_10_if_true:
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_166_22_start:
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 167 6 ]
+        %tmp.666 = lgetv %dc;
+        %tmp.667 = getv function %tmp.666 :setColor;
+        %tmp.668 = getm $.Toybox.Graphics;
+        %tmp.669 = getv %tmp.668 :COLOR_ORANGE;
+        %tmp.670 = getm $.Toybox.Graphics;
+        %tmp.671 = getv %tmp.670 :COLOR_TRANSPARENT;
+        invoke %tmp.666 %tmp.667(%tmp.669, %tmp.671);
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_166_22_stop:
+        goto @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_166_10_if_end;
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_166_10_if_false:
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 168 10 ]
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_168_10_if_stmt:
+        %tmp.673 = lgetv %bat.24;
+        %tmp.674 = 5;
+        %tmp.675 = gt %tmp.673 %tmp.674;
+        bf %tmp.675 @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_168_10_if_false;
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_168_10_if_true:
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_168_21_start:
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 169 6 ]
+        %tmp.676 = lgetv %dc;
+        %tmp.677 = getv function %tmp.676 :setColor;
+        %tmp.678 = getm $.Toybox.Graphics;
+        %tmp.679 = getv %tmp.678 :COLOR_RED;
+        %tmp.680 = getm $.Toybox.Graphics;
+        %tmp.681 = getv %tmp.680 :COLOR_TRANSPARENT;
+        invoke %tmp.676 %tmp.677(%tmp.679, %tmp.681);
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_168_21_stop:
+        goto @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_168_10_if_end;
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_168_10_if_false:
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 170 10 ]
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_170_10_if_stmt:
+        %tmp.683 = lgetv %bat.24;
+        %tmp.684 = 0;
+        %tmp.685 = gt %tmp.683 %tmp.684;
+        bf %tmp.685 @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_170_10_if_end;
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_170_10_if_true:
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_170_21_start:
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 171 6 ]
+        %tmp.686 = lgetv %dc;
+        %tmp.687 = getv function %tmp.686 :setColor;
+        %tmp.688 = getm $.Toybox.Graphics;
+        %tmp.689 = getv %tmp.688 :COLOR_DK_RED;
+        %tmp.690 = getm $.Toybox.Graphics;
+        %tmp.691 = getv %tmp.690 :COLOR_TRANSPARENT;
+        invoke %tmp.686 %tmp.687(%tmp.689, %tmp.691);
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_170_21_stop:
+        goto @C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_170_10_if_end;
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_170_10_if_end:
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_168_10_if_end:
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_166_10_if_end:
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_164_10_if_end:
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_162_10_if_end:
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_160_10_if_end:
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_158_4_if_end:
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 173 4 ]
+        %tmp.692 = lgetv %dc;
+        %tmp.693 = getv function %tmp.692 :drawText;
+        %tmp.694 = 45;
+        %tmp.695 = 120;
+        %tmp.697 = getv ? :customLat_20;
+        %tmp.698 = "Bat: ";
+        %tmp.699 = getm $.Toybox.Graphics;
+        %tmp.700 = getv %tmp.699 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.692 %tmp.693(%tmp.694, %tmp.695, %tmp.697, %tmp.698, %tmp.700);
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 174 4 ]
+        %tmp.701 = lgetv %dc;
+        %tmp.702 = getv function %tmp.701 :drawText;
+        %tmp.703 = 40;
+        %tmp.704 = 140;
+        %tmp.706 = getv ? :customLat_20;
+        %tmp.708 = lgetv %batF.25;
+        %tmp.709 = getm $.Toybox.Graphics;
+        %tmp.710 = getv %tmp.709 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.701 %tmp.702(%tmp.703, %tmp.704, %tmp.706, %tmp.708, %tmp.710);
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_37_24_stop:
+    }
+    [ @file = "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc"; @line = 198; ]
+    function onHide() as Void {
+    }
+    [ @file = "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc"; @line = 200; ]
+    function onExitSleep() {
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_200_25_start:
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 200 27 ]
+        %tmp.1 = true;
+        putv self :lowPowerMode %tmp.1;
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_200_25_stop:
+    }
+    [ @file = "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc"; @line = 202; ]
+    function onEnterSleep() {
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_202_26_start:
+[ "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc" 202 28 ]
+        %tmp.1 = false;
+        putv self :lowPowerMode %tmp.1;
+C_GIT_priv_Garmin_app_GW_GW_source_GWView_mc_202_26_stop:
+    }
+}
+[ @file = "C:\GIT\priv\Garmin_app\GW\GW\source\GWView.mc"; @line = 2; ]
+<init> {
+}
