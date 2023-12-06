@@ -1,74 +1,74 @@
-[ @file = "C:\GIT\priv\Garmin_app\WF2\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 1; ]
+[ @file = "C:\GIT\priv\Garmin\WF2-15.08\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 1; ]
 import Toybox.Lang;
-[ @file = "C:\GIT\priv\Garmin_app\WF2\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 2; ]
+[ @file = "C:\GIT\priv\Garmin\WF2-15.08\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 2; ]
 using Toybox.WatchUi;
-[ @file = "C:\GIT\priv\Garmin_app\WF2\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 3; ]
+[ @file = "C:\GIT\priv\Garmin\WF2-15.08\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 3; ]
 using Toybox.WatchUi as :Ui;
-[ @file = "C:\GIT\priv\Garmin_app\WF2\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 4; ]
+[ @file = "C:\GIT\priv\Garmin\WF2-15.08\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 4; ]
 using Toybox.Graphics;
-[ @file = "C:\GIT\priv\Garmin_app\WF2\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 5; ]
+[ @file = "C:\GIT\priv\Garmin\WF2-15.08\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 5; ]
 using Toybox.Graphics as :Gfx;
-[ @file = "C:\GIT\priv\Garmin_app\WF2\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 7; ]
+[ @file = "C:\GIT\priv\Garmin\WF2-15.08\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 7; ]
 module Rez {
-    [ @file = "C:\GIT\priv\Garmin_app\WF2\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 7; ]
+    [ @file = "C:\GIT\priv\Garmin\WF2-15.08\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 7; ]
     <init> {
     }
-    [ @file = "C:\GIT\priv\Garmin_app\WF2\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 8; ]
+    [ @file = "C:\GIT\priv\Garmin\WF2-15.08\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 8; ]
     module Drawables {
-        [ @file = "C:\GIT\priv\Garmin_app\WF2\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 8; ]
+        [ @file = "C:\GIT\priv\Garmin\WF2-15.08\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 8; ]
         <init> {
         }
-        [ @file = "C:\GIT\priv\Garmin_app\WF2\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 9; @position = 27; initialized = true; ]
+        [ @file = "C:\GIT\priv\Garmin\WF2-15.08\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 9; @position = 27; initialized = true; ]
         var Tapeta as Symbol;
-        [ @file = "C:\GIT\priv\Garmin_app\WF2\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 10; @position = 27; initialized = true; ]
+        [ @file = "C:\GIT\priv\Garmin\WF2-15.08\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 10; @position = 27; initialized = true; ]
         var Battery as Symbol;
-        [ @file = "C:\GIT\priv\Garmin_app\WF2\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 11; @position = 27; initialized = true; ]
+        [ @file = "C:\GIT\priv\Garmin\WF2-15.08\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 11; @position = 27; initialized = true; ]
         var Battery15 as Symbol;
-        [ @file = "C:\GIT\priv\Garmin_app\WF2\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 12; @position = 27; initialized = true; ]
+        [ @file = "C:\GIT\priv\Garmin\WF2-15.08\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 12; @position = 27; initialized = true; ]
         var Battery32 as Symbol;
-        [ @file = "C:\GIT\priv\Garmin_app\WF2\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 13; @position = 27; initialized = true; ]
+        [ @file = "C:\GIT\priv\Garmin\WF2-15.08\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 13; @position = 27; initialized = true; ]
         var Battery50 as Symbol;
-        [ @file = "C:\GIT\priv\Garmin_app\WF2\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 14; @position = 27; initialized = true; ]
+        [ @file = "C:\GIT\priv\Garmin\WF2-15.08\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 14; @position = 27; initialized = true; ]
         var Battery66 as Symbol;
-        [ @file = "C:\GIT\priv\Garmin_app\WF2\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 15; @position = 27; initialized = true; ]
+        [ @file = "C:\GIT\priv\Garmin\WF2-15.08\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 15; @position = 27; initialized = true; ]
         var Battery83 as Symbol;
-        [ @file = "C:\GIT\priv\Garmin_app\WF2\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 16; @position = 27; initialized = true; ]
+        [ @file = "C:\GIT\priv\Garmin\WF2-15.08\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 16; @position = 27; initialized = true; ]
         var BT as Symbol;
-        [ @file = "C:\GIT\priv\Garmin_app\WF2\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 17; @position = 27; initialized = true; ]
+        [ @file = "C:\GIT\priv\Garmin\WF2-15.08\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 17; @position = 27; initialized = true; ]
         var BTn as Symbol;
-        [ @file = "C:\GIT\priv\Garmin_app\WF2\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 18; @position = 27; initialized = true; ]
+        [ @file = "C:\GIT\priv\Garmin\WF2-15.08\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 18; @position = 27; initialized = true; ]
         var LauncherIcon as Symbol;
     }
-    [ @file = "C:\GIT\priv\Garmin_app\WF2\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 21; ]
+    [ @file = "C:\GIT\priv\Garmin\WF2-15.08\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 21; ]
     module Fonts {
-        [ @file = "C:\GIT\priv\Garmin_app\WF2\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 21; ]
+        [ @file = "C:\GIT\priv\Garmin\WF2-15.08\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 21; ]
         <init> {
         }
-        [ @file = "C:\GIT\priv\Garmin_app\WF2\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 22; @position = 27; initialized = true; ]
+        [ @file = "C:\GIT\priv\Garmin\WF2-15.08\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 22; @position = 27; initialized = true; ]
         var QSandFS as Symbol;
-        [ @file = "C:\GIT\priv\Garmin_app\WF2\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 23; @position = 27; initialized = true; ]
+        [ @file = "C:\GIT\priv\Garmin\WF2-15.08\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 23; @position = 27; initialized = true; ]
         var QSand as Symbol;
-        [ @file = "C:\GIT\priv\Garmin_app\WF2\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 24; @position = 27; initialized = true; ]
+        [ @file = "C:\GIT\priv\Garmin\WF2-15.08\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 24; @position = 27; initialized = true; ]
         var QSand28 as Symbol;
-        [ @file = "C:\GIT\priv\Garmin_app\WF2\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 25; @position = 27; initialized = true; ]
+        [ @file = "C:\GIT\priv\Garmin\WF2-15.08\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 25; @position = 27; initialized = true; ]
         var QSand_100 as Symbol;
     }
-    [ @file = "C:\GIT\priv\Garmin_app\WF2\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 28; ]
+    [ @file = "C:\GIT\priv\Garmin\WF2-15.08\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 28; ]
     module JsonData {
-        [ @file = "C:\GIT\priv\Garmin_app\WF2\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 28; ]
+        [ @file = "C:\GIT\priv\Garmin\WF2-15.08\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 28; ]
         <init> {
         }
     }
-    [ @file = "C:\GIT\priv\Garmin_app\WF2\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 31; ]
+    [ @file = "C:\GIT\priv\Garmin\WF2-15.08\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 31; ]
     module Layouts {
-        [ @file = "C:\GIT\priv\Garmin_app\WF2\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 31; ]
+        [ @file = "C:\GIT\priv\Garmin\WF2-15.08\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 31; ]
         <init> {
         }
-        [ @file = "C:\GIT\priv\Garmin_app\WF2\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 32; ]
+        [ @file = "C:\GIT\priv\Garmin\WF2-15.08\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 32; ]
         function WatchFace(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
-C_GIT_priv_Garmin_app_WF2_bin_gen_006_B2544_00_source_Rez_mcgen_32_73_start:
-[ "C:\GIT\priv\Garmin_app\WF2\bin\gen\006-B2544-00\source\Rez.mcgen" 33 12 ]
-            [ "C_GIT_priv_Garmin_app_WF2_bin_gen_006_B2544_00_source_Rez_mcgen_32_73_start" "C_GIT_priv_Garmin_app_WF2_bin_gen_006_B2544_00_source_Rez_mcgen_32_73_stop" ]
+C_GIT_priv_Garmin_WF2_15_08_bin_gen_006_B2544_00_source_Rez_mcgen_32_73_start:
+[ "C:\GIT\priv\Garmin\WF2-15.08\bin\gen\006-B2544-00\source\Rez.mcgen" 33 12 ]
+            [ "C_GIT_priv_Garmin_WF2_15_08_bin_gen_006_B2544_00_source_Rez_mcgen_32_73_start" "C_GIT_priv_Garmin_WF2_15_08_bin_gen_006_B2544_00_source_Rez_mcgen_32_73_stop" ]
             %rez_cmp_local_text_TimeLabel.1 = local;
             %tmp.3 = getm $.Toybox.WatchUi;
             %tmp.4 = getv function ? %tmp.3 :Text;
@@ -112,30 +112,30 @@ C_GIT_priv_Garmin_app_WF2_bin_gen_006_B2544_00_source_Rez_mcgen_32_73_start:
             %tmp.48 = aputv %tmp.47 %tmp.44 %tmp.46;
             %tmp.1 = newc %tmp.4 (%tmp.48);
             lputv %rez_cmp_local_text_TimeLabel.1 %tmp.1;
-[ "C:\GIT\priv\Garmin_app\WF2\bin\gen\006-B2544-00\source\Rez.mcgen" 35 12 ]
+[ "C:\GIT\priv\Garmin\WF2-15.08\bin\gen\006-B2544-00\source\Rez.mcgen" 35 12 ]
             %tmp.49 = newa Array<WatchUi.Drawable> 1;
             %tmp.51 = lgetv %rez_cmp_local_text_TimeLabel.1;
             %tmp.52 = dup %tmp.49;
             %tmp.53 = aputv %tmp.52 0 %tmp.51;
             ret %tmp.53;
-C_GIT_priv_Garmin_app_WF2_bin_gen_006_B2544_00_source_Rez_mcgen_32_73_stop:
+C_GIT_priv_Garmin_WF2_15_08_bin_gen_006_B2544_00_source_Rez_mcgen_32_73_stop:
         }
     }
-    [ @file = "C:\GIT\priv\Garmin_app\WF2\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 39; ]
+    [ @file = "C:\GIT\priv\Garmin\WF2-15.08\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 39; ]
     module Menus {
-        [ @file = "C:\GIT\priv\Garmin_app\WF2\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 39; ]
+        [ @file = "C:\GIT\priv\Garmin\WF2-15.08\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 39; ]
         <init> {
         }
     }
-    [ @file = "C:\GIT\priv\Garmin_app\WF2\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 42; ]
+    [ @file = "C:\GIT\priv\Garmin\WF2-15.08\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 42; ]
     module Strings {
-        [ @file = "C:\GIT\priv\Garmin_app\WF2\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 42; ]
+        [ @file = "C:\GIT\priv\Garmin\WF2-15.08\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 42; ]
         <init> {
         }
-        [ @file = "C:\GIT\priv\Garmin_app\WF2\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 43; @position = 27; initialized = true; ]
+        [ @file = "C:\GIT\priv\Garmin\WF2-15.08\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 43; @position = 27; initialized = true; ]
         var AppName as Symbol;
     }
 }
-[ @file = "C:\GIT\priv\Garmin_app\WF2\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 1; ]
+[ @file = "C:\GIT\priv\Garmin\WF2-15.08\bin\gen\006-B2544-00\source\Rez.mcgen"; @line = 1; ]
 <init> {
 }

@@ -1,71 +1,71 @@
-[ @file = "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc"; @line = 2; ]
+[ @file = "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc"; @line = 2; ]
 import Toybox.Lang;
-[ @file = "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc"; @line = 3; ]
+[ @file = "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc"; @line = 3; ]
 import Toybox.WatchUi;
-[ @file = "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc"; @line = 4; ]
+[ @file = "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc"; @line = 4; ]
 import Toybox.ActivityMonitor;
-[ @file = "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc"; @line = 5; ]
+[ @file = "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc"; @line = 5; ]
 import Toybox.Math;
-[ @file = "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc"; @line = 6; ]
+[ @file = "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc"; @line = 6; ]
 using Toybox.Graphics as :Gfx;
-[ @file = "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc"; @line = 7; ]
+[ @file = "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc"; @line = 7; ]
 using Toybox.Time.Gregorian as :Calendar;
-[ @file = "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc"; @line = 8; ]
+[ @file = "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc"; @line = 8; ]
 using Toybox.Time as :Time;
-[ @file = "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc"; @line = 9; ]
+[ @file = "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc"; @line = 9; ]
 using Toybox.ActivityMonitor as :AM;
-[ @file = "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc"; @line = 10; ]
+[ @file = "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc"; @line = 10; ]
 using Toybox.System as :S;
-[ @file = "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc"; @line = 11; ]
+[ @file = "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc"; @line = 11; ]
 using Toybox.BluetoothLowEnergy as :BT;
-[ @file = "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc"; @line = 13; ]
+[ @file = "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc"; @line = 13; ]
 class WF2View extends WatchUi.WatchFace{
-    [ @file = "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc"; @line = 13; ]
+    [ @file = "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc"; @line = 13; ]
     <init> {
     }
-    [ @file = "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc"; @line = 13; ]
+    [ @file = "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc"; @line = 13; ]
     static
     <init> {
     }
-    [ @file = "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc"; @line = 14; @position = 6; ]
+    [ @file = "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc"; @line = 14; @position = 6; ]
     var lowPowerMode = true;
-    [ @file = "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc"; @line = 15; @position = 6; ]
+    [ @file = "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc"; @line = 15; @position = 6; ]
     var customQSand = null;
-    [ @file = "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc"; @line = 16; @position = 6; ]
+    [ @file = "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc"; @line = 16; @position = 6; ]
     var customQSand28 = null;
-    [ @file = "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc"; @line = 17; @position = 6; ]
+    [ @file = "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc"; @line = 17; @position = 6; ]
     var customQSand_100 = null;
-    [ @file = "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc"; @line = 18; @position = 6; ]
+    [ @file = "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc"; @line = 18; @position = 6; ]
     var batteryIcon = null;
-    [ @file = "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc"; @line = 19; @position = 6; ]
+    [ @file = "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc"; @line = 19; @position = 6; ]
     var batteryIcon83 = null;
-    [ @file = "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc"; @line = 20; @position = 6; ]
+    [ @file = "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc"; @line = 20; @position = 6; ]
     var batteryIcon66 = null;
-    [ @file = "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc"; @line = 21; @position = 6; ]
+    [ @file = "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc"; @line = 21; @position = 6; ]
     var batteryIcon50 = null;
-    [ @file = "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc"; @line = 22; @position = 6; ]
+    [ @file = "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc"; @line = 22; @position = 6; ]
     var batteryIcon32 = null;
-    [ @file = "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc"; @line = 23; @position = 6; ]
+    [ @file = "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc"; @line = 23; @position = 6; ]
     var batteryIcon15 = null;
-    [ @file = "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc"; @line = 24; @position = 6; ]
+    [ @file = "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc"; @line = 24; @position = 6; ]
     var bt = null;
-    [ @file = "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc"; @line = 25; @position = 6; ]
+    [ @file = "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc"; @line = 25; @position = 6; ]
     var btn = null;
-    [ @file = "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc"; @line = 26; @position = 6; ]
+    [ @file = "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc"; @line = 26; @position = 6; ]
     var tapeta = null;
-    [ @file = "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc"; @line = 28; ]
+    [ @file = "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc"; @line = 28; ]
     function initialize() as Void {
-C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_28_24_start:
-[ "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc" 28 26 ]
+C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_28_24_start:
+[ "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc" 28 26 ]
         %tmp.2 = getv ? :WatchFace;
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_28_24_stop:
+C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_28_24_stop:
     }
-    [ @file = "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc"; @line = 31; ]
+    [ @file = "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc"; @line = 31; ]
     function onLayout(dc) {
-C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_31_24_start:
-[ "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc" 32 4 ]
+C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_31_24_start:
+[ "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc" 32 4 ]
         %tmp.1 = getm $.Toybox.WatchUi;
         %tmp.2 = getv function %tmp.1 :loadResource;
         %tmp.4 = getv ? :Rez;
@@ -73,7 +73,7 @@ C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_31_24_start:
         %tmp.6 = getv %tmp.5 :QSand;
         %tmp.7 = invoke %tmp.1 %tmp.2(%tmp.6);
         putv self :customQSand %tmp.7;
-[ "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc" 33 4 ]
+[ "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc" 33 4 ]
         %tmp.8 = getm $.Toybox.WatchUi;
         %tmp.9 = getv function %tmp.8 :loadResource;
         %tmp.11 = getv ? :Rez;
@@ -81,7 +81,7 @@ C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_31_24_start:
         %tmp.13 = getv %tmp.12 :QSand28;
         %tmp.14 = invoke %tmp.8 %tmp.9(%tmp.13);
         putv self :customQSand28 %tmp.14;
-[ "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc" 34 4 ]
+[ "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc" 34 4 ]
         %tmp.15 = getm $.Toybox.WatchUi;
         %tmp.16 = getv function %tmp.15 :loadResource;
         %tmp.18 = getv ? :Rez;
@@ -89,7 +89,7 @@ C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_31_24_start:
         %tmp.20 = getv %tmp.19 :QSand_100;
         %tmp.21 = invoke %tmp.15 %tmp.16(%tmp.20);
         putv self :customQSand_100 %tmp.21;
-[ "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc" 35 4 ]
+[ "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc" 35 4 ]
         %tmp.22 = getm $.Toybox.WatchUi;
         %tmp.23 = getv function %tmp.22 :loadResource;
         %tmp.25 = getv ? :Rez;
@@ -97,7 +97,7 @@ C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_31_24_start:
         %tmp.27 = getv %tmp.26 :Battery;
         %tmp.28 = invoke %tmp.22 %tmp.23(%tmp.27);
         putv self :batteryIcon %tmp.28;
-[ "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc" 36 4 ]
+[ "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc" 36 4 ]
         %tmp.29 = getm $.Toybox.WatchUi;
         %tmp.30 = getv function %tmp.29 :loadResource;
         %tmp.32 = getv ? :Rez;
@@ -105,7 +105,7 @@ C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_31_24_start:
         %tmp.34 = getv %tmp.33 :Battery15;
         %tmp.35 = invoke %tmp.29 %tmp.30(%tmp.34);
         putv self :batteryIcon15 %tmp.35;
-[ "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc" 37 4 ]
+[ "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc" 37 4 ]
         %tmp.36 = getm $.Toybox.WatchUi;
         %tmp.37 = getv function %tmp.36 :loadResource;
         %tmp.39 = getv ? :Rez;
@@ -113,7 +113,7 @@ C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_31_24_start:
         %tmp.41 = getv %tmp.40 :Battery32;
         %tmp.42 = invoke %tmp.36 %tmp.37(%tmp.41);
         putv self :batteryIcon32 %tmp.42;
-[ "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc" 38 4 ]
+[ "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc" 38 4 ]
         %tmp.43 = getm $.Toybox.WatchUi;
         %tmp.44 = getv function %tmp.43 :loadResource;
         %tmp.46 = getv ? :Rez;
@@ -121,7 +121,7 @@ C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_31_24_start:
         %tmp.48 = getv %tmp.47 :Battery50;
         %tmp.49 = invoke %tmp.43 %tmp.44(%tmp.48);
         putv self :batteryIcon50 %tmp.49;
-[ "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc" 39 4 ]
+[ "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc" 39 4 ]
         %tmp.50 = getm $.Toybox.WatchUi;
         %tmp.51 = getv function %tmp.50 :loadResource;
         %tmp.53 = getv ? :Rez;
@@ -129,7 +129,7 @@ C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_31_24_start:
         %tmp.55 = getv %tmp.54 :Battery66;
         %tmp.56 = invoke %tmp.50 %tmp.51(%tmp.55);
         putv self :batteryIcon66 %tmp.56;
-[ "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc" 40 4 ]
+[ "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc" 40 4 ]
         %tmp.57 = getm $.Toybox.WatchUi;
         %tmp.58 = getv function %tmp.57 :loadResource;
         %tmp.60 = getv ? :Rez;
@@ -137,7 +137,7 @@ C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_31_24_start:
         %tmp.62 = getv %tmp.61 :Battery83;
         %tmp.63 = invoke %tmp.57 %tmp.58(%tmp.62);
         putv self :batteryIcon83 %tmp.63;
-[ "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc" 41 4 ]
+[ "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc" 41 4 ]
         %tmp.64 = getm $.Toybox.WatchUi;
         %tmp.65 = getv function %tmp.64 :loadResource;
         %tmp.67 = getv ? :Rez;
@@ -145,7 +145,7 @@ C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_31_24_start:
         %tmp.69 = getv %tmp.68 :BT;
         %tmp.70 = invoke %tmp.64 %tmp.65(%tmp.69);
         putv self :bt %tmp.70;
-[ "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc" 42 4 ]
+[ "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc" 42 4 ]
         %tmp.71 = getm $.Toybox.WatchUi;
         %tmp.72 = getv function %tmp.71 :loadResource;
         %tmp.74 = getv ? :Rez;
@@ -153,7 +153,7 @@ C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_31_24_start:
         %tmp.76 = getv %tmp.75 :BTn;
         %tmp.77 = invoke %tmp.71 %tmp.72(%tmp.76);
         putv self :btn %tmp.77;
-[ "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc" 43 4 ]
+[ "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc" 43 4 ]
         %tmp.78 = getm $.Toybox.WatchUi;
         %tmp.79 = getv function %tmp.78 :loadResource;
         %tmp.81 = getv ? :Rez;
@@ -161,17 +161,17 @@ C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_31_24_start:
         %tmp.83 = getv %tmp.82 :Tapeta;
         %tmp.84 = invoke %tmp.78 %tmp.79(%tmp.83);
         putv self :tapeta %tmp.84;
-C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_31_24_stop:
+C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_31_24_stop:
     }
-    [ @file = "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc"; @line = 47; ]
+    [ @file = "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc"; @line = 47; ]
     function onUpdate(dc) {
-C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_47_24_start:
-[ "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc" 48 4 ]
+C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_47_24_start:
+[ "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc" 48 4 ]
         %tmp.2 = getv ? :View;
         %tmp.3 = getv function %tmp.2 :onUpdate;
         %tmp.5 = lgetv %dc;
         invoke %tmp.2 %tmp.3(%tmp.5);
-[ "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc" 49 4 ]
+[ "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc" 49 4 ]
         %tmp.6 = lgetv %dc;
         %tmp.7 = getv function %tmp.6 :drawBitmap;
         %tmp.8 = 23;
@@ -180,7 +180,7 @@ C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_47_24_start:
         %tmp.11 = sub 0 %tmp.10;
         %tmp.13 = getv ? :tapeta;
         invoke %tmp.6 %tmp.7(%tmp.9, %tmp.11, %tmp.13);
-[ "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc" 51 4 ]
+[ "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc" 51 4 ]
         %tmp.14 = lgetv %dc;
         %tmp.15 = getv function %tmp.14 :setColor;
         %tmp.16 = getm $.Toybox.Graphics;
@@ -188,15 +188,15 @@ C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_47_24_start:
         %tmp.18 = getm $.Toybox.Graphics;
         %tmp.19 = getv %tmp.18 :COLOR_TRANSPARENT;
         invoke %tmp.14 %tmp.15(%tmp.17, %tmp.19);
-[ "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc" 52 4 ]
-        [ "C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_47_24_start" "C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_47_24_stop" ]
+[ "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc" 52 4 ]
+        [ "C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_47_24_start" "C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_47_24_stop" ]
         %floor.1 = local;
         %tmp.20 = getm $.Toybox.ActivityMonitor;
         %tmp.21 = getv function %tmp.20 :getInfo;
         %tmp.22 = invoke %tmp.20 %tmp.21();
         %tmp.23 = getv %tmp.22 :floorsClimbed;
         lputv %floor.1 %tmp.23;
-[ "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc" 53 4 ]
+[ "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc" 53 4 ]
         %tmp.24 = lgetv %dc;
         %tmp.25 = getv function %tmp.24 :drawText;
         %tmp.26 = 168;
@@ -208,7 +208,7 @@ C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_47_24_start:
         %tmp.34 = getm $.Toybox.Graphics;
         %tmp.35 = getv %tmp.34 :TEXT_JUSTIFY_CENTER;
         invoke %tmp.24 %tmp.25(%tmp.26, %tmp.27, %tmp.29, %tmp.33, %tmp.35);
-[ "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc" 56 4 ]
+[ "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc" 56 4 ]
         %tmp.36 = lgetv %dc;
         %tmp.37 = getv function %tmp.36 :setColor;
         %tmp.38 = getm $.Toybox.Graphics;
@@ -216,8 +216,8 @@ C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_47_24_start:
         %tmp.40 = getm $.Toybox.Graphics;
         %tmp.41 = getv %tmp.40 :COLOR_TRANSPARENT;
         invoke %tmp.36 %tmp.37(%tmp.39, %tmp.41);
-[ "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc" 57 4 ]
-        [ "C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_47_24_start" "C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_47_24_stop" ]
+[ "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc" 57 4 ]
+        [ "C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_47_24_start" "C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_47_24_stop" ]
         %dateInfo4.2 = local;
         %tmp.42 = getm $.Toybox.Time.Gregorian;
         %tmp.43 = getv function %tmp.42 :info;
@@ -228,8 +228,8 @@ C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_47_24_start:
         %tmp.48 = getv %tmp.47 :FORMAT_MEDIUM;
         %tmp.49 = invoke %tmp.42 %tmp.43(%tmp.46, %tmp.48);
         lputv %dateInfo4.2 %tmp.49;
-[ "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc" 58 4 ]
-        [ "C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_47_24_start" "C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_47_24_stop" ]
+[ "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc" 58 4 ]
+        [ "C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_47_24_start" "C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_47_24_stop" ]
         %dateInfo.3 = local;
         %tmp.50 = getm $.Toybox.Time.Gregorian;
         %tmp.51 = getv function %tmp.50 :info;
@@ -240,8 +240,8 @@ C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_47_24_start:
         %tmp.56 = getv %tmp.55 :FORMAT_SHORT;
         %tmp.57 = invoke %tmp.50 %tmp.51(%tmp.54, %tmp.56);
         lputv %dateInfo.3 %tmp.57;
-[ "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc" 59 4 ]
-        [ "C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_47_24_start" "C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_47_24_stop" ]
+[ "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc" 59 4 ]
+        [ "C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_47_24_start" "C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_47_24_stop" ]
         %dateformat.4 = local;
         %tmp.58 = lgetv %dateInfo4.2;
         %tmp.59 = getv %tmp.58 :day;
@@ -262,7 +262,7 @@ C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_47_24_start:
         %tmp.74 = getv %tmp.73 :year;
         %tmp.75 = add %tmp.72 %tmp.74;
         lputv %dateformat.4 %tmp.75;
-[ "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc" 61 4 ]
+[ "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc" 61 4 ]
         %tmp.76 = lgetv %dc;
         %tmp.77 = getv function %tmp.76 :drawText;
         %tmp.78 = 110;
@@ -272,15 +272,15 @@ C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_47_24_start:
         %tmp.84 = getm $.Toybox.Graphics;
         %tmp.85 = getv %tmp.84 :TEXT_JUSTIFY_CENTER;
         invoke %tmp.76 %tmp.77(%tmp.78, %tmp.79, %tmp.81, %tmp.83, %tmp.85);
-[ "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc" 64 4 ]
-        [ "C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_47_24_start" "C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_47_24_stop" ]
+[ "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc" 64 4 ]
+        [ "C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_47_24_start" "C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_47_24_stop" ]
         %time.5 = local;
         %tmp.87 = getv ? :System;
         %tmp.88 = getv function %tmp.87 :getClockTime;
         %tmp.89 = invoke %tmp.87 %tmp.88();
         lputv %time.5 %tmp.89;
-[ "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc" 65 4 ]
-        [ "C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_47_24_start" "C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_47_24_stop" ]
+[ "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc" 65 4 ]
+        [ "C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_47_24_start" "C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_47_24_stop" ]
         %timeformat.6 = local;
         %tmp.90 = lgetv %time.5;
         %tmp.91 = getv %tmp.90 :hour;
@@ -296,7 +296,7 @@ C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_47_24_start:
         %tmp.101 = invoke %tmp.98 %tmp.99(%tmp.100);
         %tmp.102 = add %tmp.96 %tmp.101;
         lputv %timeformat.6 %tmp.102;
-[ "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc" 66 4 ]
+[ "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc" 66 4 ]
         %tmp.103 = lgetv %dc;
         %tmp.104 = getv function %tmp.103 :drawText;
         %tmp.105 = 110;
@@ -306,15 +306,15 @@ C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_47_24_start:
         %tmp.111 = getm $.Toybox.Graphics;
         %tmp.112 = getv %tmp.111 :TEXT_JUSTIFY_CENTER;
         invoke %tmp.103 %tmp.104(%tmp.105, %tmp.106, %tmp.108, %tmp.110, %tmp.112);
-[ "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc" 69 4 ]
-        [ "C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_47_24_start" "C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_47_24_stop" ]
+[ "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc" 69 4 ]
+        [ "C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_47_24_start" "C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_47_24_stop" ]
         %step.7 = local;
         %tmp.113 = getm $.Toybox.ActivityMonitor;
         %tmp.114 = getv function %tmp.113 :getInfo;
         %tmp.115 = invoke %tmp.113 %tmp.114();
         %tmp.116 = getv %tmp.115 :steps;
         lputv %step.7 %tmp.116;
-[ "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc" 70 4 ]
+[ "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc" 70 4 ]
         %tmp.117 = lgetv %dc;
         %tmp.118 = getv function %tmp.117 :drawText;
         %tmp.119 = 90;
@@ -326,183 +326,183 @@ C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_47_24_start:
         %tmp.127 = getm $.Toybox.Graphics;
         %tmp.128 = getv %tmp.127 :TEXT_JUSTIFY_CENTER;
         invoke %tmp.117 %tmp.118(%tmp.119, %tmp.120, %tmp.122, %tmp.126, %tmp.128);
-[ "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc" 73 4 ]
-        [ "C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_47_24_start" "C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_47_24_stop" ]
+[ "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc" 73 4 ]
+        [ "C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_47_24_start" "C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_47_24_stop" ]
         %batt.8 = local;
         %tmp.130 = getv ? :System;
         %tmp.131 = getv function %tmp.130 :getSystemStats;
         %tmp.132 = invoke %tmp.130 %tmp.131();
         %tmp.133 = getv %tmp.132 :battery;
         lputv %batt.8 %tmp.133;
-[ "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc" 74 4 ]
-C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_74_4_if_stmt:
+[ "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc" 74 4 ]
+C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_74_4_if_stmt:
         %tmp.135 = lgetv %batt.8;
         %tmp.136 = 95;
         %tmp.137 = gt %tmp.135 %tmp.136;
-        bf %tmp.137 @C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_74_4_if_false;
-C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_74_4_if_true:
-C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_74_19_start:
-[ "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc" 75 6 ]
+        bf %tmp.137 @C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_74_4_if_false;
+C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_74_4_if_true:
+C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_74_19_start:
+[ "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc" 75 6 ]
         %tmp.138 = lgetv %dc;
         %tmp.139 = getv function %tmp.138 :drawBitmap;
         %tmp.140 = 89;
         %tmp.141 = 195;
         %tmp.143 = getv ? :batteryIcon;
         invoke %tmp.138 %tmp.139(%tmp.140, %tmp.141, %tmp.143);
-C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_74_19_stop:
-        goto @C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_74_4_if_end;
-C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_74_4_if_false:
-[ "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc" 76 11 ]
-C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_76_11_if_stmt:
+C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_74_19_stop:
+        goto @C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_74_4_if_end;
+C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_74_4_if_false:
+[ "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc" 76 11 ]
+C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_76_11_if_stmt:
         %tmp.145 = lgetv %batt.8;
         %tmp.146 = 83;
         %tmp.147 = gt %tmp.145 %tmp.146;
-        bf %tmp.147 @C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_76_11_if_false;
-C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_76_11_if_true:
-C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_76_26_start:
-[ "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc" 77 6 ]
+        bf %tmp.147 @C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_76_11_if_false;
+C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_76_11_if_true:
+C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_76_26_start:
+[ "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc" 77 6 ]
         %tmp.148 = lgetv %dc;
         %tmp.149 = getv function %tmp.148 :drawBitmap;
         %tmp.150 = 89;
         %tmp.151 = 195;
         %tmp.153 = getv ? :batteryIcon83;
         invoke %tmp.148 %tmp.149(%tmp.150, %tmp.151, %tmp.153);
-C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_76_26_stop:
-        goto @C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_76_11_if_end;
-C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_76_11_if_false:
-[ "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc" 78 11 ]
-C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_78_11_if_stmt:
+C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_76_26_stop:
+        goto @C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_76_11_if_end;
+C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_76_11_if_false:
+[ "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc" 78 11 ]
+C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_78_11_if_stmt:
         %tmp.155 = lgetv %batt.8;
         %tmp.156 = 66;
         %tmp.157 = gt %tmp.155 %tmp.156;
-        bf %tmp.157 @C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_78_11_if_false;
-C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_78_11_if_true:
-C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_78_26_start:
-[ "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc" 79 6 ]
+        bf %tmp.157 @C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_78_11_if_false;
+C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_78_11_if_true:
+C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_78_26_start:
+[ "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc" 79 6 ]
         %tmp.158 = lgetv %dc;
         %tmp.159 = getv function %tmp.158 :drawBitmap;
         %tmp.160 = 89;
         %tmp.161 = 195;
         %tmp.163 = getv ? :batteryIcon66;
         invoke %tmp.158 %tmp.159(%tmp.160, %tmp.161, %tmp.163);
-C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_78_26_stop:
-        goto @C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_78_11_if_end;
-C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_78_11_if_false:
-[ "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc" 80 11 ]
-C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_80_11_if_stmt:
+C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_78_26_stop:
+        goto @C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_78_11_if_end;
+C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_78_11_if_false:
+[ "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc" 80 11 ]
+C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_80_11_if_stmt:
         %tmp.165 = lgetv %batt.8;
         %tmp.166 = 50;
         %tmp.167 = gt %tmp.165 %tmp.166;
-        bf %tmp.167 @C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_80_11_if_false;
-C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_80_11_if_true:
-C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_80_26_start:
-[ "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc" 81 6 ]
+        bf %tmp.167 @C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_80_11_if_false;
+C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_80_11_if_true:
+C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_80_26_start:
+[ "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc" 81 6 ]
         %tmp.168 = lgetv %dc;
         %tmp.169 = getv function %tmp.168 :drawBitmap;
         %tmp.170 = 89;
         %tmp.171 = 195;
         %tmp.173 = getv ? :batteryIcon50;
         invoke %tmp.168 %tmp.169(%tmp.170, %tmp.171, %tmp.173);
-C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_80_26_stop:
-        goto @C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_80_11_if_end;
-C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_80_11_if_false:
-[ "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc" 82 11 ]
-C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_82_11_if_stmt:
+C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_80_26_stop:
+        goto @C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_80_11_if_end;
+C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_80_11_if_false:
+[ "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc" 82 11 ]
+C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_82_11_if_stmt:
         %tmp.175 = lgetv %batt.8;
         %tmp.176 = 32;
         %tmp.177 = gt %tmp.175 %tmp.176;
-        bf %tmp.177 @C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_82_11_if_false;
-C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_82_11_if_true:
-C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_82_26_start:
-[ "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc" 83 6 ]
+        bf %tmp.177 @C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_82_11_if_false;
+C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_82_11_if_true:
+C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_82_26_start:
+[ "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc" 83 6 ]
         %tmp.178 = lgetv %dc;
         %tmp.179 = getv function %tmp.178 :drawBitmap;
         %tmp.180 = 89;
         %tmp.181 = 195;
         %tmp.183 = getv ? :batteryIcon32;
         invoke %tmp.178 %tmp.179(%tmp.180, %tmp.181, %tmp.183);
-C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_82_26_stop:
-        goto @C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_82_11_if_end;
-C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_82_11_if_false:
-[ "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc" 84 11 ]
-C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_84_11_if_stmt:
+C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_82_26_stop:
+        goto @C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_82_11_if_end;
+C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_82_11_if_false:
+[ "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc" 84 11 ]
+C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_84_11_if_stmt:
         %tmp.185 = lgetv %batt.8;
         %tmp.186 = 15;
         %tmp.187 = gt %tmp.185 %tmp.186;
-        bf %tmp.187 @C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_84_11_if_end;
-C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_84_11_if_true:
-C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_84_26_start:
-[ "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc" 85 6 ]
+        bf %tmp.187 @C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_84_11_if_end;
+C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_84_11_if_true:
+C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_84_26_start:
+[ "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc" 85 6 ]
         %tmp.188 = lgetv %dc;
         %tmp.189 = getv function %tmp.188 :drawBitmap;
         %tmp.190 = 89;
         %tmp.191 = 195;
         %tmp.193 = getv ? :batteryIcon15;
         invoke %tmp.188 %tmp.189(%tmp.190, %tmp.191, %tmp.193);
-C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_84_26_stop:
-        goto @C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_84_11_if_end;
-C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_84_11_if_end:
-C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_82_11_if_end:
-C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_80_11_if_end:
-C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_78_11_if_end:
-C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_76_11_if_end:
-C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_74_4_if_end:
-[ "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc" 89 4 ]
-        [ "C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_47_24_start" "C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_47_24_stop" ]
+C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_84_26_stop:
+        goto @C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_84_11_if_end;
+C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_84_11_if_end:
+C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_82_11_if_end:
+C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_80_11_if_end:
+C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_78_11_if_end:
+C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_76_11_if_end:
+C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_74_4_if_end:
+[ "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc" 89 4 ]
+        [ "C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_47_24_start" "C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_47_24_stop" ]
         %mySystem.9 = local;
         %tmp.195 = getv ? :System;
         %tmp.196 = getv function %tmp.195 :getDeviceSettings;
         %tmp.197 = invoke %tmp.195 %tmp.196();
         lputv %mySystem.9 %tmp.197;
-[ "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc" 90 4 ]
-C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_90_4_if_stmt:
+[ "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc" 90 4 ]
+C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_90_4_if_stmt:
         %tmp.198 = lgetv %mySystem.9;
         %tmp.199 = getv %tmp.198 :phoneConnected;
-        bf %tmp.199 @C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_90_4_if_false;
-C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_90_4_if_true:
-C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_90_33_start:
-[ "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc" 91 6 ]
+        bf %tmp.199 @C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_90_4_if_false;
+C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_90_4_if_true:
+C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_90_33_start:
+[ "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc" 91 6 ]
         %tmp.200 = lgetv %dc;
         %tmp.201 = getv function %tmp.200 :drawBitmap;
         %tmp.202 = 98;
         %tmp.203 = 0;
         %tmp.205 = getv ? :bt;
         invoke %tmp.200 %tmp.201(%tmp.202, %tmp.203, %tmp.205);
-C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_90_33_stop:
-        goto @C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_90_4_if_end;
-C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_90_4_if_false:
-C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_92_11_start:
-[ "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc" 93 6 ]
+C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_90_33_stop:
+        goto @C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_90_4_if_end;
+C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_90_4_if_false:
+C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_92_11_start:
+[ "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc" 93 6 ]
         %tmp.206 = lgetv %dc;
         %tmp.207 = getv function %tmp.206 :drawBitmap;
         %tmp.208 = 98;
         %tmp.209 = 0;
         %tmp.211 = getv ? :btn;
         invoke %tmp.206 %tmp.207(%tmp.208, %tmp.209, %tmp.211);
-C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_92_11_stop:
-C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_90_4_if_end:
-C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_47_24_stop:
+C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_92_11_stop:
+C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_90_4_if_end:
+C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_47_24_stop:
     }
-    [ @file = "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc"; @line = 101; ]
+    [ @file = "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc"; @line = 101; ]
     function onHide() as Void {
     }
-    [ @file = "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc"; @line = 103; ]
+    [ @file = "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc"; @line = 103; ]
     function onExitSleep() {
-C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_103_25_start:
-[ "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc" 103 27 ]
+C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_103_25_start:
+[ "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc" 103 27 ]
         %tmp.1 = true;
         putv self :lowPowerMode %tmp.1;
-C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_103_25_stop:
+C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_103_25_stop:
     }
-    [ @file = "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc"; @line = 105; ]
+    [ @file = "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc"; @line = 105; ]
     function onEnterSleep() {
-C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_105_26_start:
-[ "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc" 105 28 ]
+C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_105_26_start:
+[ "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc" 105 28 ]
         %tmp.1 = false;
         putv self :lowPowerMode %tmp.1;
-C_GIT_priv_Garmin_app_WF2_source_WF2View_mc_105_26_stop:
+C_GIT_priv_Garmin_WF2_15_08_source_WF2View_mc_105_26_stop:
     }
 }
-[ @file = "C:\GIT\priv\Garmin_app\WF2\source\WF2View.mc"; @line = 2; ]
+[ @file = "C:\GIT\priv\Garmin\WF2-15.08\source\WF2View.mc"; @line = 2; ]
 <init> {
 }

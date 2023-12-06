@@ -61,7 +61,7 @@ class GWView extends WatchUi.WatchFace {
     dc.drawLine(38, 107, 130, 107);
 
     //DATE
-    dc.setColor(Gfx.COLOR_LT_GRAY, Gfx.COLOR_TRANSPARENT);
+    dc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT);
     var dateInfo4 = Calendar.info(Time.now(), Time.FORMAT_MEDIUM);
     var dateInfo = Calendar.info(Time.now(), Time.FORMAT_SHORT);
     var dateformat = dateInfo4.day.format("%02d") + "." +
@@ -139,20 +139,20 @@ class GWView extends WatchUi.WatchFace {
     }else if(floor > floorGoal90 && floor < floorGoal100){
       dc.setColor(Gfx.COLOR_BLUE, Gfx.COLOR_TRANSPARENT);
     }
-    dc.drawText(115, 180, customLat_20, "CL:" + floor, Gfx.TEXT_JUSTIFY_CENTER);
+    dc.drawText(115, 185, customLat_20, "CL:" + floor, Gfx.TEXT_JUSTIFY_CENTER);
 
     dc.setColor(Gfx.COLOR_RED, Gfx.COLOR_TRANSPARENT);
-    dc.drawCircle(82, 205, 3);
+    dc.drawCircle(82, 180, 3);
     dc.setColor(Gfx.COLOR_YELLOW, Gfx.COLOR_TRANSPARENT);
-    dc.drawCircle(92, 205, 3);
+    dc.drawCircle(92, 180, 3);
     dc.setColor(Gfx.COLOR_GREEN, Gfx.COLOR_TRANSPARENT);
-    dc.drawCircle(102, 205, 3);
+    dc.drawCircle(102, 180, 3);
     dc.setColor(Gfx.COLOR_PURPLE, Gfx.COLOR_TRANSPARENT);
-    dc.drawCircle(122, 205, 3);
+    dc.drawCircle(122, 180, 3);
     dc.setColor(Gfx.COLOR_ORANGE, Gfx.COLOR_TRANSPARENT);
-    dc.drawCircle(132, 205, 3);
+    dc.drawCircle(132, 180, 3);
     dc.setColor(Gfx.COLOR_BLUE, Gfx.COLOR_TRANSPARENT);
-    dc.drawCircle(142, 205, 3);
+    dc.drawCircle(142, 180, 3);
 
     // BATTERY
     var bat = System.getSystemStats().battery;
